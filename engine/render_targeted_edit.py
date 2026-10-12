@@ -1,0 +1,6 @@
+import bpy,json,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'engine'))
+from scene_audit import snapshot,apply_facade_color
+from constraints import compare_snapshots,site_gate
+out=ROOT/'outputs/v2';cfg=json.loads((ROOT/'config/synthetic-design.json').read_text());assert cfg.get('synthetic') is True and site_gate(cfg)['final_render_allowed'],'Unverified real-site render blocked';bpy.ops.wm.open_mainfile(filepath=str(out/'model.blend'));scene=bpy.context.scene;scene.camera=bpy.data.objects['camera:aerial'];before=snapshot();target=cfg['material_edit_test']['target'];apply_facade_color(bpy.data.objects['building:'+target],cfg['material_edit_test']['color']);after=snapshot();qa=compare_snapshots(before,after,target);assert qa['passed'];assert qa['changed_objects']==['building:'+target];(out/'edit-report.json').write_text(json.dumps(qa,indent=2));(out/'scene-snapshots.json').write_text(json.dumps({'before':before,'after':after},indent=2));bpy.ops.wm.save_as_mainfile(filepath=str(out/'edited-model.blend'));bpy.ops.export_scene.gltf(filepath=str(out/'edited-model.glb'),export_format='GLB',export_extras=True);scene.render.filepath=str(out/'edited-aerial.png');bpy.ops.render.render(write_still=True);print('TARGETED SHADER EDIT VERIFIED AND RENDERED')

@@ -1,0 +1,95 @@
+{
+  "images": [
+    {
+      "id": "image-aerial",
+      "name": "aerial.png",
+      "bytes": 1153202,
+      "sha256": "b4b25b9c9e8e9fe4bdf6a594e86f4949402d8351591103725cee57d805ece129"
+    },
+    {
+      "id": "image-street",
+      "name": "street.png",
+      "bytes": 1357347,
+      "sha256": "ed15aa7ab92f810f3802c9e869e503fd3b0d57da48cb9f5aa4444842a5048caf"
+    },
+    {
+      "id": "image-edited-aerial",
+      "name": "edited-aerial.png",
+      "bytes": 1168008,
+      "sha256": "a4b52d30ef74cf7490c3b716794f7d25e6798d9d83fff12b3f0c437b9566f62d"
+    }
+  ],
+  "cameras": {
+    "aerial": {
+      "id": "aerial",
+      "name": "מבט אווירי",
+      "position": [
+        95.0,
+        -120.0,
+        95.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        7.5
+      ],
+      "fov": 37.0
+    },
+    "street": {
+      "id": "street",
+      "name": "מבט בגובה הרחוב — 1.7 מ׳",
+      "position": [
+        -22.5,
+        -115.0,
+        1.7
+      ],
+      "target": [
+        -8.0,
+        -5.0,
+        12.9
+      ],
+      "fov": 38.0
+    }
+  },
+  "source_manifest": [
+    {
+      "id": "image-aerial",
+      "name": "aerial.png",
+      "bytes": 1153202,
+      "sha256": "b4b25b9c9e8e9fe4bdf6a594e86f4949402d8351591103725cee57d805ece129",
+      "source": "examples/renders/aerial.png"
+    },
+    {
+      "id": "image-street",
+      "name": "street.png",
+      "bytes": 1357347,
+      "sha256": "ed15aa7ab92f810f3802c9e869e503fd3b0d57da48cb9f5aa4444842a5048caf",
+      "source": "examples/renders/street.png"
+    },
+    {
+      "id": "image-edited-aerial",
+      "name": "edited-aerial.png",
+      "bytes": 1168008,
+      "sha256": "a4b52d30ef74cf7490c3b716794f7d25e6798d9d83fff12b3f0c437b9566f62d",
+      "source": "examples/renders/edited-aerial.png"
+    },
+    {
+      "key": "baseline",
+      "name": "aerial.glb",
+      "bytes": 84668,
+      "sha256": "a50f623e4ff3a395818cf9c5544229bda3546c1e1fdf9954dd96164eaa4c5776",
+      "source": "examples/renders/aerial.glb",
+      "meshes": 15,
+      "cameras": 1
+    },
+    {
+      "key": "edited",
+      "name": "edited-aerial.glb",
+      "bytes": 347752,
+      "sha256": "a644e19804b092c759df53420865be15f70b4d5d906513e058bee010b6a46060",
+      "source": "examples/renders/edited-aerial.glb",
+      "meshes": 126,
+      "cameras": 1
+    }
+  ]
+}

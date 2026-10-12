@@ -1,0 +1,90 @@
+{
+  "synthetic_only": true,
+  "files": [
+    {
+      "file": "outputs/v2/aerial.png",
+      "bytes": 2051805,
+      "sha256": "d0c384fc0a73ce745040976956a084738f5439da7ab81f6c96d08d8543c49f8a"
+    },
+    {
+      "file": "outputs/v2/architectural.png",
+      "bytes": 2251520,
+      "sha256": "429804ea0cfb0478284692f971c18b897e07849980a7e114fd8d729e10ef1bdf"
+    },
+    {
+      "file": "outputs/v2/before-after.png",
+      "bytes": 2755982,
+      "sha256": "7bdfcaf2e6eb1cc29a24b5be38d8734a542a32c45624ed8627ee5aeef7967cfb"
+    },
+    {
+      "file": "outputs/v2/contact-sheet.png",
+      "bytes": 1165804,
+      "sha256": "86c13b590aa315c32e5748135364e72b9ca56e6a7322042367137baba8684ad2"
+    },
+    {
+      "file": "outputs/v2/edit-report.json",
+      "bytes": 204,
+      "sha256": "472f758263b742b73b89dc89f3c7fb8524444c2dbbfdfe8f42c7627153e19779"
+    },
+    {
+      "file": "outputs/v2/edited-aerial.png",
+      "bytes": 2035530,
+      "sha256": "7a2c925e9f0ec8c495f0d84b4fe9e8b886e4b49987e360b020e40f8d7c92ecd4"
+    },
+    {
+      "file": "outputs/v2/edited-model.blend",
+      "bytes": 8891336,
+      "sha256": "1253426f0a12ef238d7067d21c6ca0e0455e1179601908efbfa8e4c1702117c2"
+    },
+    {
+      "file": "outputs/v2/edited-model.glb",
+      "bytes": 7740156,
+      "sha256": "0856161651709c08ea4ad3b7196581929a59a8863187a54cb6f1e5dc58732b3b"
+    },
+    {
+      "file": "outputs/v2/geometry-report.json",
+      "bytes": 1385,
+      "sha256": "9093b675d7b09932b68a4ba57a04d2d8b0860ccebfd4860686c39863de9a2952"
+    },
+    {
+      "file": "outputs/v2/model.blend",
+      "bytes": 8891336,
+      "sha256": "d4d5eea894c498f375a959fbf370c272f8c60ad4f09e20974904f708a850bd4e"
+    },
+    {
+      "file": "outputs/v2/model.glb",
+      "bytes": 7740156,
+      "sha256": "0845277536d4052cd9d59ca9258fef2863b2d7f6aa4092f5b96aa431c3ee5689"
+    },
+    {
+      "file": "outputs/v2/output-checks.json",
+      "bytes": 1790,
+      "sha256": "56144a21e03561aac0afe5f30d15a00da9a91bcca394a52955cbdc2058dbd528"
+    },
+    {
+      "file": "outputs/v2/roundtrip-geometry.json",
+      "bytes": 460,
+      "sha256": "0ce3cf09dc1e6c4a900664feea5a9ffe14df88e6e3443f6436d84201deb7af16"
+    },
+    {
+      "file": "outputs/v2/scene-snapshots.json",
+      "bytes": 866379,
+      "sha256": "38f792575609f962302a2d7219c63443b64d0a92a8fea415bb3b8fac720405ac"
+    },
+    {
+      "file": "outputs/v2/street.png",
+      "bytes": 2278024,
+      "sha256": "1b18a06da063af05c512fef3632525ff8479f5e16c1e34db8b456071f1cc5951"
+    },
+    {
+      "file": "outputs/v2/viewer-module.mjs",
+      "bytes": 10307,
+      "sha256": "beada10e283d47642fd7a3a49d9f0d350d1f1f176273360277a105c841a74cec"
+    },
+    {
+      "file": "outputs/v2/viewer.html",
+      "bytes": 35077196,
+      "sha256": "79de31ba4718c76bf40973376ccbf5c70f3239da3965fb99fc92832d05e11d0b"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "model.blend": {
+    "source_objects_checked": 15,
+    "source_geometry_changed": [],
+    "passed": true
+  },
+  "model.glb": {
+    "source_objects_checked": 15,
+    "source_geometry_changed": [],
+    "passed": true
+  },
+  "edited-model.blend": {
+    "source_objects_checked": 15,
+    "source_geometry_changed": [],
+    "passed": true
+  },
+  "edited-model.glb": {
+    "source_objects_checked": 15,
+    "source_geometry_changed": [],
+    "passed": true
+  }
+}

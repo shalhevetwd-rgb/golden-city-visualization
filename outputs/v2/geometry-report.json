@@ -1,0 +1,75 @@
+{
+  "synthetic": true,
+  "real_site_accuracy": false,
+  "source_meshes_preserved": 15,
+  "source_geometry_changed": [],
+  "buildings": {
+    "building:A": {
+      "bounds": [
+        [
+          -40.0,
+          -40.0,
+          0.0
+        ],
+        [
+          -20.0,
+          -20.0,
+          30.0
+        ]
+      ],
+      "source_window_rows": 10
+    },
+    "building:B": {
+      "bounds": [
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          14.0,
+          18.0,
+          24.0
+        ]
+      ],
+      "source_window_rows": 8
+    },
+    "building:C": {
+      "bounds": [
+        [
+          23.0,
+          -20.0,
+          0.0
+        ],
+        [
+          40.0,
+          -3.0,
+          18.0
+        ]
+      ],
+      "source_window_rows": 6
+    }
+  },
+  "gate": {
+    "final_render_allowed": true,
+    "classification": "synthetic_test",
+    "missing": [
+      "parcel_geometry_verified",
+      "alignment_approved",
+      "building_positions_verified",
+      "floors_verified",
+      "heights_verified",
+      "terrain_verified"
+    ],
+    "accurate_real_site": false
+  },
+  "balconies_added": 0,
+  "new_roads": 0,
+  "landscaping_status": "synthetic_design_proposal",
+  "street_camera": {
+    "world_z_m": 1.7,
+    "local_source_ground_z_m": -0.05,
+    "eye_height_above_source_ground_m": 1.75,
+    "real_site_measurement": false
+  }
+}

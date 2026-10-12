@@ -1,0 +1,130 @@
+{
+  "synthetic": true,
+  "source_model": "baseline/aerial.glb",
+  "design_status": "synthetic_design_proposal_not_real_site",
+  "seed": 29,
+  "facade_detail": "frames within existing window rectangles; original mass and glazing meshes untouched",
+  "balconies": [],
+  "landscape": {
+    "status": "synthetic_design_proposal",
+    "tree_points": [
+      [
+        -46,
+        -12
+      ],
+      [
+        -46,
+        23
+      ],
+      [
+        -20,
+        32
+      ],
+      [
+        24,
+        38
+      ],
+      [
+        44,
+        20
+      ],
+      [
+        44,
+        -29
+      ],
+      [
+        -10,
+        -43
+      ],
+      [
+        15,
+        -43
+      ]
+    ],
+    "seating_points": [
+      [
+        -10,
+        -25
+      ],
+      [
+        18,
+        28
+      ]
+    ],
+    "paths": [
+      [
+        -30,
+        -46,
+        2.4,
+        7
+      ],
+      [
+        5,
+        -15,
+        2.4,
+        16
+      ],
+      [
+        31.5,
+        -35,
+        2.4,
+        26
+      ]
+    ]
+  },
+  "cameras": {
+    "aerial": {
+      "position": [
+        94,
+        -116,
+        84
+      ],
+      "target": [
+        0,
+        -1,
+        9
+      ],
+      "lens_mm": 40
+    },
+    "street": {
+      "position": [
+        -17,
+        -52.5,
+        1.7
+      ],
+      "target": [
+        -7,
+        -7,
+        11
+      ],
+      "lens_mm": 26
+    },
+    "architectural": {
+      "position": [
+        -68,
+        -78,
+        13
+      ],
+      "target": [
+        -24,
+        -16,
+        13
+      ],
+      "lens_mm": 36
+    }
+  },
+  "sukkah_policy": null,
+  "material_edit_test": {
+    "target": "A",
+    "color": [
+      0.37,
+      0.44,
+      0.42
+    ]
+  },
+  "finishes": {
+    "A": "stone",
+    "B": "plaster",
+    "C": "stone_light"
+  }
+}

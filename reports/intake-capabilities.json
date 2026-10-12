@@ -1,0 +1,17 @@
+{
+  "tested_sources": {
+    "PNG": "original aerial.png opened; 960x720",
+    "GLB": "exact embedded baseline/aerial.glb imported by Blender"
+  },
+  "not_yet_proven": [
+    "PDF planning extraction",
+    "DWG",
+    "DXF",
+    "GIS-to-ground alignment",
+    "image-plan georeferencing",
+    "architectural floor schedules",
+    "terrain models"
+  ],
+  "confidential_sources_used": false,
+  "public_repository_payload": "synthetic models, images, source code and reports only"
+}

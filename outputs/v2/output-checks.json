@@ -1,0 +1,64 @@
+{
+  "synthetic": true,
+  "images": [
+    {
+      "name": "aerial.png",
+      "sha256": "d0c384fc0a73ce745040976956a084738f5439da7ab81f6c96d08d8543c49f8a",
+      "supported": true,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "meaning": "source image only; no camera or scale inferred"
+    },
+    {
+      "name": "street.png",
+      "sha256": "1b18a06da063af05c512fef3632525ff8479f5e16c1e34db8b456071f1cc5951",
+      "supported": true,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "meaning": "source image only; no camera or scale inferred"
+    },
+    {
+      "name": "architectural.png",
+      "sha256": "429804ea0cfb0478284692f971c18b897e07849980a7e114fd8d729e10ef1bdf",
+      "supported": true,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "meaning": "source image only; no camera or scale inferred"
+    },
+    {
+      "name": "edited-aerial.png",
+      "sha256": "7a2c925e9f0ec8c495f0d84b4fe9e8b886e4b49987e360b020e40f8d7c92ecd4",
+      "supported": true,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "meaning": "source image only; no camera or scale inferred"
+    }
+  ],
+  "errors": [],
+  "model.glb": {
+    "name": "model.glb",
+    "sha256": "0845277536d4052cd9d59ca9258fef2863b2d7f6aa4092f5b96aa431c3ee5689",
+    "supported": true,
+    "meshes": 43,
+    "nodes": 43,
+    "meaning": "geometry import; no site CRS or floor schedule inferred"
+  },
+  "edited-model.glb": {
+    "name": "edited-model.glb",
+    "sha256": "0856161651709c08ea4ad3b7196581929a59a8863187a54cb6f1e5dc58732b3b",
+    "supported": true,
+    "meshes": 43,
+    "nodes": 43,
+    "meaning": "geometry import; no site CRS or floor schedule inferred"
+  },
+  "geometric_edit_passed": true,
+  "architectural_quality_requires_manual_review": true
+}

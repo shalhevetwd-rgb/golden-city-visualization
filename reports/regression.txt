@@ -1,0 +1,23 @@
+test_actual_source_glb_read (test_constraints.Gates.test_actual_source_glb_read) ... ok
+test_actual_source_png_read (test_constraints.Gates.test_actual_source_png_read) ... ok
+test_claimed_flags_without_evidence_not_accuracy (test_constraints.Gates.test_claimed_flags_without_evidence_not_accuracy) ... ok
+test_edit_outside_target_rejected (test_constraints.Gates.test_edit_outside_target_rejected) ... ok
+test_foreign_project_evidence_rejected (test_constraints.Gates.test_foreign_project_evidence_rejected) ... ok
+test_geometry_edit_rejected (test_constraints.Gates.test_geometry_edit_rejected) ... ok
+test_material_edit_passes_without_pixel_claim (test_constraints.Gates.test_material_edit_passes_without_pixel_claim) ... ok
+test_nearby_nonoverlapping_slab_not_obstruction (test_constraints.Gates.test_nearby_nonoverlapping_slab_not_obstruction) ... ok
+test_original_delivery_files_preserved (test_constraints.Gates.test_original_delivery_files_preserved) ... ok
+test_overhang_detected (test_constraints.Gates.test_overhang_detected) ... ok
+test_removed_context_rejected (test_constraints.Gates.test_removed_context_rejected) ... ok
+test_sukkah_geometry_never_halakhic_approval (test_constraints.Gates.test_sukkah_geometry_never_halakhic_approval) ... ok
+test_sukkah_no_policy_does_not_assume_rules (test_constraints.Gates.test_sukkah_no_policy_does_not_assume_rules) ... ok
+test_synthetic_never_real_accuracy (test_constraints.Gates.test_synthetic_never_real_accuracy) ... ok
+test_target_movement_rejected_even_without_vertex_change (test_constraints.Gates.test_target_movement_rejected_even_without_vertex_change) ... ok
+test_unknown_real_site_blocked (test_constraints.Gates.test_unknown_real_site_blocked) ... ok
+test_unsupported_not_claimed (test_constraints.Gates.test_unsupported_not_claimed) ... ok
+test_verified_evidence_still_missing_terrain_blocked (test_constraints.Gates.test_verified_evidence_still_missing_terrain_blocked) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.037s
+
+OK

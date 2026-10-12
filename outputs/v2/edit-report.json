@@ -1,0 +1,11 @@
+{
+  "changed_objects": [
+    "building:A"
+  ],
+  "added_objects": [],
+  "removed_objects": [],
+  "outside_target_changed": [],
+  "geometry_changed": [],
+  "passed": true,
+  "pixel_identity_claim": false
+}
