@@ -1,0 +1,342 @@
+{
+  "status": "passed",
+  "verified_artifact_commit": "5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b",
+  "branch": "development/architectural-v3",
+  "repository_visibility": "public",
+  "push_permission_verified": true,
+  "remote_tree_files_compared": 217,
+  "downloaded_delivery_file_count": 34,
+  "downloaded_delivery_files": [
+    {
+      "name": "outputs/v3/README-delivery.md",
+      "bytes": 1790,
+      "sha256": "be15ae0a557f87519ce58f7cae95ae56503e4db76b4c859e67ff1216f86700c4",
+      "git_blob_sha": "b0f7f78ba914d3f8038748ae5fec8cae4887ccaa",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/aerial.png",
+      "bytes": 2452855,
+      "sha256": "beb9efa31bf85ffbfe97946dc24d2d2789b78f72819fd61ddf61d00383cd2002",
+      "git_blob_sha": "b9d82be820d1899da0a0c2545ff6aa05d3738aad",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/architectural.png",
+      "bytes": 2379486,
+      "sha256": "df5fe7966aa37d301b31fd15c096073a04683fdb204089560e035589bda6c070",
+      "git_blob_sha": "d0cca786eebb38aae3b1c91377606618c33e9f09",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/before-after.png",
+      "bytes": 3240515,
+      "sha256": "adfa2610d7698e31a909f3031a60a60991d5a95308458414b0a7d5d2ad381e33",
+      "git_blob_sha": "f4f809008bab964658dec7ccf099d4309ce1daa9",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/browser-report.json",
+      "bytes": 1347,
+      "sha256": "eba6193abef33914a6d5813c46d9aaed9d7bebcb1d0eaa33e0500d3c22606749",
+      "git_blob_sha": "8ac1e1bf7fc106d4474c5c1da9fc54ff9299df82",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/cameras.json",
+      "bytes": 1739,
+      "sha256": "baf45c232e5d629b25c7b8c7655302dedfa49cc0cc6ae308409660b053a45c19",
+      "git_blob_sha": "0ee4fa838ed6b377a5d3d37a61f9732fe9083d89",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/contact-sheet-validation.json",
+      "bytes": 1921,
+      "sha256": "2e78f6edae83796dec926cdc3f23099dbb62176f42499d934d867b6c2c73454b",
+      "git_blob_sha": "3a661cff965d42b4ffc0e5853325636f4ebf5bc9",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/contact-sheet.png",
+      "bytes": 2064787,
+      "sha256": "53ad5ca2de24abdbfa351ae8ffa084439e2644d21edfe09d00c005c7164b13e4",
+      "git_blob_sha": "3883bf7670a285206666ecac299abbfe707e3314",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/delivery-manifest.json",
+      "bytes": 752527,
+      "sha256": "0cd062ea90ed600542e423b26a4a6e852dd3fcebe039d1fde4fd7a1f885ab6cf",
+      "git_blob_sha": "4aa4cfaf302967459c4226288d9415925ced732f",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/delivery-validation-v3.json",
+      "bytes": 844700,
+      "sha256": "88fe6c298a2b104eb5a47be232c578fb416b698c8487fa26e466a2e44ba94107",
+      "git_blob_sha": "954937289a92805793ad2b22e282634cc1a18839",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/design-config.json",
+      "bytes": 7621,
+      "sha256": "27415959c0f1a5f073c9c3a7122a479eab67f5a63d3acf9f24a03b09bf60e43f",
+      "git_blob_sha": "89c5af8635e198dcd685f3d774cea4f05649e84a",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/edit-report.json",
+      "bytes": 4620,
+      "sha256": "d2a7d5fcdbe38c4fa7600371417ae2bcdd872afb7cf2dc309e8522f3b19084a2",
+      "git_blob_sha": "fde23db9c737f39dacf80d7d964432e6541f10bc",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/edited-aerial.png",
+      "bytes": 2459436,
+      "sha256": "fa13d18083225dceb27b3825ba0ab4df79eadc0f9a08e31c760aee9708433156",
+      "git_blob_sha": "a6b939b871be937430339865716df68a5237e914",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/edited-model.blend",
+      "bytes": 36125420,
+      "sha256": "a7133c9389704cc775f66d760f3cedcb552aa2ebeade8c90538b8a20e0372250",
+      "git_blob_sha": "e8418c220ce0a66f71b3928f38f0853e8b5f576e",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/edited-model.glb",
+      "bytes": 40227400,
+      "sha256": "bff1f1a3c6daf7dfdfcf51988edcf68d9f8f22bf771fcb933d426e49de6e9ceb",
+      "git_blob_sha": "6dee77cf001f4408d30277532fa185eba59966b6",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/geometry-report.json",
+      "bytes": 10658,
+      "sha256": "4bf4f490a7676f08d4c7fedc99e7a097f6875192d2b3a14da64bd65bcbce204b",
+      "git_blob_sha": "3cfeaeb70401c75b8bc7d419215c14dfa92e442b",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/golden-city-architectural-v3.zip",
+      "bytes": 83336543,
+      "sha256": "48ec8cea258136b6f8d5bee13202d97258c9f4aac24ac25367976fb51f18b13e",
+      "git_blob_sha": "db14c4002baa20051ee483dd3bf360f6262ed161",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/model-expectations.json",
+      "bytes": 381936,
+      "sha256": "455f4cdea13f1c7be0408fc65775618b5c930790ef5ff421220ac37ccc159476",
+      "git_blob_sha": "eee4823f0ce07ff6e40396133722f0119eb7d5f6",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/model-native-inventories.json",
+      "bytes": 413589,
+      "sha256": "ab0c92d9deabfef9f95d6ed6f96627e86df6815e6f4ebc684879ead951cdbb98",
+      "git_blob_sha": "d23703b963be267e76dfd3844403a3843cbdf46c",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/model.blend",
+      "bytes": 35847864,
+      "sha256": "45fa5bd7fdf5df113b3cab9d6b2b49af92f1c9cd88e9f664753454b1a79c3648",
+      "git_blob_sha": "0c08a7960a00e30df2b2ef0ece20dc862c9b74a5",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/model.glb",
+      "bytes": 40227200,
+      "sha256": "0a1a9443db363085ec3e6b52980e37b19311c4ce3a3d092826af120ebfbbeee1",
+      "git_blob_sha": "60964af9e54a7afccd13c556994237addf6b1a64",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/native-browser-report.json",
+      "bytes": 1509,
+      "sha256": "8b3fc1f85a28a716c414bc6dd99cb1485d646198498c39c058ccf482f3e71c39",
+      "git_blob_sha": "cac3bf75d33e2ae8a00a2bfccfba9eddf3649e29",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/output-checks.json",
+      "bytes": 283039,
+      "sha256": "77bd0a203acaaabe0670ac3285020181321a0e0c030dd2e7c3cfff1627006671",
+      "git_blob_sha": "e40e1dc8dde6088d98c75882a4d851233cdbdeb9",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/portable-materials-report.json",
+      "bytes": 220224,
+      "sha256": "a37e782a26ab8edec39ba256b76cdfef3c9a41b50c76b10152dde405f02a8bdd",
+      "git_blob_sha": "7e2d867555c2ab2f72cfb741bd3667fa5e34f7be",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/render-report.json",
+      "bytes": 3425,
+      "sha256": "dd6361a89cf56fd5f4acbc42934fa67482b104ce452e111060431e01d0afa0b4",
+      "git_blob_sha": "a4c9bf20381fe0858bbedbc8778d260271cf2bd5",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/render-settings.json",
+      "bytes": 258,
+      "sha256": "58fc7b0a8aac346b322e638a277b0afa66d0ea330a108e136a00e10d8de86e26",
+      "git_blob_sha": "547174da9a1360eb05ca7624940086a345d86c22",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/roundtrip-geometry.json",
+      "bytes": 460,
+      "sha256": "0ce3cf09dc1e6c4a900664feea5a9ffe14df88e6e3443f6436d84201deb7af16",
+      "git_blob_sha": "7a45c2acc1a923502505c0ccab8e8c18158a3806",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/scene-snapshots.json",
+      "bytes": 11603091,
+      "sha256": "fd95ef4236a602e1b2f59c43b345c1000c5babbb067c8f1d133b4ad4a57b9b82",
+      "git_blob_sha": "71b8002eb43279a076f1d9573085c033f589211a",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/street.png",
+      "bytes": 2535535,
+      "sha256": "4ae560324de0b734b9c26bb9df046c47078e034e2d71100d21e0500f9f63f219",
+      "git_blob_sha": "a5556e145d719b0493425dc4ea957edb554b1052",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/validation-report.json",
+      "bytes": 33558,
+      "sha256": "ddb69c0c9f58b19ee9911c8525be9413743522f19a1357585677c74ba7860fb2",
+      "git_blob_sha": "a340b5a1ae319a1123e4e471c04f68b23ab2491b",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/vegetation-report.json",
+      "bytes": 5663,
+      "sha256": "b3d858f802d4e0cf8754a39924e64651ade3e55b574864ba268d3e9e0efaa0d0",
+      "git_blob_sha": "f134e383984c5d060643fcf8a52e91cdf9bc8336",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/viewer-build.json",
+      "bytes": 827,
+      "sha256": "0ad8d89a901c63b3e9dd3e3a6f8b52da72bfd5bf27f83ddd2567f38228521d69",
+      "git_blob_sha": "cfee4935bad6d4ffe62f4930ad3d5232e01eb397",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/viewer.html",
+      "bytes": 76573463,
+      "sha256": "d67c247b8e46d5d835fed9ac73cdc85d5217032048e3aeb6ba2432005a6620e3",
+      "git_blob_sha": "9da40a23e48d9d36e6f989e851df4516c0738915",
+      "remote_download": "passed"
+    },
+    {
+      "name": "outputs/v3/visual-review.json",
+      "bytes": 2211,
+      "sha256": "57d08ef28e802415d179e9f01d237d966b4e9e1c40b1c3e3a7685b8e704458fc",
+      "git_blob_sha": "a33ccc690eb8cc4dcec169d6ba828df81231b5b2",
+      "remote_download": "passed"
+    }
+  ],
+  "independent_reopen": {
+    "status": "passed",
+    "source_files_reopened": 30,
+    "archives_reopened": 1,
+    "source_files_modified": false,
+    "checks": [
+      "PNG full decode in Pillow and FFmpeg",
+      "Fresh Blender import of both BLEND and both GLB files with geometry and cameras",
+      "Native-derived effective material binding comparison for both GLBs",
+      "Embedded viewer models reopened and compared with source bytes",
+      "ZIP CRC, complete manifests, extraction and all members reopened"
+    ]
+  },
+  "links": {
+    "aerial.png": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/aerial.png",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/aerial.png",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    },
+    "street.png": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/street.png",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/street.png",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    },
+    "architectural.png": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/architectural.png",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/architectural.png",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    },
+    "before-after.png": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/before-after.png",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/before-after.png",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    },
+    "contact-sheet.png": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/contact-sheet.png",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/contact-sheet.png",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    },
+    "viewer.html": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/viewer.html",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/viewer.html",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    },
+    "model.glb": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/model.glb",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/model.glb",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    },
+    "golden-city-architectural-v3.zip": {
+      "view_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/blob/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/golden-city-architectural-v3.zip",
+      "view_http_status": 200,
+      "download_url": "https://github.com/shalhevetwd-rgb/golden-city-visualization/raw/5ea31d73eafda433f7e3418a0b9e9a469e0a3c7b/outputs/v3/golden-city-architectural-v3.zip",
+      "download_http_status": 302,
+      "redirect_target_matches": true,
+      "recipient_access": "not_verified",
+      "cdn_fetch": "not_attempted_managed_network_policy"
+    }
+  },
+  "delivery_transport": "Official GitHub Git Blobs API JSON/base64 downloaded every artifact without bypassing the managed network policy",
+  "recipient_access": "not_verified",
+  "raw_cdn_fetch": "Not attempted because raw.githubusercontent.com is outside the cloud allowlist; normal GitHub download redirects point to the correct files",
+  "synthetic": true,
+  "real_site_accuracy_certified": false,
+  "professional_photorealism_certified": false
+}
