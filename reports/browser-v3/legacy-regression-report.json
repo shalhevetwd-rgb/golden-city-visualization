@@ -1,0 +1,22 @@
+{
+  "url": "http://127.0.0.1:8013",
+  "software_webgl": true,
+  "checks": [
+    "real WebGL canvas initializes",
+    "existing synthetic model imported with three stable object ids",
+    "orbit controls change the actual 3D camera",
+    "street camera stays at 1.7 metres while looking upward",
+    "camera save and restore round trip preserves XYZ target and FOV",
+    "georeferenced photo and separate OBJ context layer load without replacing building objects",
+    "one-building facade edit leaves B and C byte-equivalent in canonical JSON",
+    "balcony footprint and top elevation persist only on the selected building",
+    "known-geometry sky analysis, top view, and true east-west section display without certification",
+    "version restore appends a revision and restores buildings cameras and environment references",
+    "reloading page restores persisted project and saved camera",
+    "no browser JavaScript or console errors"
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "project_id": "b5b8708d732744c1884239f753da6424",
+  "status": "passed"
+}

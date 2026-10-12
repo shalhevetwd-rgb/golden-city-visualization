@@ -1,0 +1,12 @@
+{
+  "engine": "Blender Cycles CPU",
+  "blender_version": "4.3.2",
+  "mode": "final",
+  "samples": 160,
+  "adaptive_threshold": 0.017999999225139618,
+  "denoising": false,
+  "external_oidn_available": false,
+  "width": 1600,
+  "height": 1000,
+  "threads": 8
+}

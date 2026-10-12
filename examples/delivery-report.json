@@ -1,0 +1,137 @@
+{
+  "unit_tests": {
+    "passed": 57,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "browser_checks": 13,
+  "browser_status": "passed",
+  "render_acceptance": "passed",
+  "unchanged_buildings": [
+    "B",
+    "C"
+  ],
+  "render_engine": "Blender 4.3.2 Cycles CPU",
+  "viewer": "Three.js 0.180.0 Chromium software WebGL",
+  "unverified": [
+    "hardware GPU",
+    "real cadastral accuracy",
+    "terrain elevations",
+    "professional marketing quality",
+    "photogrammetric camera registration",
+    "photo building replacement",
+    "religious/professional certification"
+  ],
+  "not_implemented": [
+    "official GIS service connection",
+    "scanned plan extraction",
+    "offline rendering of uploaded environment/photo assets"
+  ],
+  "artifacts": {
+    "examples/renders/baseline-project.json": {
+      "bytes": 2542,
+      "sha256": "d29c2ebcccfc5cc8bf3b39c8df0706b40a6b417d2a10654d8370658f2a62c16e"
+    },
+    "examples/renders/comparison.png": {
+      "bytes": 1498448,
+      "sha256": "83bb50177bc613b8a4c27b5e43aee6ed516080e4050043aab3c6477ff15b24df"
+    },
+    "examples/renders/street.blend": {
+      "bytes": 867592,
+      "sha256": "79f123736ca63b261ad54f7e2967c2579360918b4239dcecc0c8c61d6f73543a"
+    },
+    "examples/renders/edited-project.json": {
+      "bytes": 4934,
+      "sha256": "ca1fab3125bdb4f87bdff21e475a143cb2fa869d505178562d1c22f82e2df24e"
+    },
+    "examples/renders/aerial.scene.json": {
+      "bytes": 3436,
+      "sha256": "db4a2c395f8e19dcbc126c21735a8112f766d0eab7e3fa000682474e29bf2060"
+    },
+    "examples/renders/acceptance-report.json": {
+      "bytes": 1692,
+      "sha256": "79f1c89ed1b5b2cf9d579a951ac9aad7e92a1a5cd91702d59c33207a3944785e"
+    },
+    "examples/renders/aerial-objects.png": {
+      "bytes": 18346,
+      "sha256": "cad0bd37cd60c16820fc396813d2bba0e0d88228b5749bee38b4dbb92e8577c5"
+    },
+    "examples/renders/edited-aerial.scene.json": {
+      "bytes": 6051,
+      "sha256": "102c4e32a51936591cdae47d3c2a005af99be1ec44da28a81d206dd967082cc3"
+    },
+    "examples/renders/street-objects.png": {
+      "bytes": 20513,
+      "sha256": "2356fc36be1bb1bd7f9be667ca5c0486590a05db4d1e842f79813735e2a46920"
+    },
+    "examples/renders/aerial.metadata.json": {
+      "bytes": 2728,
+      "sha256": "996447159713ce0221d44970b6e5304b4dd03ee9399c62e950a89889f01c4c43"
+    },
+    "examples/renders/street.png": {
+      "bytes": 1357347,
+      "sha256": "6184d0d1521709e144595f5c35f330515f09a60d3066bfd4a947bd549df4ee3f"
+    },
+    "examples/renders/street.scene.json": {
+      "bytes": 3462,
+      "sha256": "471ccf1a4a92fb6310445a22fa372630896e0cc2679e3483cc9e40152710d2ea"
+    },
+    "examples/renders/street.metadata.json": {
+      "bytes": 2753,
+      "sha256": "890d6fc062bf2568aeb2364a44d0e9b5cd108f47dcbee157e844ddce752e074d"
+    },
+    "examples/renders/aerial.png": {
+      "bytes": 1153202,
+      "sha256": "f7bd41020d01657a1419e86b17bca0afb2b2a3218e4dbda7b39f052491938680"
+    },
+    "examples/renders/edited-aerial.blend": {
+      "bytes": 1601352,
+      "sha256": "7eeea65954dcebc9c5ee7bc503bf55173e1be3cf88f201fba774be25e8612a8d"
+    },
+    "examples/renders/edited-aerial.png": {
+      "bytes": 1168008,
+      "sha256": "0aeed4db2e23afc687fac50b85b594ab6b102ec0f1c01ae9306eb62497d3e8cb"
+    },
+    "examples/renders/aerial.blend": {
+      "bytes": 867592,
+      "sha256": "f207ce6e299f2672c3b1a359feddc2ba0b65438ebf12d8b1c280c7c14221a421"
+    },
+    "examples/renders/edited-aerial-objects.png": {
+      "bytes": 18530,
+      "sha256": "ae03f37e14a8135ed4ebfb93e828c108a2d364aa26e9fa62c0153dc42aeab905"
+    },
+    "examples/renders/edited-aerial.metadata.json": {
+      "bytes": 2756,
+      "sha256": "4495cbb4fe24641547bbdac140f7ca4de3660e1044c75238ffe1f1a7fa75e2fd"
+    },
+    "examples/browser/browser-report.json": {
+      "bytes": 1363,
+      "sha256": "a7e10c2d48175504aa9539d7203144e327e70e6f5e7537363731ac1c89f9b574"
+    },
+    "examples/browser/interface.png": {
+      "bytes": 1401474,
+      "sha256": "55706bde21b8e63b1e171b8d8f7acc42c6e2b159c8ff9fc57002bcfbd1f9165a"
+    },
+    "examples/browser/balcony-section.png": {
+      "bytes": 9245,
+      "sha256": "186fc2d2b2a01088a379efdd177d950b7a926247f43637c347d9b10c37f4d8f8"
+    },
+    "examples/browser/ui-render.png": {
+      "bytes": 1346078,
+      "sha256": "7efc67f8f6ac8fc55b70557c506d77595fde30f220ae735c67fdafe231f550b2"
+    },
+    "examples/browser/edited-webgl.png": {
+      "bytes": 63064,
+      "sha256": "71d5ce25e70e6ac796479f96b2ca932a516ac303b69b4a298b840eb7ca31702d"
+    },
+    "examples/browser/aerial-webgl.png": {
+      "bytes": 77204,
+      "sha256": "dad274a18b3d91b001ddda7033230b09a42f27020846f3fa1db6d4c8f22d1b49"
+    },
+    "examples/browser/street-webgl.png": {
+      "bytes": 74229,
+      "sha256": "8ea27390b52e19b29e72650ce66e2d713cde44aa0a273007154fe91f070ecd95"
+    }
+  }
+}

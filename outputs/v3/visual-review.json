@@ -1,0 +1,40 @@
+{
+  "synthetic": true,
+  "real_site_accuracy": false,
+  "review_method": "Each actual final PNG visually reopened after Cycles render; automatic image decode checks are separate",
+  "rendered_source_png_sha256": {
+    "aerial.png": "beb9efa31bf85ffbfe97946dc24d2d2789b78f72819fd61ddf61d00383cd2002",
+    "street.png": "4ae560324de0b734b9c26bb9df046c47078e034e2d71100d21e0500f9f63f219",
+    "architectural.png": "df5fe7966aa37d301b31fd15c096073a04683fdb204089560e035589bda6c070",
+    "edited-aerial.png": "fa13d18083225dceb27b3825ba0ab4df79eadc0f9a08e31c760aee9708433156"
+  },
+  "views_reviewed": [
+    "aerial",
+    "street",
+    "architectural",
+    "edited-aerial"
+  ],
+  "final_resolution": [
+    1600,
+    1000
+  ],
+  "development_visual_upgrade": "visible",
+  "professional_marketing_photorealism_approved": false,
+  "visible_improvements": [
+    "Warm stone courses on A; light mineral facade treatment on B/C",
+    "Physical additive cladding recesses, jambs, sills, window mullions and contrasting corner/floor/plinth composition",
+    "Pedestrian viewpoint above source ground, proposed entrance canopies, paving, grouped vegetation and scale figures",
+    "Single coherent sunlight/sky direction, reflective glazing and small edge bevels",
+    "Localized A finish change visible with all source cores and other scene objects preserved"
+  ],
+  "remaining_quality_limits": [
+    "Rigid uniform source window grid and simple original flat roofs remain",
+    "Glazing keeps the source opaque wall backing; no modeled or reconstructed interiors",
+    "Figures are simple procedural scale mannequins",
+    "Plants use repeated generic procedural forms, not photographic or species-validated assets",
+    "Flat ground and surroundings are unmeasured; large neutral background remains schematic",
+    "No unavailable OpenImageDenoise pass claimed; 160-sample CPU Cycles images retain some fine sampling grain"
+  ],
+  "geometric_claim": "Original15 source meshes/transforms preserved; no new floors, balconies or roads",
+  "edit_proof": "Full raw/evaluated geometry/material/scene snapshots constrain changes to6 ownerA facade objects; global bounce light/sampling pixels are not an object-immutability test"
+}

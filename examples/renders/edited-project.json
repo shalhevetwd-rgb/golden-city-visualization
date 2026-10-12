@@ -1,0 +1,249 @@
+{
+  "crs": "EPSG:2039",
+  "boundary": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          220000,
+          630000
+        ],
+        [
+          220100,
+          630000
+        ],
+        [
+          220100,
+          630100
+        ],
+        [
+          220000,
+          630100
+        ],
+        [
+          220000,
+          630000
+        ]
+      ]
+    ]
+  },
+  "buildings": [
+    {
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              220010,
+              630010
+            ],
+            [
+              220030,
+              630010
+            ],
+            [
+              220030,
+              630030
+            ],
+            [
+              220010,
+              630030
+            ],
+            [
+              220010,
+              630010
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "A",
+        "height": 30,
+        "floors": 10,
+        "color": "#b94e3b",
+        "material": "brick",
+        "balconies": [
+          {
+            "id": "south-6",
+            "footprint": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    220014,
+                    630007
+                  ],
+                  [
+                    220026,
+                    630007
+                  ],
+                  [
+                    220026,
+                    630010
+                  ],
+                  [
+                    220014,
+                    630010
+                  ],
+                  [
+                    220014,
+                    630007
+                  ]
+                ]
+              ]
+            },
+            "elevation": 6,
+            "thickness": 0.25,
+            "railing_height": 1.05
+          },
+          {
+            "id": "south-12",
+            "footprint": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    220014,
+                    630007
+                  ],
+                  [
+                    220026,
+                    630007
+                  ],
+                  [
+                    220026,
+                    630010
+                  ],
+                  [
+                    220014,
+                    630010
+                  ],
+                  [
+                    220014,
+                    630007
+                  ]
+                ]
+              ]
+            },
+            "elevation": 12,
+            "thickness": 0.25,
+            "railing_height": 1.05
+          },
+          {
+            "id": "south-18",
+            "footprint": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    220014,
+                    630007
+                  ],
+                  [
+                    220026,
+                    630007
+                  ],
+                  [
+                    220026,
+                    630010
+                  ],
+                  [
+                    220014,
+                    630010
+                  ],
+                  [
+                    220014,
+                    630007
+                  ]
+                ]
+              ]
+            },
+            "elevation": 18,
+            "thickness": 0.25,
+            "railing_height": 1.05
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              220046,
+              630046
+            ],
+            [
+              220064,
+              630046
+            ],
+            [
+              220064,
+              630068
+            ],
+            [
+              220046,
+              630068
+            ],
+            [
+              220046,
+              630046
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "B",
+        "height": 24,
+        "floors": 8,
+        "color": "#bbc4b6",
+        "material": "plaster"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              220073,
+              630030
+            ],
+            [
+              220090,
+              630030
+            ],
+            [
+              220090,
+              630047
+            ],
+            [
+              220073,
+              630047
+            ],
+            [
+              220073,
+              630030
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "C",
+        "height": 18,
+        "floors": 6,
+        "color": "#e7d4b7",
+        "material": "stone"
+      }
+    }
+  ],
+  "name": "Synthetic acceptance: existing A with distinct B and C",
+  "id": "synthetic-acceptance",
+  "errors": [],
+  "approved": true,
+  "version": 2,
+  "synthetic": true
+}

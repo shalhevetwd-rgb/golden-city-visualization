@@ -1,0 +1,386 @@
+{
+  "tests_run": 94,
+  "passed": 94,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "outcomes": [
+    {
+      "test": "test_api.APITests.test_boundary_and_control_alignment_preserve_camera_and_assets",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_invalid_asset_and_traversal",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_jpeg_source_preserved_byte_for_byte",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_persistent_edit_camera_restore",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_photo_and_context_model_ingest",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_static_json_sample_is_served_as_valid_json",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_balcony_default_thickness_matches_model_and_other_slab_defaults",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_body_overlap_is_reported_conservatively",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_duplicate_slab_and_building_ids_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_explicit_complete_empty_scene_yields_geometric_clear_only",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_higher_partial_balcony_and_section_geometry",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_hole_remains_empty_in_top_and_section",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_invalid_inputs_and_missing_ids_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_lower_balcony_and_distant_geometry_do_not_obstruct",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_overlapping_projections_union_without_double_counting",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_second_building_above_balcony_and_different_base_datum",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_unknown_overhead_is_not_treated_as_open_or_certified",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_bundle_preserves_originals_and_zip_is_repeatable",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_contact_sheet_contains_actual_render_pixels",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_full_bundle_refuses_missing_fresh_model_exports",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_gallery_embeds_original_pngs_and_no_external_dependencies",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_missing_or_invalid_png_does_not_create_partial_output",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_offline_chromium_displays_all_original_images_without_network",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_report_text_is_escaped",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_validation_failure_preserves_existing_delivery",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_api.DeliveryAPITests.test_blank_and_missing_deliveries_fail_closed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_api.DeliveryAPITests.test_download_verifies_actual_bytes_and_sets_filename",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_glb_separate_blender_import_preserves_camera",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_obj_separate_blender_import_geometry_and_names",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_pdf_all_pages_visually_rendered_and_reopened",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_png_jpeg_reopened_and_two_independent_decoders",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_archive_crc_unsafe_paths_and_corrupt_image_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_archive_requires_manifest_and_all_members",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_corrupt_or_blank_pdf_is_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_declared_golden_city_obj_axes_preserve_local_xyz_bounds",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_existing_but_corrupt_local_image_and_html_cycles_are_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_invalid_geometry_and_glb_indices_are_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_json_text_and_unsupported_types",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_local_embedded_and_external_links_checked_without_access_claim",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_missing_empty_and_unreasonably_large_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_missing_escaped_and_corrupt_embedded_link_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_modified_during_validation_fails",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_packaged_outputs_are_extracted_reopened_and_hashed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_truncated_png_cannot_pass_header_only_check",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_uniform_or_transparent_image_fails_but_source_is_labeled",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_wrong_extension_expected_dimensions_or_hash_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_duplicate_id",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_geographic_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_invalid_polygon",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_outside",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_overlap",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_valid_and_approval_gate",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_actual_png_and_persisted_blender_scene",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_bad_render_requests_rejected_before_blender",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_base_elevation_is_part_of_geometry_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_invalid_camera_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_named_and_saved_cameras_use_local_z_up",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_polygon_openings_preserved_in_exact_cap_triangulation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_targeted_material_change_preserves_geometry",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewAPITests.test_malformed_geojson_returns_400_without_creating_projects",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewAPITests.test_restored_asset_references_keep_original_bytes_and_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewAPITests.test_sky_completeness_requires_explicit_boolean_at_http_boundary",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_balcony_input_ids_and_coordinates_match_analysis_contract",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_explicit_imported_overhead_geometry_is_not_silently_lost",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_export_and_camera_use_one_xyz_z_up_convention",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_holed_overhead_source_survives_import_and_version_restore",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_omitted_balcony_thickness_matches_rendering_default",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_restore_recovers_assets_source_approval_and_stable_ids",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_cache_separates_expected_dimensions_and_returns_isolated_evidence",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_cached_html_cannot_reuse_old_evidence_for_changed_link_target",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_changed_corrupt_bytes_do_not_reuse_prior_open_evidence",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_download_serves_verified_snapshot_when_file_changes_after_gate",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_expected_original_hash_cannot_be_replaced_with_changed_valid_bytes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_html_link_cannot_pass_merely_because_corrupt_target_exists",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_nested_archive_gallery_resolves_within_whole_extraction_root",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_uniform_source_image_cannot_reuse_cache_as_valid_render_output",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_attached_balconies_and_slabs_share_horizontal_alignment",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_insufficient_collinear_and_poor_distribution_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_invalid_tolerance_scale_bounds_and_crs_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_measured_residuals_are_reported_inside_tolerance",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_outlier_wrong_pair_and_mirror_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_rotation_scale_multiple_footprints_and_source_unchanged",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_second_site_crs_negative_rotation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_bad_ring_nonfinite_and_3d_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_feature_projected_source_and_provenance_do_not_certify",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_missing_provenance_invalid_date_and_unsupported_geojson",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_real_coordinate_sites_in_two_projected_crs",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_wrong_crs_axis_order_and_unknown_source_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_atomic_serialization_persists_snapshots",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_balcony_edit_preserves_neighbors",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_camera_survives_version_restore",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_edit_only_one_object",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_invalid_balcony_outside",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_invalid_camera",
+      "outcome": "passed"
+    }
+  ]
+}

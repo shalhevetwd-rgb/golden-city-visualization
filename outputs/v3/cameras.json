@@ -1,0 +1,92 @@
+{
+  "aerial": {
+    "name": "camera:aerial",
+    "position": [
+      74.0,
+      -100.0,
+      68.0
+    ],
+    "forward": [
+      -0.5656855702400208,
+      0.7071067690849304,
+      -0.4242638647556305
+    ],
+    "up": [
+      -0.26503556966781616,
+      0.3312944173812866,
+      0.9055386185646057
+    ],
+    "lens_mm": 35.0,
+    "sensor_fit": "VERTICAL",
+    "sensor_height_mm": 24.0,
+    "vertical_fov": 37.84928837995056,
+    "shift_y": 0.0,
+    "ground_z": null,
+    "height_above_source_ground_m": null,
+    "target": [
+      -2,
+      -5,
+      11
+    ]
+  },
+  "street": {
+    "name": "camera:street",
+    "position": [
+      -18.0,
+      -49.5,
+      1.7000000476837158
+    ],
+    "forward": [
+      -0.31452593207359314,
+      0.9435775876045227,
+      0.10360870510339737
+    ],
+    "up": [
+      0.03276390954852104,
+      -0.09829185903072357,
+      0.9946181178092957
+    ],
+    "lens_mm": 22.0,
+    "sensor_fit": "VERTICAL",
+    "sensor_height_mm": 24.0,
+    "vertical_fov": 57.22092063977898,
+    "shift_y": 0.0,
+    "ground_z": 0.0,
+    "height_above_source_ground_m": 1.7,
+    "target": [
+      -26.5,
+      -24,
+      4.5
+    ]
+  },
+  "architectural": {
+    "name": "camera:architectural",
+    "position": [
+      -64.0,
+      -74.0,
+      10.5
+    ],
+    "forward": [
+      0.5668285489082336,
+      0.8232507705688477,
+      0.031040731817483902
+    ],
+    "up": [
+      -0.01760331727564335,
+      -0.02556658536195755,
+      0.999518096446991
+    ],
+    "lens_mm": 37.0,
+    "sensor_fit": "VERTICAL",
+    "sensor_height_mm": 24.0,
+    "vertical_fov": 35.938276582261864,
+    "shift_y": 0.0,
+    "ground_z": null,
+    "height_above_source_ground_m": null,
+    "target": [
+      -22,
+      -13,
+      12.8
+    ]
+  }
+}

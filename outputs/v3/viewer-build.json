@@ -1,0 +1,25 @@
+{
+  "viewer": "outputs/v3/viewer.html",
+  "sha256": "d67c247b8e46d5d835fed9ac73cdc85d5217032048e3aeb6ba2432005a6620e3",
+  "bytes": 76573463,
+  "embedded_sources": [
+    {
+      "key": "baseline",
+      "name": "model.glb",
+      "bytes": 40227200,
+      "sha256": "0a1a9443db363085ec3e6b52980e37b19311c4ce3a3d092826af120ebfbbeee1",
+      "blend_sha256": "45fa5bd7fdf5df113b3cab9d6b2b49af92f1c9cd88e9f664753454b1a79c3648",
+      "encoding": "glb_shared_bin"
+    },
+    {
+      "key": "edited",
+      "name": "edited-model.glb",
+      "bytes": 40227400,
+      "sha256": "bff1f1a3c6daf7dfdfcf51988edcf68d9f8f22bf771fcb933d426e49de6e9ceb",
+      "blend_sha256": "a7133c9389704cc775f66d760f3cedcb552aa2ebeade8c90538b8a20e0372250",
+      "encoding": "glb_shared_bin"
+    }
+  ],
+  "synthetic": true,
+  "source_files_modified": false
+}

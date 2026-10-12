@@ -1,0 +1,335 @@
+{
+  "objects": [
+    {
+      "name": "building:A",
+      "type": "MESH",
+      "persistent_id": "building:A",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -40.0,
+        -40.0,
+        0.0
+      ],
+      "bounds_max": [
+        -20.0,
+        -20.0,
+        30.0
+      ]
+    },
+    {
+      "name": "building:B",
+      "type": "MESH",
+      "persistent_id": "building:B",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -4.0,
+        -4.0,
+        0.0
+      ],
+      "bounds_max": [
+        14.0,
+        18.0,
+        24.0
+      ]
+    },
+    {
+      "name": "building:C",
+      "type": "MESH",
+      "persistent_id": "building:C",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        23.0,
+        -20.0,
+        0.0
+      ],
+      "bounds_max": [
+        40.0,
+        -3.0,
+        18.0
+      ]
+    },
+    {
+      "name": "camera:aerial",
+      "type": "CAMERA",
+      "persistent_id": "camera:aerial"
+    },
+    {
+      "name": "context:apron:A",
+      "type": "MESH",
+      "persistent_id": "context:apron:A",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -41.20000076293945,
+        -41.20000076293945,
+        0.0020000000949949026
+      ],
+      "bounds_max": [
+        -18.799999237060547,
+        -18.799999237060547,
+        0.017000000923871994
+      ]
+    },
+    {
+      "name": "context:apron:B",
+      "type": "MESH",
+      "persistent_id": "context:apron:B",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -5.199999809265137,
+        -5.199999809265137,
+        0.0020000000949949026
+      ],
+      "bounds_max": [
+        15.199999809265137,
+        19.200000762939453,
+        0.017000000923871994
+      ]
+    },
+    {
+      "name": "context:apron:C",
+      "type": "MESH",
+      "persistent_id": "context:apron:C",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        21.799999237060547,
+        -21.200000762939453,
+        0.0020000000949949026
+      ],
+      "bounds_max": [
+        41.20000076293945,
+        -1.7999999523162842,
+        0.017000000923871994
+      ]
+    },
+    {
+      "name": "context:ground",
+      "type": "MESH",
+      "persistent_id": "context:ground",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -400.0,
+        -400.0,
+        -0.15000000596046448
+      ],
+      "bounds_max": [
+        400.0,
+        400.0,
+        -0.05000000074505806
+      ]
+    },
+    {
+      "name": "context:parcel",
+      "type": "MESH",
+      "persistent_id": "context:parcel",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -50.0,
+        -50.0,
+        -0.05000000074505806
+      ],
+      "bounds_max": [
+        50.0,
+        50.0,
+        0.0
+      ]
+    },
+    {
+      "name": "context:street",
+      "type": "MESH",
+      "persistent_id": "context:street",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -400.0,
+        -66.0,
+        -0.019999999552965164
+      ],
+      "bounds_max": [
+        400.0,
+        -54.0,
+        -0.004999999888241291
+      ]
+    },
+    {
+      "name": "lighting:sun",
+      "type": "LIGHT",
+      "persistent_id": "lighting:sun"
+    },
+    {
+      "name": "roof:A",
+      "type": "MESH",
+      "persistent_id": "roof:A",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -40.0,
+        -40.0,
+        30.0
+      ],
+      "bounds_max": [
+        -20.0,
+        -20.0,
+        30.18000030517578
+      ]
+    },
+    {
+      "name": "roof:B",
+      "type": "MESH",
+      "persistent_id": "roof:B",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -4.0,
+        -4.0,
+        24.0
+      ],
+      "bounds_max": [
+        14.0,
+        18.0,
+        24.18000030517578
+      ]
+    },
+    {
+      "name": "roof:C",
+      "type": "MESH",
+      "persistent_id": "roof:C",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        23.0,
+        -20.0,
+        18.0
+      ],
+      "bounds_max": [
+        40.0,
+        -3.0,
+        18.18000030517578
+      ]
+    },
+    {
+      "name": "windows:A",
+      "type": "MESH",
+      "persistent_id": "windows:A",
+      "vertices": 800,
+      "unique_vertices": 800,
+      "polygons": 200,
+      "triangles": 400,
+      "bounds_min": [
+        -40.04499816894531,
+        -40.04499816894531,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        -19.954999923706055,
+        -19.954999923706055,
+        29.3700008392334
+      ]
+    },
+    {
+      "name": "windows:B",
+      "type": "MESH",
+      "persistent_id": "windows:B",
+      "vertices": 576,
+      "unique_vertices": 576,
+      "polygons": 144,
+      "triangles": 288,
+      "bounds_min": [
+        -4.045000076293945,
+        -4.045000076293945,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        14.045000076293945,
+        18.045000076293945,
+        23.3700008392334
+      ]
+    },
+    {
+      "name": "windows:C",
+      "type": "MESH",
+      "persistent_id": "windows:C",
+      "vertices": 384,
+      "unique_vertices": 384,
+      "polygons": 96,
+      "triangles": 192,
+      "bounds_min": [
+        22.954999923706055,
+        -20.045000076293945,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        40.04499816894531,
+        -2.9549999237060547,
+        17.3700008392334
+      ]
+    }
+  ],
+  "counts": {
+    "objects": 17,
+    "mesh_objects": 15,
+    "cameras": 1,
+    "lights": 1,
+    "vertices": 1856,
+    "unique_vertices": 1856,
+    "polygons": 512,
+    "triangles": 1024
+  },
+  "camera": {
+    "name": "camera:aerial",
+    "position": [
+      95.0,
+      -120.0,
+      95.0
+    ],
+    "rotation_euler": [
+      1.0514456033706665,
+      5.002902270234699e-08,
+      0.6696389317512512
+    ],
+    "vertical_fov": 36.99999875288908,
+    "lens_mm": 35.864219665527344,
+    "forward": [
+      -0.5388580560684204,
+      0.6806628108024597,
+      -0.4963165819644928
+    ],
+    "up": [
+      -0.30806511640548706,
+      0.3891349732875824,
+      0.8681415915489197
+    ]
+  },
+  "blender_version": "4.3.2"
+}

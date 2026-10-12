@@ -1,0 +1,1944 @@
+{
+  "engine": "Blender Cycles CPU",
+  "synthetic": true,
+  "scene_type": "schematic architectural visualization",
+  "project_id": "synthetic-acceptance",
+  "project_version": 1,
+  "frozen_project_hash": "193f09ea2b83b5f9bc51d598b13002946739a4df3f73b1d40657ca711403ab1f",
+  "terrain": "flat unmeasured local z=0",
+  "duration_seconds": 40.997,
+  "width": 960,
+  "height": 720,
+  "samples": 48,
+  "denoising": false,
+  "camera": {
+    "id": "aerial",
+    "name": "מבט אווירי",
+    "position": [
+      95.0,
+      -120.0,
+      95.0
+    ],
+    "target": [
+      0.0,
+      0.0,
+      7.5
+    ],
+    "fov": 37.0
+  },
+  "fov_axis": "vertical",
+  "origin": [
+    220050.0,
+    630050.0,
+    0.0
+  ],
+  "crs": "EPSG:2039",
+  "coordinates": "local meters x=easting, y=northing, z=up; subtract origin from project XY",
+  "output_path": "/workspace/golden-city-visualization/examples/renders/aerial.png",
+  "scene_path": "/workspace/golden-city-visualization/examples/renders/aerial.scene.json",
+  "inventory_path": "/workspace/golden-city-visualization/examples/renders/aerial.objects.json",
+  "obj_path": "/workspace/golden-city-visualization/examples/renders/aerial.obj",
+  "glb_path": "/workspace/golden-city-visualization/examples/renders/aerial.glb",
+  "mtl_path": "/workspace/golden-city-visualization/examples/renders/aerial.mtl",
+  "blend_path": "/workspace/golden-city-visualization/examples/renders/aerial.blend",
+  "object_mask_path": "/workspace/golden-city-visualization/examples/renders/aerial-objects.png",
+  "png_sha256": "b4b25b9c9e8e9fe4bdf6a594e86f4949402d8351591103725cee57d805ece129",
+  "delivery_checks": {
+    "aerial.png": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial.png",
+      "name": "aerial.png",
+      "bytes": 1153202,
+      "sha256": "b4b25b9c9e8e9fe4bdf6a594e86f4949402d8351591103725cee57d805ece129",
+      "format": "png",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "container_verify",
+        "full_pixel_decode",
+        "second_independent_pixel_decoder",
+        "dimensions",
+        "nonblank",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Pillow independent verify + full pixel decode",
+        "encoding": "PNG",
+        "width": 960,
+        "height": 720,
+        "mode": "RGBA",
+        "extrema": [
+          [
+            9,
+            193
+          ],
+          [
+            36,
+            190
+          ],
+          [
+            50,
+            194
+          ]
+        ],
+        "standard_deviation": [
+          20.258376746135735,
+          18.717548520555933,
+          17.202732791685165
+        ],
+        "nonuniform_fraction": 0.939697265625,
+        "nonblank": true,
+        "decoded": true,
+        "second_decoder": {
+          "reader": "FFmpeg independent full pixel decoder",
+          "decoded_bytes": 2073600,
+          "pixel_sha256": "18a9cf989a84eabf00d328b93c80ad00295700875486d7e6115596300ade4732",
+          "decoded": true
+        }
+      },
+      "user_accessibility": "not_verified"
+    },
+    "aerial.scene.json": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial.scene.json",
+      "name": "aerial.scene.json",
+      "bytes": 3682,
+      "sha256": "54f2d6b5da397fb5d6b0167f73eb995d22f2b14ee806a4b547fde2e176aee447",
+      "format": "json",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "json_parse",
+        "finite_json_numbers",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 JSON parser",
+        "type": "dict"
+      },
+      "user_accessibility": "not_verified"
+    },
+    "aerial.objects.json": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial.objects.json",
+      "name": "aerial.objects.json",
+      "bytes": 6691,
+      "sha256": "fd8c4761c0c2155f02cfe7c14d2cce6c94680eedae5a7b7f4e1dbae90fb327d5",
+      "format": "json",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "json_parse",
+        "finite_json_numbers",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 JSON parser",
+        "type": "dict"
+      },
+      "user_accessibility": "not_verified"
+    },
+    "aerial-objects.png": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial-objects.png",
+      "name": "aerial-objects.png",
+      "bytes": 18346,
+      "sha256": "4a67969f56253c45809d19650f908236d1de6074742dfd4ea771fc7b05b57fd1",
+      "format": "png",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "container_verify",
+        "full_pixel_decode",
+        "second_independent_pixel_decoder",
+        "dimensions",
+        "nonblank",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Pillow independent verify + full pixel decode",
+        "encoding": "PNG",
+        "width": 960,
+        "height": 720,
+        "mode": "RGBA",
+        "extrema": [
+          [
+            0,
+            175
+          ],
+          [
+            0,
+            255
+          ],
+          [
+            0,
+            187
+          ]
+        ],
+        "standard_deviation": [
+          39.068411776165476,
+          55.44680301254203,
+          44.36655917872328
+        ],
+        "nonuniform_fraction": 0.14316813151041663,
+        "nonblank": true,
+        "decoded": true,
+        "second_decoder": {
+          "reader": "FFmpeg independent full pixel decoder",
+          "decoded_bytes": 2073600,
+          "pixel_sha256": "53ea47b7fc602f5106605da5d5fdd4d5de7180940de19b25ba45a6f406b817e4",
+          "decoded": true
+        }
+      },
+      "user_accessibility": "not_verified"
+    },
+    "aerial.blend": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial.blend",
+      "name": "aerial.blend",
+      "bytes": 867592,
+      "sha256": "0e55b0044df13984b79849b4fdc199153abf20cce4606bcf331fa6e8123255fd",
+      "format": "blend",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "independent_model_reimport",
+        "finite_nonempty_geometry",
+        "object_inventory",
+        "camera_inventory",
+        "immutable_source_hash",
+        "camera_parameters_match_source",
+        "camera_position_direction_up_vertical_fov_match_source"
+      ],
+      "details": {
+        "status": "passed",
+        "reader": "Blender independent re-import",
+        "blender_version": "4.3.2",
+        "format": "blend",
+        "objects": [
+          {
+            "name": "building:A",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 3200.0,
+            "surface_area_world": 3200.0,
+            "bounds": [
+              [
+                -40.0,
+                -40.0,
+                0.0
+              ],
+              [
+                -20.0,
+                -20.0,
+                30.0
+              ]
+            ]
+          },
+          {
+            "name": "building:B",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 2712.0,
+            "surface_area_world": 2712.0,
+            "bounds": [
+              [
+                -4.0,
+                -4.0,
+                0.0
+              ],
+              [
+                14.0,
+                18.0,
+                24.0
+              ]
+            ]
+          },
+          {
+            "name": "building:C",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 1802.0,
+            "surface_area_world": 1802.0,
+            "bounds": [
+              [
+                23.0,
+                -20.0,
+                0.0
+              ],
+              [
+                40.0,
+                -3.0,
+                18.0
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:A",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 1004.8640806674957,
+            "surface_area_world": 1004.8641481344641,
+            "bounds": [
+              [
+                -41.20000076293945,
+                -41.20000076293945,
+                0.0020000000949949026
+              ],
+              [
+                -18.799999237060547,
+                -18.799999237060547,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:B",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 996.8640196323395,
+            "surface_area_world": 996.8640274597795,
+            "bounds": [
+              [
+                -5.199999809265137,
+                -5.199999809265137,
+                0.0020000000949949026
+              ],
+              [
+                15.199999809265137,
+                19.200000762939453,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:C",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 753.8840929269791,
+            "surface_area_world": 753.8841091365377,
+            "bounds": [
+              [
+                21.799999237060547,
+                -21.200000762939453,
+                0.0020000000949949026
+              ],
+              [
+                41.20000076293945,
+                -1.7999999523162842,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:ground",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 1280320.0000305176,
+            "surface_area_world": 1280320.0000366215,
+            "bounds": [
+              [
+                -400.0,
+                -400.0,
+                -0.15000000596046448
+              ],
+              [
+                400.0,
+                400.0,
+                -0.05000000074505806
+              ]
+            ]
+          },
+          {
+            "name": "context:parcel",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 20020.0,
+            "surface_area_world": 20020.0,
+            "bounds": [
+              [
+                -50.0,
+                -50.0,
+                -0.05000000074505806
+              ],
+              [
+                50.0,
+                50.0,
+                0.0
+              ]
+            ]
+          },
+          {
+            "name": "context:street",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 19224.359999984503,
+            "surface_area_world": 19224.35999998398,
+            "bounds": [
+              [
+                -400.0,
+                -66.0,
+                -0.019999999552965164
+              ],
+              [
+                400.0,
+                -54.0,
+                -0.004999999888241291
+              ]
+            ]
+          },
+          {
+            "name": "roof:A",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 814.3999633789062,
+            "surface_area_world": 814.4000243928494,
+            "bounds": [
+              [
+                -40.0,
+                -40.0,
+                30.0
+              ],
+              [
+                -20.0,
+                -20.0,
+                30.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "roof:B",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 806.4000549316406,
+            "surface_area_world": 806.4000244517179,
+            "bounds": [
+              [
+                -4.0,
+                -4.0,
+                24.0
+              ],
+              [
+                14.0,
+                18.0,
+                24.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "roof:C",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 590.2400054931641,
+            "surface_area_world": 590.2400210471378,
+            "bounds": [
+              [
+                23.0,
+                -20.0,
+                18.0
+              ],
+              [
+                40.0,
+                -3.0,
+                18.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "windows:A",
+            "vertices": 800,
+            "faces": 200,
+            "surface_area_local": 476.9999952316284,
+            "surface_area_world": 477.00004528052324,
+            "bounds": [
+              [
+                -40.04499816894531,
+                -40.04499816894531,
+                0.7799999713897705
+              ],
+              [
+                -19.954999923706055,
+                -19.954999923706055,
+                29.3700008392334
+              ]
+            ]
+          },
+          {
+            "name": "windows:B",
+            "vertices": 576,
+            "faces": 144,
+            "surface_area_local": 343.4400062561035,
+            "surface_area_world": 343.4400385199514,
+            "bounds": [
+              [
+                -4.045000076293945,
+                -4.045000076293945,
+                0.7799999713897705
+              ],
+              [
+                14.045000076293945,
+                18.045000076293945,
+                23.3700008392334
+              ]
+            ]
+          },
+          {
+            "name": "windows:C",
+            "vertices": 384,
+            "faces": 96,
+            "surface_area_local": 228.9600486755371,
+            "surface_area_world": 228.96001981530205,
+            "bounds": [
+              [
+                22.954999923706055,
+                -20.045000076293945,
+                0.7799999713897705
+              ],
+              [
+                40.04499816894531,
+                -2.9549999237060547,
+                17.3700008392334
+              ]
+            ]
+          }
+        ],
+        "vertices": 1856,
+        "faces": 512,
+        "cameras": [
+          {
+            "name": "camera:aerial",
+            "position": [
+              95.0,
+              -120.0,
+              95.0
+            ],
+            "rotation": [
+              1.0514456033706665,
+              5.002902270234699e-08,
+              0.6696389317512512
+            ],
+            "quaternion": [
+              0.816929817199707,
+              0.47397109866142273,
+              0.1649034321308136,
+              0.2842251658439636
+            ],
+            "forward": [
+              -0.5388580560684204,
+              0.6806628704071045,
+              -0.4963165521621704
+            ],
+            "up": [
+              -0.30806511640548706,
+              0.38913488388061523,
+              0.8681416511535645
+            ],
+            "type": "PERSP",
+            "lens_mm": 35.864219665527344,
+            "vertical_fov": 36.99999875288908,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          }
+        ],
+        "camera_support": "supported",
+        "active_camera": "camera:aerial",
+        "coordinate_interpretation": "Blender Z up"
+      },
+      "user_accessibility": "not_verified"
+    },
+    "aerial.obj": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial.obj",
+      "name": "aerial.obj",
+      "bytes": 105279,
+      "sha256": "3cec73fbb00d56941e28288ae7d9a4d8ae34cddbd220ae3e52d998cb9371c31f",
+      "format": "obj",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "independent_model_reimport",
+        "finite_nonempty_geometry",
+        "object_inventory",
+        "camera_inventory",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "source_vertices": 1856,
+        "source_faces": 512,
+        "status": "passed",
+        "reader": "Blender independent re-import",
+        "blender_version": "4.3.2",
+        "format": "obj",
+        "objects": [
+          {
+            "name": "building:A",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 3200.0,
+            "surface_area_world": 3200.0,
+            "bounds": [
+              [
+                -40.0,
+                -40.0,
+                0.0
+              ],
+              [
+                -20.0,
+                -20.0,
+                30.0
+              ]
+            ]
+          },
+          {
+            "name": "building:B",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 2712.0,
+            "surface_area_world": 2712.0,
+            "bounds": [
+              [
+                -4.0,
+                -4.0,
+                0.0
+              ],
+              [
+                14.0,
+                18.0,
+                24.0
+              ]
+            ]
+          },
+          {
+            "name": "building:C",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 1802.0,
+            "surface_area_world": 1802.0,
+            "bounds": [
+              [
+                23.0,
+                -20.0,
+                0.0
+              ],
+              [
+                40.0,
+                -3.0,
+                18.0
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:A",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 1004.8640806674957,
+            "surface_area_world": 1004.8641481344641,
+            "bounds": [
+              [
+                -41.20000076293945,
+                -41.20000076293945,
+                0.0020000000949949026
+              ],
+              [
+                -18.799999237060547,
+                -18.799999237060547,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:B",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 996.8640196323395,
+            "surface_area_world": 996.8640274597795,
+            "bounds": [
+              [
+                -5.199999809265137,
+                -5.199999809265137,
+                0.0020000000949949026
+              ],
+              [
+                15.199999809265137,
+                19.200000762939453,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:C",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 753.8840929269791,
+            "surface_area_world": 753.8841091365377,
+            "bounds": [
+              [
+                21.799999237060547,
+                -21.200000762939453,
+                0.0020000000949949026
+              ],
+              [
+                41.20000076293945,
+                -1.7999999523162842,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:ground",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 1280320.0000305176,
+            "surface_area_world": 1280320.0000366215,
+            "bounds": [
+              [
+                -400.0,
+                -400.0,
+                -0.15000000596046448
+              ],
+              [
+                400.0,
+                400.0,
+                -0.05000000074505806
+              ]
+            ]
+          },
+          {
+            "name": "context:parcel",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 20020.0,
+            "surface_area_world": 20020.0,
+            "bounds": [
+              [
+                -50.0,
+                -50.0,
+                -0.05000000074505806
+              ],
+              [
+                50.0,
+                50.0,
+                0.0
+              ]
+            ]
+          },
+          {
+            "name": "context:street",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 19224.359999984503,
+            "surface_area_world": 19224.35999998398,
+            "bounds": [
+              [
+                -400.0,
+                -66.0,
+                -0.019999999552965164
+              ],
+              [
+                400.0,
+                -54.0,
+                -0.004999999888241291
+              ]
+            ]
+          },
+          {
+            "name": "roof:A",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 814.3999633789062,
+            "surface_area_world": 814.4000243928494,
+            "bounds": [
+              [
+                -40.0,
+                -40.0,
+                30.0
+              ],
+              [
+                -20.0,
+                -20.0,
+                30.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "roof:B",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 806.4000549316406,
+            "surface_area_world": 806.4000244517179,
+            "bounds": [
+              [
+                -4.0,
+                -4.0,
+                24.0
+              ],
+              [
+                14.0,
+                18.0,
+                24.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "roof:C",
+            "vertices": 8,
+            "faces": 6,
+            "surface_area_local": 590.2400054931641,
+            "surface_area_world": 590.2400210471378,
+            "bounds": [
+              [
+                23.0,
+                -20.0,
+                18.0
+              ],
+              [
+                40.0,
+                -3.0,
+                18.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "windows:A",
+            "vertices": 800,
+            "faces": 200,
+            "surface_area_local": 476.9999952316284,
+            "surface_area_world": 477.00004528052324,
+            "bounds": [
+              [
+                -40.04499816894531,
+                -40.04499816894531,
+                0.7799999713897705
+              ],
+              [
+                -19.954999923706055,
+                -19.954999923706055,
+                29.3700008392334
+              ]
+            ]
+          },
+          {
+            "name": "windows:B",
+            "vertices": 576,
+            "faces": 144,
+            "surface_area_local": 343.43998622894287,
+            "surface_area_world": 343.44003152234257,
+            "bounds": [
+              [
+                -4.045000076293945,
+                -4.045000076293945,
+                0.7799999713897705
+              ],
+              [
+                14.045000076293945,
+                18.045000076293945,
+                23.3700008392334
+              ]
+            ]
+          },
+          {
+            "name": "windows:C",
+            "vertices": 384,
+            "faces": 96,
+            "surface_area_local": 228.9600486755371,
+            "surface_area_world": 228.96001981530205,
+            "bounds": [
+              [
+                22.954999923706055,
+                -20.045000076293945,
+                0.7799999713897705
+              ],
+              [
+                40.04499816894531,
+                -2.9549999237060547,
+                17.3700008392334
+              ]
+            ]
+          }
+        ],
+        "vertices": 1856,
+        "faces": 512,
+        "cameras": [],
+        "camera_support": "not supported by OBJ",
+        "active_camera": null,
+        "coordinate_interpretation": "declared local XYZ Z up"
+      },
+      "user_accessibility": "not_verified"
+    },
+    "aerial.glb": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial.glb",
+      "name": "aerial.glb",
+      "bytes": 84668,
+      "sha256": "a50f623e4ff3a395818cf9c5544229bda3546c1e1fdf9954dd96164eaa4c5776",
+      "format": "glb",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "independent_model_reimport",
+        "finite_nonempty_geometry",
+        "object_inventory",
+        "camera_inventory",
+        "immutable_source_hash",
+        "camera_parameters_match_source",
+        "camera_position_direction_up_vertical_fov_match_source"
+      ],
+      "details": {
+        "source_primitives": 15,
+        "source_cameras": 1,
+        "status": "passed",
+        "reader": "Blender independent re-import",
+        "blender_version": "4.3.2",
+        "format": "glb",
+        "objects": [
+          {
+            "name": "building:A",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 3200.0,
+            "surface_area_world": 3200.0,
+            "bounds": [
+              [
+                -40.0,
+                -40.0,
+                0.0
+              ],
+              [
+                -20.0,
+                -20.0,
+                30.0
+              ]
+            ]
+          },
+          {
+            "name": "building:B",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 2712.0,
+            "surface_area_world": 2712.0,
+            "bounds": [
+              [
+                -4.0,
+                -4.0,
+                0.0
+              ],
+              [
+                14.0,
+                18.0,
+                24.0
+              ]
+            ]
+          },
+          {
+            "name": "building:C",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 1802.0,
+            "surface_area_world": 1802.0,
+            "bounds": [
+              [
+                23.0,
+                -20.0,
+                0.0
+              ],
+              [
+                40.0,
+                -3.0,
+                18.0
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:A",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 1004.864141702652,
+            "surface_area_world": 1004.8641481344641,
+            "bounds": [
+              [
+                -41.20000076293945,
+                -41.20000076293945,
+                0.0020000000949949026
+              ],
+              [
+                -18.799999237060547,
+                -18.799999237060547,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:B",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 996.8640195727348,
+            "surface_area_world": 996.8640274597795,
+            "bounds": [
+              [
+                -5.199999809265137,
+                -5.199999809265137,
+                0.0020000000949949026
+              ],
+              [
+                15.199999809265137,
+                19.200000762939453,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:apron:C",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 753.8840929269791,
+            "surface_area_world": 753.8841091365377,
+            "bounds": [
+              [
+                21.799999237060547,
+                -21.200000762939453,
+                0.0020000000949949026
+              ],
+              [
+                41.20000076293945,
+                -1.7999999523162842,
+                0.017000000923871994
+              ]
+            ]
+          },
+          {
+            "name": "context:ground",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 1280320.0000305176,
+            "surface_area_world": 1280320.0000366215,
+            "bounds": [
+              [
+                -400.0,
+                -400.0,
+                -0.15000000596046448
+              ],
+              [
+                400.0,
+                400.0,
+                -0.05000000074505806
+              ]
+            ]
+          },
+          {
+            "name": "context:parcel",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 20020.0,
+            "surface_area_world": 20020.0,
+            "bounds": [
+              [
+                -50.0,
+                -50.0,
+                -0.05000000074505806
+              ],
+              [
+                50.0,
+                50.0,
+                0.0
+              ]
+            ]
+          },
+          {
+            "name": "context:street",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 19224.359999984503,
+            "surface_area_world": 19224.35999998398,
+            "bounds": [
+              [
+                -400.0,
+                -66.0,
+                -0.019999999552965164
+              ],
+              [
+                400.0,
+                -54.0,
+                -0.004999999888241291
+              ]
+            ]
+          },
+          {
+            "name": "roof:A",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 814.4000244140625,
+            "surface_area_world": 814.4000243928494,
+            "bounds": [
+              [
+                -40.0,
+                -40.0,
+                30.0
+              ],
+              [
+                -20.0,
+                -20.0,
+                30.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "roof:B",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 806.4000244140625,
+            "surface_area_world": 806.4000244517179,
+            "bounds": [
+              [
+                -4.0,
+                -4.0,
+                24.0
+              ],
+              [
+                14.0,
+                18.0,
+                24.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "roof:C",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 590.2400207519531,
+            "surface_area_world": 590.2400210471378,
+            "bounds": [
+              [
+                23.0,
+                -20.0,
+                18.0
+              ],
+              [
+                40.0,
+                -3.0,
+                18.18000030517578
+              ]
+            ]
+          },
+          {
+            "name": "windows:A",
+            "vertices": 800,
+            "faces": 400,
+            "surface_area_local": 477.0000410079956,
+            "surface_area_world": 477.00004528052324,
+            "bounds": [
+              [
+                -40.04499816894531,
+                -40.04499816894531,
+                0.7799999713897705
+              ],
+              [
+                -19.954999923706055,
+                -19.954999923706055,
+                29.3700008392334
+              ]
+            ]
+          },
+          {
+            "name": "windows:B",
+            "vertices": 576,
+            "faces": 288,
+            "surface_area_local": 343.4400362968445,
+            "surface_area_world": 343.4400385199514,
+            "bounds": [
+              [
+                -4.045000076293945,
+                -4.045000076293945,
+                0.7799999713897705
+              ],
+              [
+                14.045000076293945,
+                18.045000076293945,
+                23.3700008392334
+              ]
+            ]
+          },
+          {
+            "name": "windows:C",
+            "vertices": 384,
+            "faces": 192,
+            "surface_area_local": 228.96001815795898,
+            "surface_area_world": 228.96001981530205,
+            "bounds": [
+              [
+                22.954999923706055,
+                -20.045000076293945,
+                0.7799999713897705
+              ],
+              [
+                40.04499816894531,
+                -2.9549999237060547,
+                17.3700008392334
+              ]
+            ]
+          }
+        ],
+        "vertices": 2048,
+        "faces": 1024,
+        "cameras": [
+          {
+            "name": "camera:aerial",
+            "position": [
+              95.0,
+              -120.0,
+              95.0
+            ],
+            "rotation": [
+              1.0514456033706665,
+              1.1369147046025319e-07,
+              0.6696390509605408
+            ],
+            "quaternion": [
+              0.816929817199707,
+              0.47397109866142273,
+              0.164903461933136,
+              0.284225195646286
+            ],
+            "forward": [
+              -0.53885817527771,
+              0.6806628108024597,
+              -0.4963165521621704
+            ],
+            "up": [
+              -0.30806511640548706,
+              0.38913488388061523,
+              0.8681417107582092
+            ],
+            "type": "PERSP",
+            "lens_mm": 35.86422348022461,
+            "vertical_fov": 36.99999875288908,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          }
+        ],
+        "camera_support": "supported",
+        "active_camera": null,
+        "coordinate_interpretation": "Blender Z up"
+      },
+      "user_accessibility": "not_verified"
+    },
+    "aerial.mtl": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/examples/renders/aerial.mtl",
+      "name": "aerial.mtl",
+      "bytes": 1821,
+      "sha256": "c82f60608b78ad8b6aafe2b83cfd6d4dae5d4882cb48bca25a5b04fdaf1bce66",
+      "format": "mtl",
+      "artifact_role": "render output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "nonblank_text",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 decoder",
+        "characters": 1821,
+        "lines": 92
+      },
+      "user_accessibility": "not_verified"
+    }
+  },
+  "source_scene_counts": {
+    "objects": 17,
+    "mesh_objects": 15,
+    "cameras": 1,
+    "lights": 1,
+    "vertices": 1856,
+    "unique_vertices": 1856,
+    "polygons": 512,
+    "triangles": 1024
+  },
+  "model_expectations": {
+    "aerial.blend": {
+      "objects": 15,
+      "object_names": [
+        "building:A",
+        "building:B",
+        "building:C"
+      ],
+      "object_bounds": {
+        "building:A": [
+          [
+            -40.0,
+            -40.0,
+            0.0
+          ],
+          [
+            -20.0,
+            -20.0,
+            30.0
+          ]
+        ],
+        "building:B": [
+          [
+            -4.0,
+            -4.0,
+            0.0
+          ],
+          [
+            14.0,
+            18.0,
+            24.0
+          ]
+        ],
+        "building:C": [
+          [
+            23.0,
+            -20.0,
+            0.0
+          ],
+          [
+            40.0,
+            -3.0,
+            18.0
+          ]
+        ],
+        "context:apron:A": [
+          [
+            -41.20000076293945,
+            -41.20000076293945,
+            0.0020000000949949026
+          ],
+          [
+            -18.799999237060547,
+            -18.799999237060547,
+            0.017000000923871994
+          ]
+        ],
+        "context:apron:B": [
+          [
+            -5.199999809265137,
+            -5.199999809265137,
+            0.0020000000949949026
+          ],
+          [
+            15.199999809265137,
+            19.200000762939453,
+            0.017000000923871994
+          ]
+        ],
+        "context:apron:C": [
+          [
+            21.799999237060547,
+            -21.200000762939453,
+            0.0020000000949949026
+          ],
+          [
+            41.20000076293945,
+            -1.7999999523162842,
+            0.017000000923871994
+          ]
+        ],
+        "context:ground": [
+          [
+            -400.0,
+            -400.0,
+            -0.15000000596046448
+          ],
+          [
+            400.0,
+            400.0,
+            -0.05000000074505806
+          ]
+        ],
+        "context:parcel": [
+          [
+            -50.0,
+            -50.0,
+            -0.05000000074505806
+          ],
+          [
+            50.0,
+            50.0,
+            0.0
+          ]
+        ],
+        "context:street": [
+          [
+            -400.0,
+            -66.0,
+            -0.019999999552965164
+          ],
+          [
+            400.0,
+            -54.0,
+            -0.004999999888241291
+          ]
+        ],
+        "roof:A": [
+          [
+            -40.0,
+            -40.0,
+            30.0
+          ],
+          [
+            -20.0,
+            -20.0,
+            30.18000030517578
+          ]
+        ],
+        "roof:B": [
+          [
+            -4.0,
+            -4.0,
+            24.0
+          ],
+          [
+            14.0,
+            18.0,
+            24.18000030517578
+          ]
+        ],
+        "roof:C": [
+          [
+            23.0,
+            -20.0,
+            18.0
+          ],
+          [
+            40.0,
+            -3.0,
+            18.18000030517578
+          ]
+        ],
+        "windows:A": [
+          [
+            -40.04499816894531,
+            -40.04499816894531,
+            0.7799999713897705
+          ],
+          [
+            -19.954999923706055,
+            -19.954999923706055,
+            29.3700008392334
+          ]
+        ],
+        "windows:B": [
+          [
+            -4.045000076293945,
+            -4.045000076293945,
+            0.7799999713897705
+          ],
+          [
+            14.045000076293945,
+            18.045000076293945,
+            23.3700008392334
+          ]
+        ],
+        "windows:C": [
+          [
+            22.954999923706055,
+            -20.045000076293945,
+            0.7799999713897705
+          ],
+          [
+            40.04499816894531,
+            -2.9549999237060547,
+            17.3700008392334
+          ]
+        ]
+      },
+      "bound_tolerance": 0.0001,
+      "cameras": 1,
+      "camera_parameters": {
+        "camera:aerial": {
+          "position": [
+            95.0,
+            -120.0,
+            95.0
+          ],
+          "forward": [
+            -0.5388580560684204,
+            0.6806628108024597,
+            -0.4963165819644928
+          ],
+          "up": [
+            -0.30806511640548706,
+            0.3891349732875824,
+            0.8681415915489197
+          ],
+          "vertical_fov": 36.99999875288908
+        }
+      },
+      "min_vertices": 1856,
+      "min_faces": 512,
+      "vertices": 1856,
+      "faces": 512
+    },
+    "aerial.obj": {
+      "objects": 15,
+      "object_names": [
+        "building:A",
+        "building:B",
+        "building:C"
+      ],
+      "object_bounds": {
+        "building:A": [
+          [
+            -40.0,
+            -40.0,
+            0.0
+          ],
+          [
+            -20.0,
+            -20.0,
+            30.0
+          ]
+        ],
+        "building:B": [
+          [
+            -4.0,
+            -4.0,
+            0.0
+          ],
+          [
+            14.0,
+            18.0,
+            24.0
+          ]
+        ],
+        "building:C": [
+          [
+            23.0,
+            -20.0,
+            0.0
+          ],
+          [
+            40.0,
+            -3.0,
+            18.0
+          ]
+        ],
+        "context:apron:A": [
+          [
+            -41.20000076293945,
+            -41.20000076293945,
+            0.0020000000949949026
+          ],
+          [
+            -18.799999237060547,
+            -18.799999237060547,
+            0.017000000923871994
+          ]
+        ],
+        "context:apron:B": [
+          [
+            -5.199999809265137,
+            -5.199999809265137,
+            0.0020000000949949026
+          ],
+          [
+            15.199999809265137,
+            19.200000762939453,
+            0.017000000923871994
+          ]
+        ],
+        "context:apron:C": [
+          [
+            21.799999237060547,
+            -21.200000762939453,
+            0.0020000000949949026
+          ],
+          [
+            41.20000076293945,
+            -1.7999999523162842,
+            0.017000000923871994
+          ]
+        ],
+        "context:ground": [
+          [
+            -400.0,
+            -400.0,
+            -0.15000000596046448
+          ],
+          [
+            400.0,
+            400.0,
+            -0.05000000074505806
+          ]
+        ],
+        "context:parcel": [
+          [
+            -50.0,
+            -50.0,
+            -0.05000000074505806
+          ],
+          [
+            50.0,
+            50.0,
+            0.0
+          ]
+        ],
+        "context:street": [
+          [
+            -400.0,
+            -66.0,
+            -0.019999999552965164
+          ],
+          [
+            400.0,
+            -54.0,
+            -0.004999999888241291
+          ]
+        ],
+        "roof:A": [
+          [
+            -40.0,
+            -40.0,
+            30.0
+          ],
+          [
+            -20.0,
+            -20.0,
+            30.18000030517578
+          ]
+        ],
+        "roof:B": [
+          [
+            -4.0,
+            -4.0,
+            24.0
+          ],
+          [
+            14.0,
+            18.0,
+            24.18000030517578
+          ]
+        ],
+        "roof:C": [
+          [
+            23.0,
+            -20.0,
+            18.0
+          ],
+          [
+            40.0,
+            -3.0,
+            18.18000030517578
+          ]
+        ],
+        "windows:A": [
+          [
+            -40.04499816894531,
+            -40.04499816894531,
+            0.7799999713897705
+          ],
+          [
+            -19.954999923706055,
+            -19.954999923706055,
+            29.3700008392334
+          ]
+        ],
+        "windows:B": [
+          [
+            -4.045000076293945,
+            -4.045000076293945,
+            0.7799999713897705
+          ],
+          [
+            14.045000076293945,
+            18.045000076293945,
+            23.3700008392334
+          ]
+        ],
+        "windows:C": [
+          [
+            22.954999923706055,
+            -20.045000076293945,
+            0.7799999713897705
+          ],
+          [
+            40.04499816894531,
+            -2.9549999237060547,
+            17.3700008392334
+          ]
+        ]
+      },
+      "bound_tolerance": 0.0001,
+      "cameras": 0,
+      "min_vertices": 1856,
+      "min_faces": 512,
+      "faces": 512
+    },
+    "aerial.glb": {
+      "objects": 15,
+      "object_names": [
+        "building:A",
+        "building:B",
+        "building:C"
+      ],
+      "object_bounds": {
+        "building:A": [
+          [
+            -40.0,
+            -40.0,
+            0.0
+          ],
+          [
+            -20.0,
+            -20.0,
+            30.0
+          ]
+        ],
+        "building:B": [
+          [
+            -4.0,
+            -4.0,
+            0.0
+          ],
+          [
+            14.0,
+            18.0,
+            24.0
+          ]
+        ],
+        "building:C": [
+          [
+            23.0,
+            -20.0,
+            0.0
+          ],
+          [
+            40.0,
+            -3.0,
+            18.0
+          ]
+        ],
+        "context:apron:A": [
+          [
+            -41.20000076293945,
+            -41.20000076293945,
+            0.0020000000949949026
+          ],
+          [
+            -18.799999237060547,
+            -18.799999237060547,
+            0.017000000923871994
+          ]
+        ],
+        "context:apron:B": [
+          [
+            -5.199999809265137,
+            -5.199999809265137,
+            0.0020000000949949026
+          ],
+          [
+            15.199999809265137,
+            19.200000762939453,
+            0.017000000923871994
+          ]
+        ],
+        "context:apron:C": [
+          [
+            21.799999237060547,
+            -21.200000762939453,
+            0.0020000000949949026
+          ],
+          [
+            41.20000076293945,
+            -1.7999999523162842,
+            0.017000000923871994
+          ]
+        ],
+        "context:ground": [
+          [
+            -400.0,
+            -400.0,
+            -0.15000000596046448
+          ],
+          [
+            400.0,
+            400.0,
+            -0.05000000074505806
+          ]
+        ],
+        "context:parcel": [
+          [
+            -50.0,
+            -50.0,
+            -0.05000000074505806
+          ],
+          [
+            50.0,
+            50.0,
+            0.0
+          ]
+        ],
+        "context:street": [
+          [
+            -400.0,
+            -66.0,
+            -0.019999999552965164
+          ],
+          [
+            400.0,
+            -54.0,
+            -0.004999999888241291
+          ]
+        ],
+        "roof:A": [
+          [
+            -40.0,
+            -40.0,
+            30.0
+          ],
+          [
+            -20.0,
+            -20.0,
+            30.18000030517578
+          ]
+        ],
+        "roof:B": [
+          [
+            -4.0,
+            -4.0,
+            24.0
+          ],
+          [
+            14.0,
+            18.0,
+            24.18000030517578
+          ]
+        ],
+        "roof:C": [
+          [
+            23.0,
+            -20.0,
+            18.0
+          ],
+          [
+            40.0,
+            -3.0,
+            18.18000030517578
+          ]
+        ],
+        "windows:A": [
+          [
+            -40.04499816894531,
+            -40.04499816894531,
+            0.7799999713897705
+          ],
+          [
+            -19.954999923706055,
+            -19.954999923706055,
+            29.3700008392334
+          ]
+        ],
+        "windows:B": [
+          [
+            -4.045000076293945,
+            -4.045000076293945,
+            0.7799999713897705
+          ],
+          [
+            14.045000076293945,
+            18.045000076293945,
+            23.3700008392334
+          ]
+        ],
+        "windows:C": [
+          [
+            22.954999923706055,
+            -20.045000076293945,
+            0.7799999713897705
+          ],
+          [
+            40.04499816894531,
+            -2.9549999237060547,
+            17.3700008392334
+          ]
+        ]
+      },
+      "bound_tolerance": 0.0001,
+      "cameras": 1,
+      "camera_parameters": {
+        "camera:aerial": {
+          "position": [
+            95.0,
+            -120.0,
+            95.0
+          ],
+          "forward": [
+            -0.5388580560684204,
+            0.6806628108024597,
+            -0.4963165819644928
+          ],
+          "up": [
+            -0.30806511640548706,
+            0.3891349732875824,
+            0.8681415915489197
+          ],
+          "vertical_fov": 36.99999875288908
+        }
+      },
+      "min_vertices": 1856,
+      "min_faces": 512,
+      "faces": 1024
+    }
+  },
+  "model_format_coordinates": "OBJ declares local XYZ Z-up, forward=Y/up=Z; GLB uses standard Y-up and Blender re-import restores scene Z-up",
+  "building_fingerprints": {
+    "A": {
+      "geometry_hash": "97d9361ca08aec7eb6ee2b827fb88ada8b6edbba6e2fdac5cc001f319f05bf9c",
+      "material_hash": "4d4c567664723878bef6663a9ae00e429b18b80bd894ec7b69d1d20ea72a7838",
+      "content_hash": "2cd64f2a4840f914bb876a4067180cd0e02f197bc21210ccfeb1624081efe1f5"
+    },
+    "B": {
+      "geometry_hash": "5231aad5f3a8ebe41b610fa34a6d90f86c117da27594189757c6effcb0569603",
+      "material_hash": "feb63eec6b5db0b87de6061d703905aea99d77736ea6ab6c5199dc5de7f6b8db",
+      "content_hash": "7f0ecfefc24edd61f62f7ef6f020b710e72352098074afe13296f859d5cd2ffc"
+    },
+    "C": {
+      "geometry_hash": "55d67e9d6b84d8f5d74f0d22fa3dc2adbc646aea157b4b560b714764147080dc",
+      "material_hash": "896b2fac557804bd6504def893f5c26e46f7443e9f1c5a0f24637fa0945988d1",
+      "content_hash": "fedb959e8d66ac09f0f6d5b4a54bbc2f753b461831b307262adf4a5552b89ed0"
+    }
+  },
+  "object_mask_labels": {
+    "A": [
+      55,
+      121,
+      177
+    ],
+    "B": [
+      110,
+      243,
+      98
+    ],
+    "C": [
+      166,
+      109,
+      19
+    ]
+  },
+  "limitations": [
+    "No cadastral or terrain validation; terrain is always a flat unmeasured plane",
+    "Uploaded aerial images and context meshes are supported in the interactive viewer only, not this offline Blender renderer",
+    "Procedural windows and materials are schematic",
+    "OBJ and GLB use constant PBR base colors; procedural shaders and sky are preserved in native Blender only",
+    "Changes may affect global lighting and shadows while neighboring objects remain unchanged"
+  ]
+}

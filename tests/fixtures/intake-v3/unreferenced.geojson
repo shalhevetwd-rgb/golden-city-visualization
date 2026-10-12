@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              220000,
+              630000
+            ],
+            [
+              220010,
+              630000
+            ],
+            [
+              220010,
+              630010
+            ],
+            [
+              220000,
+              630010
+            ],
+            [
+              220000,
+              630000
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "source_type": "synthetic",
+        "id": "test"
+      }
+    }
+  ]
+}

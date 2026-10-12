@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "mode": "offline_reopened_actual_HTML",
+  "software_webgl": true,
+  "html_sha256": "d67c247b8e46d5d835fed9ac73cdc85d5217032048e3aeb6ba2432005a6620e3",
+  "checks": [
+    "embedded modules PNGs and GLBs reopen from exact original bytes with matching SHA-256",
+    "all four PNGs and real WebGL display; three saved camera poses FOV and ground-relative street height match",
+    "orbit changes camera; local camera save and restore preserve pose",
+    "raycasting selects the clicked building rather than only the dropdown",
+    "all owner-A role-facade meshes change together; geometry windows roofs B C and context remain identical; undo restores every material",
+    "baseline and edited saved versions switch; before-after image comparison slider responds",
+    "four PNG downloads and baseline GLB download save exact original bytes after editing and undo",
+    "real local dossier and decoded user source stay separate from the synthetic demonstration",
+    "zero HTTP requests zero browser JavaScript errors and zero console errors offline"
+  ],
+  "network_requests": [],
+  "page_errors": [],
+  "console_errors": [],
+  "edited_facade_meshes": [
+    "buildingA",
+    "detailcladdingA",
+    "detailsillsA",
+    "detailcorner-piersA",
+    "detailplinthA",
+    "detailfloor-bandsA"
+  ],
+  "source_bytes_unchanged": true
+}

@@ -1,4 +1,9 @@
+.venv/
+data/
 __pycache__/
+node_modules/
+vendor/
+deliverables/
 *.pyc
 *.blend1
 *.log
@@ -6,3 +11,5 @@ baseline/stable-delivery.zip
 outputs/v2/review-*
 outputs/review-v2-stage/
 outputs/editor-smoke/
+outputs/v3-draft/
+outputs/v3/review-*

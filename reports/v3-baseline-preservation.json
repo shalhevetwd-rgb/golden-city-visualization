@@ -1,0 +1,229 @@
+{
+  "status": "passed",
+  "stable_artifact_count": 29,
+  "original_test_module_count": 11,
+  "artifacts": [
+    {
+      "path": "outputs/v2/architectural.png",
+      "unchanged": true,
+      "sha256": "429804ea0cfb0478284692f971c18b897e07849980a7e114fd8d729e10ef1bdf"
+    },
+    {
+      "path": "outputs/v2/delivery-manifest.json",
+      "unchanged": true,
+      "sha256": "23084dc95307d07188d0b34914595d4c95a2dd7de686e2524fa296ceee132ff9"
+    },
+    {
+      "path": "outputs/v2/street.png",
+      "unchanged": true,
+      "sha256": "1b18a06da063af05c512fef3632525ff8479f5e16c1e34db8b456071f1cc5951"
+    },
+    {
+      "path": "outputs/v2/roundtrip-geometry.json",
+      "unchanged": true,
+      "sha256": "0ce3cf09dc1e6c4a900664feea5a9ffe14df88e6e3443f6436d84201deb7af16"
+    },
+    {
+      "path": "outputs/v2/edited-model.blend",
+      "unchanged": true,
+      "sha256": "1253426f0a12ef238d7067d21c6ca0e0455e1179601908efbfa8e4c1702117c2"
+    },
+    {
+      "path": "outputs/v2/edited-model.glb",
+      "unchanged": true,
+      "sha256": "0856161651709c08ea4ad3b7196581929a59a8863187a54cb6f1e5dc58732b3b"
+    },
+    {
+      "path": "outputs/v2/before-after.png",
+      "unchanged": true,
+      "sha256": "7bdfcaf2e6eb1cc29a24b5be38d8734a542a32c45624ed8627ee5aeef7967cfb"
+    },
+    {
+      "path": "outputs/v2/viewer.html",
+      "unchanged": true,
+      "sha256": "79de31ba4718c76bf40973376ccbf5c70f3239da3965fb99fc92832d05e11d0b"
+    },
+    {
+      "path": "outputs/v2/contact-sheet.png",
+      "unchanged": true,
+      "sha256": "86c13b590aa315c32e5748135364e72b9ca56e6a7322042367137baba8684ad2"
+    },
+    {
+      "path": "outputs/v2/geometry-report.json",
+      "unchanged": true,
+      "sha256": "9093b675d7b09932b68a4ba57a04d2d8b0860ccebfd4860686c39863de9a2952"
+    },
+    {
+      "path": "outputs/v2/aerial.png",
+      "unchanged": true,
+      "sha256": "d0c384fc0a73ce745040976956a084738f5439da7ab81f6c96d08d8543c49f8a"
+    },
+    {
+      "path": "outputs/v2/model.blend",
+      "unchanged": true,
+      "sha256": "d4d5eea894c498f375a959fbf370c272f8c60ad4f09e20974904f708a850bd4e"
+    },
+    {
+      "path": "outputs/v2/edit-report.json",
+      "unchanged": true,
+      "sha256": "472f758263b742b73b89dc89f3c7fb8524444c2dbbfdfe8f42c7627153e19779"
+    },
+    {
+      "path": "outputs/v2/model.glb",
+      "unchanged": true,
+      "sha256": "0845277536d4052cd9d59ca9258fef2863b2d7f6aa4092f5b96aa431c3ee5689"
+    },
+    {
+      "path": "outputs/v2/scene-snapshots.json",
+      "unchanged": true,
+      "sha256": "38f792575609f962302a2d7219c63443b64d0a92a8fea415bb3b8fac720405ac"
+    },
+    {
+      "path": "outputs/v2/edited-aerial.png",
+      "unchanged": true,
+      "sha256": "7a2c925e9f0ec8c495f0d84b4fe9e8b886e4b49987e360b020e40f8d7c92ecd4"
+    },
+    {
+      "path": "outputs/v2/viewer-module.mjs",
+      "unchanged": true,
+      "sha256": "beada10e283d47642fd7a3a49d9f0d350d1f1f176273360277a105c841a74cec"
+    },
+    {
+      "path": "outputs/v2/output-checks.json",
+      "unchanged": true,
+      "sha256": "56144a21e03561aac0afe5f30d15a00da9a91bcca394a52955cbdc2058dbd528"
+    },
+    {
+      "path": "baseline/imported-inventory.json",
+      "unchanged": true,
+      "sha256": "57e901f0bd02ea5ab5a45129773c84ba475cb966c64962717e7f604217493004"
+    },
+    {
+      "path": "baseline/edited-aerial.glb",
+      "unchanged": true,
+      "sha256": "a644e19804b092c759df53420865be15f70b4d5d906513e058bee010b6a46060"
+    },
+    {
+      "path": "baseline/aerial.glb",
+      "unchanged": true,
+      "sha256": "a50f623e4ff3a395818cf9c5544229bda3546c1e1fdf9954dd96164eaa4c5776"
+    },
+    {
+      "path": "baseline/source-metadata.json",
+      "unchanged": true,
+      "sha256": "4dc0d81ac8db7f5e3e327d11966466b1232b19438340033778b1864e5197a00c"
+    },
+    {
+      "path": "config/synthetic-design.json",
+      "unchanged": true,
+      "sha256": "c4a3f0af59fcc7e5617cb0499519633f7cfb7da680c05ebf6c881f8a5088cfef"
+    },
+    {
+      "path": "aerial.png",
+      "unchanged": true,
+      "sha256": "b4b25b9c9e8e9fe4bdf6a594e86f4949402d8351591103725cee57d805ece129"
+    },
+    {
+      "path": "street.png",
+      "unchanged": true,
+      "sha256": "ed15aa7ab92f810f3802c9e869e503fd3b0d57da48cb9f5aa4444842a5048caf"
+    },
+    {
+      "path": "edited-aerial.png",
+      "unchanged": true,
+      "sha256": "a4b52d30ef74cf7490c3b716794f7d25e6798d9d83fff12b3f0c437b9566f62d"
+    },
+    {
+      "path": "contact-sheet.png",
+      "unchanged": true,
+      "sha256": "b9a61b4968e7cdeb07337640a14384efbcb448918ec13b2554418713b5fa3ed4"
+    },
+    {
+      "path": "golden-city-gallery.html",
+      "unchanged": true,
+      "sha256": "8c9fbba13e118540d81cf87484cc3ae9f0b02864db2bbf89354bcc86d0de7ede"
+    },
+    {
+      "path": "golden-city-viewer.html",
+      "unchanged": true,
+      "sha256": "61c3be94161d32e0ddfbee1acd31987d407754102d2ff19d225c8311cdc800c7"
+    }
+  ],
+  "tests": [
+    {
+      "path": "tests/test_api.py",
+      "unchanged": true,
+      "sha256": "03223ead72eb3a80fd2bfc5050b901f1ea45e35580e2955b367096bbc7657cce"
+    },
+    {
+      "path": "tests/test_balconies.py",
+      "unchanged": true,
+      "sha256": "096ae2f940d19f850dfd223bfdde98e4cc05c9051d4cee40ed006e21ab98029d"
+    },
+    {
+      "path": "tests/test_delivery.py",
+      "unchanged": true,
+      "sha256": "d71a1aefdf91467271d2f416abbf06067b5cbc1e87ec29e24edbdd1e7c04dbe2"
+    },
+    {
+      "path": "tests/test_delivery_api.py",
+      "unchanged": true,
+      "sha256": "f37faacb89e6dc8807ebb6b8c6463af5f6d318d83b6bf507640995b101db9dfb"
+    },
+    {
+      "path": "tests/test_delivery_validation.py",
+      "unchanged": true,
+      "sha256": "1e6762595ea0f358171342501150197559e4a69b7b8572200af6944a9be7b3b2"
+    },
+    {
+      "path": "tests/test_geometry.py",
+      "unchanged": true,
+      "sha256": "465518e5faa45289aca1101b7e1148b853801118bd713c826d481c3bab448ba7"
+    },
+    {
+      "path": "tests/test_rendering.py",
+      "unchanged": true,
+      "sha256": "58bdc83137a26b92d45a2bbabd84bfb0629d4af8fefbfd8db744ba51afd605dd"
+    },
+    {
+      "path": "tests/test_review.py",
+      "unchanged": true,
+      "sha256": "56c36fb7844a7e4ec583577946f1366e781f00bf5b9f36d7694c525237ea9732"
+    },
+    {
+      "path": "tests/test_review_delivery.py",
+      "unchanged": true,
+      "sha256": "73f8c0d9e2721e50a2c87e0989d5c8bcc6fc6bac5ad4468e080e633066d7e8a6"
+    },
+    {
+      "path": "tests/test_spatial.py",
+      "unchanged": true,
+      "sha256": "4445385f19615701bb1524f4a2bdacb1da401396e02476baf55b8eccc579290b"
+    },
+    {
+      "path": "tests/test_state.py",
+      "unchanged": true,
+      "sha256": "d783b14587835583d164c09565f70347bafeddf4e9d48b5d3782b8882aef35fb"
+    }
+  ],
+  "main_branch_modified": false,
+  "synthetic": true,
+  "original_browser_artifacts": [
+    {
+      "path": "examples/browser/browser-report.json",
+      "sha256": "a7e10c2d48175504aa9539d7203144e327e70e6f5e7537363731ac1c89f9b574",
+      "unchanged": true
+    },
+    {
+      "path": "examples/browser/edited-webgl.png",
+      "sha256": "71d5ce25e70e6ac796479f96b2ca932a516ac303b69b4a298b840eb7ca31702d",
+      "unchanged": true
+    },
+    {
+      "path": "examples/browser/interface.png",
+      "sha256": "55706bde21b8e63b1e171b8d8f7acc42c6e2b159c8ff9fc57002bcfbd1f9165a",
+      "unchanged": true
+    }
+  ],
+  "original_browser_artifact_count": 3
+}

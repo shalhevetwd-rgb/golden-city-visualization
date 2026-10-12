@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8013",
+  "checks": [
+    "live capability API lists actual format statuses",
+    "new real dossier creates no geometry and clears the synthetic scene; missing evidence is displayed",
+    "source is uploaded to the same dossier with a content inspection result and no inferred building geometry",
+    "UI and real server reject final rendering without evidence; no certification is claimed"
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "project_id": "857653c1b7914963bdfc2ed1c17dc683",
+  "source_bytes_unchanged": true
+}

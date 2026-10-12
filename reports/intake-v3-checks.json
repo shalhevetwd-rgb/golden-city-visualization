@@ -1,0 +1,220 @@
+{
+  "schema": "golden-city.intake-checks.v3",
+  "checked_at_utc": "2026-10-12T21:59:13.678624+00:00",
+  "regeneration_command": ".venv/bin/python scripts/verify_intake.py",
+  "python_version": "3.12.14",
+  "runtime_profile": "repository .venv",
+  "inspection_module_sha256": "71640597aad22efdd22446eda35b587b104fdf3cd8a02f8ecab5b0c08515b275",
+  "test_module_sha256": "67ed47d135416eaba36aadcc8b6ba1e894a73052a9ef55f71edc0379a757358e",
+  "verification_script_sha256": "0c150a1d4b9f420d68357c147d761346ccd29e87c3467d2de7ea4c35f49f18a0",
+  "source_hashes_stable": true,
+  "runtime_dependency_error": null,
+  "expected_tests": 30,
+  "tests_run": 30,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_outcomes": {
+    "passed": [
+      "test_v3_intake.IntakeTests.test_actual_format_fixtures_have_hashes_and_no_assumed_georeferencing",
+      "test_v3_intake.IntakeTests.test_actual_glb_blender_import_export_roundtrip_geometry_and_camera",
+      "test_v3_intake.IntakeTests.test_actual_pdf_poppler_fallback_is_verified_independently",
+      "test_v3_intake.IntakeTests.test_dwg_and_unknown_formats_are_not_advertised",
+      "test_v3_intake.IntakeTests.test_dxf_actual_entities_units_and_coordinates",
+      "test_v3_intake.IntakeTests.test_dxf_curved_polyline_is_explicitly_not_treated_as_straight",
+      "test_v3_intake.IntakeTests.test_dxf_malformed_and_binary_not_advertised",
+      "test_v3_intake.IntakeTests.test_dxf_units_missing_are_not_assumed_to_be_metres",
+      "test_v3_intake.IntakeTests.test_existing_script_import_signature_can_inspect_geojson_from_engine_directory",
+      "test_v3_intake.IntakeTests.test_geojson_explicit_metric_crs_and_missing_crs_are_distinct",
+      "test_v3_intake.IntakeTests.test_geojson_nonmetric_crs_and_invalid_topology_or_nonfinite_rejected",
+      "test_v3_intake.IntakeTests.test_glb_actual_bad_indices_nonfinite_components_camera_and_hierarchy",
+      "test_v3_intake.IntakeTests.test_glb_actual_buffers_geometry_camera_and_parented_pose",
+      "test_v3_intake.IntakeTests.test_glb_external_buffers_are_never_fetched_or_called_geometry_complete",
+      "test_v3_intake.IntakeTests.test_glb_inline_buffer_and_interleaved_accessors_preserve_geometry",
+      "test_v3_intake.IntakeTests.test_glb_invalid_header_chunks_and_buffer_bounds",
+      "test_v3_intake.IntakeTests.test_glb_matrix_accessor_column_padding_is_validated",
+      "test_v3_intake.IntakeTests.test_glb_response_coordinate_cap_does_not_change_actual_counts_and_hashes",
+      "test_v3_intake.IntakeTests.test_glb_semantic_morph_material_and_empty_light_references_are_strict",
+      "test_v3_intake.IntakeTests.test_glb_sparse_accessor_values_and_duplicate_sparse_indices",
+      "test_v3_intake.IntakeTests.test_glb_unsupported_required_compression_is_inventory_only",
+      "test_v3_intake.IntakeTests.test_image_malformed_truncated_wrong_extension_and_pixel_limit",
+      "test_v3_intake.IntakeTests.test_large_real_glb_buffer_with_small_mesh_is_bounded_and_inspected",
+      "test_v3_intake.IntakeTests.test_obj_actual_planar_quad_and_concave_face_triangulation",
+      "test_v3_intake.IntakeTests.test_obj_negative_texture_normal_indices_and_external_materials_not_loaded",
+      "test_v3_intake.IntakeTests.test_obj_strict_indices_nan_unexecuted_directives_and_nonplanar_face",
+      "test_v3_intake.IntakeTests.test_pdf_actual_pages_text_and_raster_are_extracted_without_scale",
+      "test_v3_intake.IntakeTests.test_pdf_bad_content_and_real_page_limit",
+      "test_v3_intake.IntakeTests.test_png_and_jpeg_pixels_are_decoded_and_preview_is_a_real_image",
+      "test_v3_intake.IntakeTests.test_size_regular_file_and_symlink_guards_have_safe_errors"
+    ],
+    "failed": [],
+    "errors": [],
+    "skipped": []
+  },
+  "formats": {
+    ".pdf": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/plan.pdf",
+      "sha256": "162ce5474eb414382843bd903eace8e72b8f3d2c2fcc81e42cf946d8cc385157",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 1910,
+      "supported_level": "parsed_document",
+      "capabilities": [
+        "pdf_pages",
+        "pdf_text",
+        "raster_preview"
+      ],
+      "georeferencing_verified": false,
+      "backend": "Poppler",
+      "page_count": 2,
+      "first_page_raster_decoded": true,
+      "text_extraction_checked": true
+    },
+    ".dxf": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/plan.dxf",
+      "sha256": "775a55f967b820a20748fbf474919bba489a4b7c069daec0369b31c5ead1fb72",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 15757,
+      "supported_level": "parsed_cad_subset",
+      "capabilities": [
+        "dxf_ascii_entities",
+        "declared_drawing_units"
+      ],
+      "georeferencing_verified": false,
+      "backend": "strict ASCII subset",
+      "entity_types": {
+        "LINE": 1,
+        "LWPOLYLINE": 1,
+        "CIRCLE": 1,
+        "TEXT": 1
+      },
+      "drawing_units": {
+        "insunits": 6,
+        "name": "metres",
+        "scale_to_metres": 1.0
+      }
+    },
+    ".geojson": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/projected.geojson",
+      "sha256": "313e883fae1f6bbd0ecf8b60651070007eacb36c2e77bd22f7e5000f6f3b3235",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 674,
+      "supported_level": "validated_geojson",
+      "capabilities": [
+        "geojson_geometry",
+        "declared_crs_validation"
+      ],
+      "georeferencing_verified": false,
+      "crs": "EPSG:2039",
+      "missing_crs_fixture_remains_unreferenced_test_passed": true,
+      "additional_fixtures": [
+        {
+          "fixture": "tests/fixtures/intake-v3/unreferenced.geojson",
+          "sha256": "8d273ea07687483def8db5481193ab997e6630ca12bcbc2bc840c504c12ada7c",
+          "passed": true
+        }
+      ]
+    },
+    ".obj": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/mesh.obj",
+      "sha256": "2cdf1e5f62d37577c20e14615579a2edaf532cb4835a1f6e474c1e511ad001d5",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 109,
+      "supported_level": "parsed_mesh",
+      "capabilities": [
+        "obj_vertices",
+        "obj_triangles",
+        "strict_indices"
+      ],
+      "georeferencing_verified": false
+    },
+    ".glb": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/mesh.glb",
+      "sha256": "c03b014afca713fb68660aaabe8a07694ffb0fa6bfb99c19a733dd5a47d46c29",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 1104,
+      "supported_level": "parsed_gltf",
+      "capabilities": [
+        "glb_chunks",
+        "gltf_buffer_validation",
+        "gltf_inventory",
+        "source_cameras",
+        "mesh_vertices",
+        "mesh_triangles"
+      ],
+      "georeferencing_verified": false,
+      "geometry_supported": true,
+      "triangle_count": 1,
+      "camera_count": 1,
+      "blender_import_export_roundtrip_test_passed": true,
+      "large_35_mib_bin_fixture_test_passed": true
+    },
+    ".png": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/plan.png",
+      "sha256": "00ed2976f0de2368412e9a3cdb19525c83af79ee23b4e70049e2cc0f5aa2faaa",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 2348,
+      "supported_level": "decoded_image",
+      "capabilities": [
+        "image_decode",
+        "raster_preview"
+      ],
+      "georeferencing_verified": false
+    },
+    ".jpg": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/plan.jpg",
+      "sha256": "7ccb9862e475b5d3fce59f4eb8f127014e25f7983ad8cc9e9882e13e8c21826f",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 6795,
+      "supported_level": "decoded_image",
+      "capabilities": [
+        "image_decode",
+        "raster_preview"
+      ],
+      "georeferencing_verified": false
+    },
+    ".jpeg": {
+      "passed": true,
+      "fixture": "tests/fixtures/intake-v3/plan.jpeg",
+      "sha256": "7ccb9862e475b5d3fce59f4eb8f127014e25f7983ad8cc9e9882e13e8c21826f",
+      "tests_valid": true,
+      "fixture_check_passed": true,
+      "size_bytes": 6795,
+      "supported_level": "decoded_image",
+      "capabilities": [
+        "image_decode",
+        "raster_preview"
+      ],
+      "georeferencing_verified": false
+    },
+    ".dwg": {
+      "passed": false,
+      "status": "unsupported",
+      "reason": "No lawful tested converter and real validated DWG fixture available"
+    }
+  },
+  "limits": {
+    "source_bytes": 52428800,
+    "json_bytes": 8388608,
+    "decoded_image_pixels": 16000000,
+    "pdf_pages": 100,
+    "glb_vertex_count_per_primitive": 500000,
+    "glb_accessor_component_budget": 15000000,
+    "response_vertices": 20000,
+    "response_triangles": 40000
+  },
+  "scope": "Real-file extraction and syntax/geometry inspection only. No cadastral, scale, camera calibration, floor, terrain, or rights certification."
+}

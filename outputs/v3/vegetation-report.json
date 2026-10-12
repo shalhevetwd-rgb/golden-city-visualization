@@ -1,0 +1,312 @@
+{
+  "synthetic": true,
+  "real_site_accuracy": false,
+  "asset_source": "Original deterministic procedural plant geometry; no external plant assets",
+  "seed": 29,
+  "tree_roots_preserved": true,
+  "parcel_xy_limits": [
+    -50.0,
+    50.0
+  ],
+  "source_meshes_checked": 15,
+  "source_geometry_changed": [],
+  "trees": [
+    {
+      "name": "landscape:tree:0",
+      "root_xy": [
+        -46,
+        -12
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          -48.69536209106445,
+          -14.752581596374512,
+          -0.012751458212733269
+        ],
+        [
+          -43.0163688659668,
+          -9.254868507385254,
+          6.209824085235596
+        ]
+      ]
+    },
+    {
+      "name": "landscape:tree:1",
+      "root_xy": [
+        -46,
+        23
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          -48.55667495727539,
+          20.091283798217773,
+          -0.012013137340545654
+        ],
+        [
+          -43.033912658691406,
+          25.969852447509766,
+          6.821593761444092
+        ]
+      ]
+    },
+    {
+      "name": "landscape:tree:2",
+      "root_xy": [
+        -20,
+        32
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          -22.643056869506836,
+          29.258745193481445,
+          -0.011492706835269928
+        ],
+        [
+          -17.028860092163086,
+          35.02727508544922,
+          7.023068428039551
+        ]
+      ]
+    },
+    {
+      "name": "landscape:tree:3",
+      "root_xy": [
+        24,
+        38
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          21.285810470581055,
+          35.04347610473633,
+          -0.012929875403642654
+        ],
+        [
+          27.198604583740234,
+          40.93545913696289,
+          6.331352710723877
+        ]
+      ]
+    },
+    {
+      "name": "landscape:tree:4",
+      "root_xy": [
+        44,
+        20
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          41.46609878540039,
+          17.388044357299805,
+          -0.0121322525665164
+        ],
+        [
+          46.82915115356445,
+          22.96660041809082,
+          6.880466938018799
+        ]
+      ]
+    },
+    {
+      "name": "landscape:tree:5",
+      "root_xy": [
+        44,
+        -29
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          41.353519439697266,
+          -31.64861488342285,
+          -0.011712398380041122
+        ],
+        [
+          46.77044677734375,
+          -26.281173706054688,
+          6.913384914398193
+        ]
+      ]
+    },
+    {
+      "name": "landscape:tree:6",
+      "root_xy": [
+        -10,
+        -43
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          -12.943821907043457,
+          -45.68547058105469,
+          -0.012709653936326504
+        ],
+        [
+          -7.058701515197754,
+          -40.07851028442383,
+          6.366037368774414
+        ]
+      ]
+    },
+    {
+      "name": "landscape:tree:7",
+      "root_xy": [
+        15,
+        -43
+      ],
+      "leaves": 3240,
+      "bounds": [
+        [
+          12.385223388671875,
+          -45.665252685546875,
+          -0.012109551578760147
+        ],
+        [
+          17.83713150024414,
+          -40.27558517456055,
+          6.741965293884277
+        ]
+      ]
+    }
+  ],
+  "shrub_count": 34,
+  "planting_beds": [
+    {
+      "id": "tree-bed-0",
+      "rectangle": [
+        -48.4,
+        -14.4,
+        -43.6,
+        -9.6
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "tree-bed-1",
+      "rectangle": [
+        -48.4,
+        20.6,
+        -43.6,
+        25.4
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "tree-bed-2",
+      "rectangle": [
+        -22.4,
+        29.6,
+        -17.6,
+        34.4
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "tree-bed-3",
+      "rectangle": [
+        21.6,
+        35.6,
+        26.4,
+        40.4
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "tree-bed-4",
+      "rectangle": [
+        41.6,
+        17.6,
+        46.4,
+        22.4
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "tree-bed-5",
+      "rectangle": [
+        41.6,
+        -31.4,
+        46.4,
+        -26.6
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "tree-bed-6",
+      "rectangle": [
+        -12.4,
+        -45.4,
+        -7.6,
+        -40.6
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "tree-bed-7",
+      "rectangle": [
+        12.6,
+        -45.4,
+        17.4,
+        -40.6
+      ],
+      "kind": "tree_understory"
+    },
+    {
+      "id": "forecourt-A",
+      "rectangle": [
+        -20,
+        -49,
+        -14,
+        -41
+      ],
+      "kind": "foreground_understory"
+    },
+    {
+      "id": "forecourt-B",
+      "rectangle": [
+        12,
+        -23,
+        20,
+        -9
+      ],
+      "kind": "entrance_understory"
+    },
+    {
+      "id": "forecourt-C",
+      "rectangle": [
+        27,
+        -35,
+        37,
+        -28
+      ],
+      "kind": "entrance_understory"
+    }
+  ],
+  "extra_bed_planting": [
+    {
+      "id": "forecourt-A",
+      "shrub_count": 6,
+      "grass_tuft_count": 560
+    },
+    {
+      "id": "forecourt-B",
+      "shrub_count": 6,
+      "grass_tuft_count": 560
+    },
+    {
+      "id": "forecourt-C",
+      "shrub_count": 6,
+      "grass_tuft_count": 560
+    }
+  ],
+  "soil_bed_count": 11,
+  "clear_soil_area_m2": 392.63998764038007,
+  "grass_tuft_count": 4240,
+  "leaf_count": 45912,
+  "vegetation_vertices": 643720,
+  "vegetation_faces": 388354,
+  "botanical_limits": "Stylized broadleaf forms, not a validated species or planting plan; unmeasured flat synthetic terrain"
+}

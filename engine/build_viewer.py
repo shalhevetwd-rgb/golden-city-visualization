@@ -1,32 +1,141 @@
-"""Extend the existing self-contained viewer; preserve its Three.js modules."""
+"""Build v3 from the existing offline viewer's licensed, embedded Three modules.
+
+Rendering and source files are read without modification. The generated viewer
+keeps PNG/GLB originals byte-for-byte; browser edits are separate previews.
+"""
+import argparse
+import base64
+import hashlib
+import html
+import json
+import math
+import re
+import struct
 from pathlib import Path
-import re,json,base64,hashlib,math
-ROOT=Path(__file__).resolve().parents[1];out=ROOT/'outputs/v2';h=(ROOT/'golden-city-viewer.html').read_text();cfg=json.loads((ROOT/'config/synthetic-design.json').read_text());payload=json.loads(re.search(r'<script id="viewerPayload"[^>]*>(.*?)</script>',h,re.S).group(1))
-for r in payload['images']:
- raw=(out/r['name']).read_bytes();r['bytes']=len(raw);r['sha256']=hashlib.sha256(raw).hexdigest();data=base64.b64encode(raw).decode();pattern=r'(<img\b[^>]*\bid="'+re.escape(r['id'])+r'"[^>]*\bsrc=")[^"]+("[^>]*>)';h,n=re.subn(pattern,lambda m:m.group(1)+'data:image/png;base64,'+data+m.group(2),h);assert n==1
-raw=(out/'architectural.png').read_bytes();payload['images'].append({'id':'image-architectural','name':'architectural.png','bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()})
-figure='<figure><img id="image-architectural" alt="מבט אדריכלי סינתטי" src="data:image/png;base64,'+base64.b64encode(raw).decode()+'"><figcaption>מבט אדריכלי סינתטי <button data-image-download="architectural.png">הורדה</button></figcaption></figure>'
-h=re.sub(r'(<div[^>]*id="images"[^>]*>.*?)(</div>)',lambda m:m.group(1)+figure+m.group(2),h,count=1,flags=re.S)
-payload['models']=[]
-for key,name in [('baseline','model.glb'),('edited','edited-model.glb')]:
- raw=(out/name).read_bytes();payload['models'].append({'key':key,'name':name,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'blend_sha256':hashlib.sha256((out/name.replace('.glb','.blend')).read_bytes()).hexdigest(),'base64':base64.b64encode(raw).decode()})
-payload['cameras']={k:{**v,'fov':math.degrees(2*math.atan(36/(2*v['lens_mm'])/1.6))} for k,v in cfg['cameras'].items()};payload['source_manifest']=[{k:v for k,v in r.items() if k!='base64'} for r in payload['models']];payload['synthetic']=True
-h=re.sub(r'(<script id="viewerPayload"[^>]*>).*?(</script>)',lambda m:m.group(1)+json.dumps(payload,separators=(',',':'),ensure_ascii=False)+m.group(2),h,flags=re.S)
-h=h.replace('#153f37','#470d3f').replace('#17392f','#2a2330').replace('#e2c38a','#c9b88a')
-h=h.replace('המודל המקורי','המודל המשופר לפני עריכה').replace('הגרסה הקיימת לאחר שינוי A','לאחר עריכת חזית A').replace('שלוש התמונות המקוריות','תמונות הבדיקה ודוגמת העריכה').replace('הרינדורים המקוריים','הרינדורים המשופרים')
-h=h.replace('שלוש תמונות הרינדור המקוריות','הדמיות הניסוי הסינתטי ועריכה נקודתית')
-h=h.replace('<button id="street">מבט רחוב</button>','<button id="street">מבט רחוב</button><button id="architectural">מבט אדריכלי</button>')
-h=h.replace("element('street').onclick = () => setCamera(payload.cameras.street);","element('street').onclick = () => setCamera(payload.cameras.street);\n  element('architectural').onclick = () => setCamera(payload.cameras.architectural);")
-form='''<section><h2>תיק פרויקט מקומי</h2><p>המודל המוצג הוא סינתטי. פתיחת תיק חדש אינה משייכת אליו את מודל ההדגמה. הקבצים נבדקים במחשב שלך ואינם נשלחים לשירות חיצוני.</p><form id="projectForm"><label>שם המתחם <input name="name" required></label> <label>כתובת <input name="address" required></label> <label>גוש <input name="block" type="number" min="1" required></label> <label>חלקות <input name="parcels" placeholder="אם ידועות"></label><button>פתיחת תיק נפרד</button></form><input id="localFiles" type="file" multiple><p id="projectStatus">זהו ניסוי סינתטי; אין אישור קדסטרי, העמדה או גובה מדוד.</p><button id="projectExport">הורדת תיק נתונים</button><button id="showDemo">פתיחת הדגמה סינתטית בנפרד</button></section><section id="editPanel"><h2>עריכה נקודתית בתצוגת ההדגמה</h2><label>מבנה <select id="editBuilding"><option>A</option><option>B</option><option>C</option></select></label> <label>צבע חזית <input id="editColor" type="color" value="#67776f"></label><button id="previewColor">תצוגה מקדימה</button><button id="undoColor">חזרה לגרסה קודמת</button><button id="saveRequest">שמירת בקשת עריכה</button><p>תצוגת צבע בדפדפן אינה רינדור פוטוריאליסטי. הבקשה נשמרת בנפרד; קובץ GLB המקורי אינו מוחלף בעקבות תצוגה זו. רינדור חדש נדרש לשינוי תמונה.</p><p id="editStatus"></p></section>'''
-h=h.replace('<section><h2>פתיחת המודל',form+'<section><h2>פתיחת המודל',1)
-logic='''
-const versions=[];let project={id:crypto.randomUUID(),synthetic:true,files:[]};
-element('projectForm').onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));project={id:crypto.randomUUID(),synthetic:false,identity:d,files:[],evidence:{}};element('images').closest('section').hidden=true;element('viewport').closest('section').hidden=true;element('editPanel').hidden=true;element('projectStatus').textContent='נפתח תיק נפרד. חסרים: גבולות מאומתים, התאמת העמדה, קומות, גבהים וטופוגרפיה. רינדור מדויק חסום. מודל ההדגמה אינו חלק מהתיק.';};
-element('localFiles').onchange=async e=>{for(const f of e.target.files){const bytes=await f.arrayBuffer();const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(x=>x.toString(16).padStart(2,'0')).join('');project.files.push({name:f.name,bytes:f.size,sha256:hash,status:'קובץ נרשם; חילוץ ואימות תוכן טרם בוצעו'});}element('projectStatus').textContent='נקלטו '+project.files.length+' קבצים מקומיים. אין אישור מיקום או גובה; נדרש אימות מקצועי.';};
-element('showDemo').onclick=()=>{element('images').closest('section').hidden=false;element('viewport').closest('section').hidden=false;element('editPanel').hidden=false;resize();element('projectStatus').textContent='ההדגמה הסינתטית פתוחה בנפרד. היא אינה משויכת לתיק הפרויקט החדש.';};
-element('projectExport').onclick=()=>saveBytes(new TextEncoder().encode(JSON.stringify(project,null,2)),'project.json','application/json');
-element('previewColor').onclick=()=>{if(!window.goldenOffline?.ready)return;const id=element('editBuilding').value;let mesh;models.get(active).scene.traverse(o=>{if(o.isMesh && o.userData.building_id===id)mesh=o;});if(!mesh){element('editStatus').textContent='מבנה לא נמצא';return;}versions.push({mesh,material:mesh.material});mesh.material=mesh.material.clone();mesh.material.color.set(element('editColor').value);element('editStatus').textContent='שונה חומר החזית של '+id+' בלבד. הגיאומטריה לא השתנתה.';};
-element('undoColor').onclick=()=>{const v=versions.pop();if(v){v.mesh.material=v.material;element('editStatus').textContent='חומר החזית שוחזר';}};
-element('saveRequest').onclick=()=>{const hex=element('editColor').value;const color=[1,3,5].map(i=>(()=>{const u=parseInt(hex.slice(i,i+2),16)/255;return u<=.04045?u/12.92:((u+.055)/1.055)**2.4})());const r={source_glb_sha256:payload.models.find(m=>m.key===active).sha256,source_sha256:payload.models.find(m=>m.key===active).blend_sha256,building_id:element('editBuilding').value,operation:'facade_color',color,synthetic:true,requires_saved_scene_sha256:true};saveBytes(new TextEncoder().encode(JSON.stringify(r,null,2)),'edit-request.json','application/json');};
-'''
-h=h.replace('</script></main></body></html>',logic+'</script></main></body></html>');(out/'viewer.html').write_text(h);module=re.findall(r'<script type="module">(.*?)</script>',h,re.S)[-1];(out/'viewer-module.mjs').write_text(module);print('Viewer extended from existing source:',len(h.encode()),'bytes')
+
+from PIL import Image
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def sha256(data):
+    return hashlib.sha256(data).hexdigest()
+
+def shared_bin_parts(raw):
+    """Return exact raw chunks only for the standard two-chunk GLB layout."""
+    if len(raw) < 20 or raw[:4] != b"glTF":
+        return None
+    offset, chunks = 12, []
+    while offset < len(raw):
+        if offset + 8 > len(raw):
+            return None
+        length, kind = struct.unpack_from("<II", raw, offset)
+        end = offset + 8 + length
+        if end > len(raw) or length % 4:
+            return None
+        chunks.append((kind, raw[offset:end]))
+        offset = end
+    if len(chunks) != 2 or chunks[0][0] != 0x4E4F534A or chunks[1][0] != 0x004E4942:
+        return None
+    return raw[:12], chunks[0][1], chunks[1][1]
+
+
+def build(output, config, base_viewer):
+    output, config, base_viewer = Path(output), Path(config), Path(base_viewer)
+    original = base_viewer.read_text()
+    importmap = re.search(r'<script type="importmap">.*?</script>', original, re.S).group(0)
+    license_block = re.search(r'<details><summary>רישיון Three.js</summary>.*?</details>', original, re.S).group(0)
+    design = json.loads(config.read_text())
+    if design.get("synthetic") is not True:
+        raise ValueError("The embedded v3 demonstration requires explicitly synthetic design data")
+    images, image_sources = [], {}
+    views = [("aerial", "מבט אווירי"), ("street", "מבט רחוב"), ("architectural", "מבט אדריכלי"), ("edited-aerial", "לאחר שינוי חזית A")]
+    figures = []
+    for key, label in views:
+        name = key + ".png"
+        raw = (output / name).read_bytes()
+        with Image.open(output / name) as image:
+            image.verify()
+        data_url = "data:image/png;base64," + base64.b64encode(raw).decode()
+        image_sources[key] = data_url
+        images.append({"id": "image-" + key, "name": name, "bytes": len(raw), "sha256": sha256(raw)})
+        figures.append('<figure><img id="image-' + key + '" alt="' + html.escape(label) +
+                       ' — ניסוי סינתטי" src="' + data_url + '"><figcaption><strong>' +
+                       html.escape(label) + '</strong><button data-image-download="' + name +
+                       '">הורדת PNG</button></figcaption></figure>')
+    models, originals = [], {}
+    for key, name in [("baseline", "model.glb"), ("edited", "edited-model.glb")]:
+        raw = (output / name).read_bytes()
+        if len(raw) < 20 or raw[:4] != b"glTF" or struct.unpack_from("<II", raw, 4) != (2, len(raw)):
+            raise ValueError("Invalid GLB header: " + name)
+        blend = output / name.replace(".glb", ".blend")
+        originals[key] = raw
+        models.append({"key": key, "name": name, "bytes": len(raw), "sha256": sha256(raw),
+                       "blend_sha256": sha256(blend.read_bytes()) if blend.exists() else None})
+    pieces = {key: shared_bin_parts(raw) for key, raw in originals.items()}
+    shared_binary = None
+    if all(pieces.values()) and pieces["baseline"][2] == pieces["edited"][2]:
+        shared_binary = pieces["baseline"][2]
+        for record in models:
+            header, json_chunk, bin_chunk = pieces[record["key"]]
+            if header + json_chunk + shared_binary != originals[record["key"]]:
+                raise ValueError("Shared BIN reconstruction differs from the original GLB")
+            record.update(encoding="glb_shared_bin", header_base64=base64.b64encode(header).decode(),
+                          json_chunk_base64=base64.b64encode(json_chunk).decode())
+    else:
+        for record in models:
+            record.update(encoding="base64", base64=base64.b64encode(originals[record["key"]]).decode())
+    geometry_report = output / "geometry-report.json"
+    resolved_cameras = json.loads(geometry_report.read_text()).get("cameras", {}) if geometry_report.exists() else {}
+    cameras = {}
+    for name, camera in design["cameras"].items():
+        record = {**camera, **resolved_cameras.get(name, {})}
+        if any(value is None for value in record["position"]):
+            raise ValueError("A camera height requires the resolved geometry-report.json: " + name)
+        if "vertical_fov" in record:
+            record["fov"] = record["vertical_fov"]
+        if "fov" not in record:
+            sensor_height = record.get("sensor_height_mm", 24)
+            record["fov"] = math.degrees(2 * math.atan(sensor_height / (2 * record["lens_mm"])))
+        record.setdefault("shift_y", 0)
+        cameras[name] = record
+    payload = {"version": "architectural-v3", "synthetic": True, "design_status": design.get("design_status"),
+               "images": images, "models": models, "cameras": cameras,
+               "source_manifest": [{k: model[k] for k in ("key","name","bytes","sha256","blend_sha256","encoding")} for model in models],
+               "capabilities": [
+                   {"extension": "PNG/JPEG", "status": "browser_decode", "label": "פענוח תמונה; לא נלמדים מיקום, קנה מידה או גובה"},
+                   {"extension": "GLB", "status": "geometry_decode", "label": "קליטת גיאומטריה מקומית; מערכת קרקע וקומות אינן מוסקות"},
+                   {"extension": "GeoJSON", "status": "syntax_only", "label": "בדיקת מבנה JSON בלבד בקובץ העצמאי"},
+                   {"extension": "PDF/DWG/DXF", "status": "not_parsed", "label": "שמירת פרטי מקור בלבד; אין כאן חילוץ תוכנית"},
+               ]}
+    if shared_binary is not None:
+        payload["shared_glb_bin_base64"] = base64.b64encode(shared_binary).decode()
+        payload["shared_glb_bin_sha256"] = sha256(shared_binary)
+    template = (ROOT / "engine" / "viewer_template.html").read_text()
+    module = (ROOT / "engine" / "viewer_module.mjs").read_text()
+    hash_helper = (ROOT / "engine" / "hash_sha256.mjs").read_text().replace("export ", "")
+    module = module.replace("// __HASH_HELPER__", hash_helper)
+    values = {"__IMPORTMAP__": importmap, "__LICENSE__": license_block, "__IMAGES__": "".join(figures),
+              "__BEFORE_SRC__": image_sources["aerial"], "__AFTER_SRC__": image_sources["edited-aerial"],
+              "__PAYLOAD__": json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c"),
+              "__MODULE__": module}
+    for placeholder, value in values.items():
+        template = template.replace(placeholder, value)
+    if len(template.encode()) >= 99_000_000:
+        raise ValueError("The standalone viewer exceeds the 99 MB delivery budget; reduce geometry or use a separately validated compressed embedding")
+    output.mkdir(parents=True, exist_ok=True)
+    (output / "viewer.html").write_text(template)
+    (output / "viewer-module.mjs").write_text(module)
+    result = {"viewer": str(output / "viewer.html"), "sha256": sha256(template.encode()), "bytes": len(template.encode()),
+              "embedded_sources": payload["source_manifest"], "synthetic": True, "source_files_modified": False}
+    (output / "viewer-build.json").write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    return result
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, default=ROOT / "outputs" / "v3")
+    parser.add_argument("--config", type=Path, default=ROOT / "config" / "synthetic-design-v3.json")
+    parser.add_argument("--base-viewer", type=Path, default=ROOT / "golden-city-viewer.html")
+    args = parser.parse_args()
+    print(json.dumps(build(args.output, args.config, args.base_viewer), ensure_ascii=False, indent=2))

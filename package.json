@@ -1,0 +1,1 @@
+{"name":"golden-city-visualization","private":true,"version":"0.2.0","dependencies":{"three":"0.180.0"},"scripts":{"vendor":"python scripts/vendor_three.py"}}

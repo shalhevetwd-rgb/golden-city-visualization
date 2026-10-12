@@ -1,0 +1,180 @@
+{
+  "project": {
+    "crs": "EPSG:2039",
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            220000,
+            630000
+          ],
+          [
+            220100,
+            630000
+          ],
+          [
+            220100,
+            630100
+          ],
+          [
+            220000,
+            630100
+          ],
+          [
+            220000,
+            630000
+          ]
+        ]
+      ]
+    },
+    "buildings": [
+      {
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                220010,
+                630010
+              ],
+              [
+                220030,
+                630010
+              ],
+              [
+                220030,
+                630030
+              ],
+              [
+                220010,
+                630030
+              ],
+              [
+                220010,
+                630010
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "A",
+          "height": 30,
+          "floors": 10,
+          "color": "#d9bd89",
+          "material": "stone"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                220046,
+                630046
+              ],
+              [
+                220064,
+                630046
+              ],
+              [
+                220064,
+                630068
+              ],
+              [
+                220046,
+                630068
+              ],
+              [
+                220046,
+                630046
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "B",
+          "height": 24,
+          "floors": 8,
+          "color": "#bbc4b6",
+          "material": "plaster"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                220073,
+                630030
+              ],
+              [
+                220090,
+                630030
+              ],
+              [
+                220090,
+                630047
+              ],
+              [
+                220073,
+                630047
+              ],
+              [
+                220073,
+                630030
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "C",
+          "height": 18,
+          "floors": 6,
+          "color": "#e7d4b7",
+          "material": "stone"
+        }
+      }
+    ],
+    "name": "Synthetic acceptance: existing A with distinct B and C",
+    "id": "synthetic-acceptance",
+    "errors": [],
+    "approved": true,
+    "version": 1,
+    "synthetic": true
+  },
+  "polygon_meshes": {},
+  "camera": {
+    "id": "street",
+    "name": "מבט בגובה הרחוב — 1.7 מ׳",
+    "position": [
+      -22.5,
+      -115.0,
+      1.7
+    ],
+    "target": [
+      -8.0,
+      -5.0,
+      12.9
+    ],
+    "fov": 38.0
+  },
+  "origin": [
+    220050.0,
+    630050.0,
+    0.0
+  ],
+  "width": 1280,
+  "height": 720,
+  "samples": 48,
+  "output": "/workspace/golden-city-visualization/examples/renders/street.png",
+  "blend": "/workspace/golden-city-visualization/examples/renders/street.blend",
+  "inventory": "/workspace/golden-city-visualization/examples/renders/street.objects.json",
+  "obj": "/workspace/golden-city-visualization/examples/renders/street.obj",
+  "glb": "/workspace/golden-city-visualization/examples/renders/street.glb",
+  "mask": "/workspace/golden-city-visualization/examples/renders/street-objects.png"
+}

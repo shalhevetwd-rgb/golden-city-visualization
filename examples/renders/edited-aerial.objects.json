@@ -1,0 +1,2444 @@
+{
+  "objects": [
+    {
+      "name": "balcony:A:south-12",
+      "type": "MESH",
+      "persistent_id": "balcony:A:south-12",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -36.0,
+        -43.0,
+        11.75
+      ],
+      "bounds_max": [
+        -24.0,
+        -40.0,
+        12.0
+      ]
+    },
+    {
+      "name": "balcony:A:south-18",
+      "type": "MESH",
+      "persistent_id": "balcony:A:south-18",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -36.0,
+        -43.0,
+        17.75
+      ],
+      "bounds_max": [
+        -24.0,
+        -40.0,
+        18.0
+      ]
+    },
+    {
+      "name": "balcony:A:south-6",
+      "type": "MESH",
+      "persistent_id": "balcony:A:south-6",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -36.0,
+        -43.0,
+        5.75
+      ],
+      "bounds_max": [
+        -24.0,
+        -40.0,
+        6.0
+      ]
+    },
+    {
+      "name": "building:A",
+      "type": "MESH",
+      "persistent_id": "building:A",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -40.0,
+        -40.0,
+        0.0
+      ],
+      "bounds_max": [
+        -20.0,
+        -20.0,
+        30.0
+      ]
+    },
+    {
+      "name": "building:B",
+      "type": "MESH",
+      "persistent_id": "building:B",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -4.0,
+        -4.0,
+        0.0
+      ],
+      "bounds_max": [
+        14.0,
+        18.0,
+        24.0
+      ]
+    },
+    {
+      "name": "building:C",
+      "type": "MESH",
+      "persistent_id": "building:C",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        23.0,
+        -20.0,
+        0.0
+      ],
+      "bounds_max": [
+        40.0,
+        -3.0,
+        18.0
+      ]
+    },
+    {
+      "name": "camera:aerial",
+      "type": "CAMERA",
+      "persistent_id": "camera:aerial"
+    },
+    {
+      "name": "context:apron:A",
+      "type": "MESH",
+      "persistent_id": "context:apron:A",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -41.20000076293945,
+        -41.20000076293945,
+        0.0020000000949949026
+      ],
+      "bounds_max": [
+        -18.799999237060547,
+        -18.799999237060547,
+        0.017000000923871994
+      ]
+    },
+    {
+      "name": "context:apron:B",
+      "type": "MESH",
+      "persistent_id": "context:apron:B",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -5.199999809265137,
+        -5.199999809265137,
+        0.0020000000949949026
+      ],
+      "bounds_max": [
+        15.199999809265137,
+        19.200000762939453,
+        0.017000000923871994
+      ]
+    },
+    {
+      "name": "context:apron:C",
+      "type": "MESH",
+      "persistent_id": "context:apron:C",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        21.799999237060547,
+        -21.200000762939453,
+        0.0020000000949949026
+      ],
+      "bounds_max": [
+        41.20000076293945,
+        -1.7999999523162842,
+        0.017000000923871994
+      ]
+    },
+    {
+      "name": "context:ground",
+      "type": "MESH",
+      "persistent_id": "context:ground",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -400.0,
+        -400.0,
+        -0.15000000596046448
+      ],
+      "bounds_max": [
+        400.0,
+        400.0,
+        -0.05000000074505806
+      ]
+    },
+    {
+      "name": "context:parcel",
+      "type": "MESH",
+      "persistent_id": "context:parcel",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -50.0,
+        -50.0,
+        -0.05000000074505806
+      ],
+      "bounds_max": [
+        50.0,
+        50.0,
+        0.0
+      ]
+    },
+    {
+      "name": "context:street",
+      "type": "MESH",
+      "persistent_id": "context:street",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -400.0,
+        -66.0,
+        -0.019999999552965164
+      ],
+      "bounds_max": [
+        400.0,
+        -54.0,
+        -0.004999999888241291
+      ]
+    },
+    {
+      "name": "lighting:sun",
+      "type": "LIGHT",
+      "persistent_id": "lighting:sun"
+    },
+    {
+      "name": "post:A:south-12:0:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -35.09892272949219,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -35.05492401123047,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:10",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:10",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -26.791229248046875,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -26.747230529785156,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:11",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:11",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -25.868152618408203,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -25.824153900146484,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:12",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:12",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.94507598876953,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -24.901077270507812,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -34.175846099853516,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -34.1318473815918,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:3",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -33.252769470214844,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -33.208770751953125,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:4",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:4",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -32.32969284057617,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -32.28569412231445,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:5",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:5",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -31.406614303588867,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -31.36261558532715,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:6",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:6",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -30.483537673950195,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -30.439538955688477,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:7",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:7",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -29.560461044311523,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -29.516462326049805,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:8",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:8",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -28.63738441467285,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -28.593385696411133,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:0:9",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:0:9",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -27.71430778503418,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -27.67030906677246,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:1:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:1:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -43.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -42.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:1:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:1:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -42.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -41.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:1:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:1:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -41.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -40.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.94507598876953,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -24.901077270507812,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:10",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:10",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -33.252769470214844,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -33.208770751953125,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:11",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:11",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -34.175846099853516,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -34.1318473815918,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:12",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:12",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -35.09892272949219,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -35.05492401123047,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -25.868152618408203,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -25.824153900146484,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:3",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -26.791229248046875,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -26.747230529785156,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:4",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:4",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -27.71430778503418,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -27.67030906677246,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:5",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:5",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -28.63738441467285,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -28.593385696411133,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:6",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:6",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -29.560461044311523,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -29.516462326049805,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:7",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:7",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -30.483537673950195,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -30.439538955688477,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:8",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:8",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -31.406614303588867,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -31.36261558532715,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:2:9",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:2:9",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -32.32969284057617,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -32.28569412231445,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:3:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:3:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -40.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -39.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:3:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:3:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -41.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -40.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-12:3:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-12:3:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -42.02199935913086,
+        12.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -41.97800064086914,
+        13.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -35.09892272949219,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -35.05492401123047,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:10",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:10",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -26.791229248046875,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -26.747230529785156,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:11",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:11",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -25.868152618408203,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -25.824153900146484,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:12",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:12",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.94507598876953,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -24.901077270507812,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -34.175846099853516,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -34.1318473815918,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:3",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -33.252769470214844,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -33.208770751953125,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:4",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:4",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -32.32969284057617,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -32.28569412231445,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:5",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:5",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -31.406614303588867,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -31.36261558532715,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:6",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:6",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -30.483537673950195,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -30.439538955688477,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:7",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:7",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -29.560461044311523,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -29.516462326049805,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:8",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:8",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -28.63738441467285,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -28.593385696411133,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:0:9",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:0:9",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -27.71430778503418,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -27.67030906677246,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:1:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:1:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -43.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -42.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:1:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:1:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -42.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -41.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:1:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:1:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -41.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -40.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.94507598876953,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -24.901077270507812,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:10",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:10",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -33.252769470214844,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -33.208770751953125,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:11",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:11",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -34.175846099853516,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -34.1318473815918,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:12",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:12",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -35.09892272949219,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -35.05492401123047,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -25.868152618408203,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -25.824153900146484,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:3",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -26.791229248046875,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -26.747230529785156,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:4",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:4",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -27.71430778503418,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -27.67030906677246,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:5",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:5",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -28.63738441467285,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -28.593385696411133,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:6",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:6",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -29.560461044311523,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -29.516462326049805,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:7",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:7",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -30.483537673950195,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -30.439538955688477,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:8",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:8",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -31.406614303588867,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -31.36261558532715,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:2:9",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:2:9",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -32.32969284057617,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -32.28569412231445,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:3:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:3:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -40.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -39.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:3:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:3:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -41.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -40.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-18:3:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-18:3:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -42.02199935913086,
+        18.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -41.97800064086914,
+        19.049999237060547
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -35.09892272949219,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -35.05492401123047,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:10",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:10",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -26.791229248046875,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -26.747230529785156,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:11",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:11",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -25.868152618408203,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -25.824153900146484,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:12",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:12",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.94507598876953,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -24.901077270507812,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -34.175846099853516,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -34.1318473815918,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:3",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -33.252769470214844,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -33.208770751953125,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:4",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:4",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -32.32969284057617,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -32.28569412231445,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:5",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:5",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -31.406614303588867,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -31.36261558532715,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:6",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:6",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -30.483537673950195,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -30.439538955688477,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:7",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:7",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -29.560461044311523,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -29.516462326049805,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:8",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:8",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -28.63738441467285,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -28.593385696411133,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:0:9",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:0:9",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -27.71430778503418,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -27.67030906677246,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:1:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:1:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -43.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -42.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:1:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:1:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -42.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -41.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:1:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:1:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -41.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -40.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.02199935913086,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -23.97800064086914,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.94507598876953,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -24.901077270507812,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:10",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:10",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -33.252769470214844,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -33.208770751953125,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:11",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:11",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -34.175846099853516,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -34.1318473815918,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:12",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:12",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -35.09892272949219,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -35.05492401123047,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -25.868152618408203,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -25.824153900146484,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:3",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -26.791229248046875,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -26.747230529785156,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:4",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:4",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -27.71430778503418,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -27.67030906677246,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:5",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:5",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -28.63738441467285,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -28.593385696411133,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:6",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:6",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -29.560461044311523,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -29.516462326049805,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:7",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:7",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -30.483537673950195,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -30.439538955688477,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:8",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:8",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -31.406614303588867,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -31.36261558532715,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:2:9",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:2:9",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -32.32969284057617,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -32.28569412231445,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:3:0",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:3:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -40.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -39.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:3:1",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:3:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -41.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -40.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "post:A:south-6:3:2",
+      "type": "MESH",
+      "persistent_id": "post:A:south-6:3:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.02199935913086,
+        -42.02199935913086,
+        6.0
+      ],
+      "bounds_max": [
+        -35.97800064086914,
+        -41.97800064086914,
+        7.050000190734863
+      ]
+    },
+    {
+      "name": "rail:A:south-12:0",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-12:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.0,
+        -43.03499984741211,
+        13.015000343322754
+      ],
+      "bounds_max": [
+        -24.0,
+        -42.96500015258789,
+        13.085000038146973
+      ]
+    },
+    {
+      "name": "rail:A:south-12:1",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-12:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.03499984741211,
+        -43.0,
+        13.015000343322754
+      ],
+      "bounds_max": [
+        -23.96500015258789,
+        -40.0,
+        13.085000038146973
+      ]
+    },
+    {
+      "name": "rail:A:south-12:2",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-12:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.0,
+        -40.03499984741211,
+        13.015000343322754
+      ],
+      "bounds_max": [
+        -24.0,
+        -39.96500015258789,
+        13.085000038146973
+      ]
+    },
+    {
+      "name": "rail:A:south-12:3",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-12:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.03499984741211,
+        -43.0,
+        13.015000343322754
+      ],
+      "bounds_max": [
+        -35.96500015258789,
+        -40.0,
+        13.085000038146973
+      ]
+    },
+    {
+      "name": "rail:A:south-18:0",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-18:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.0,
+        -43.03499984741211,
+        19.014999389648438
+      ],
+      "bounds_max": [
+        -24.0,
+        -42.96500015258789,
+        19.084999084472656
+      ]
+    },
+    {
+      "name": "rail:A:south-18:1",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-18:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.03499984741211,
+        -43.0,
+        19.014999389648438
+      ],
+      "bounds_max": [
+        -23.96500015258789,
+        -40.0,
+        19.084999084472656
+      ]
+    },
+    {
+      "name": "rail:A:south-18:2",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-18:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.0,
+        -40.03499984741211,
+        19.014999389648438
+      ],
+      "bounds_max": [
+        -24.0,
+        -39.96500015258789,
+        19.084999084472656
+      ]
+    },
+    {
+      "name": "rail:A:south-18:3",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-18:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.03499984741211,
+        -43.0,
+        19.014999389648438
+      ],
+      "bounds_max": [
+        -35.96500015258789,
+        -40.0,
+        19.084999084472656
+      ]
+    },
+    {
+      "name": "rail:A:south-6:0",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-6:0",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.0,
+        -43.03499984741211,
+        7.014999866485596
+      ],
+      "bounds_max": [
+        -24.0,
+        -42.96500015258789,
+        7.085000514984131
+      ]
+    },
+    {
+      "name": "rail:A:south-6:1",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-6:1",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -24.03499984741211,
+        -43.0,
+        7.014999866485596
+      ],
+      "bounds_max": [
+        -23.96500015258789,
+        -40.0,
+        7.085000514984131
+      ]
+    },
+    {
+      "name": "rail:A:south-6:2",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-6:2",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.0,
+        -40.03499984741211,
+        7.014999866485596
+      ],
+      "bounds_max": [
+        -24.0,
+        -39.96500015258789,
+        7.085000514984131
+      ]
+    },
+    {
+      "name": "rail:A:south-6:3",
+      "type": "MESH",
+      "persistent_id": "rail:A:south-6:3",
+      "vertices": 16,
+      "unique_vertices": 16,
+      "polygons": 10,
+      "triangles": 28,
+      "bounds_min": [
+        -36.03499984741211,
+        -43.0,
+        7.014999866485596
+      ],
+      "bounds_max": [
+        -35.96500015258789,
+        -40.0,
+        7.085000514984131
+      ]
+    },
+    {
+      "name": "roof:A",
+      "type": "MESH",
+      "persistent_id": "roof:A",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -40.0,
+        -40.0,
+        30.0
+      ],
+      "bounds_max": [
+        -20.0,
+        -20.0,
+        30.18000030517578
+      ]
+    },
+    {
+      "name": "roof:B",
+      "type": "MESH",
+      "persistent_id": "roof:B",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        -4.0,
+        -4.0,
+        24.0
+      ],
+      "bounds_max": [
+        14.0,
+        18.0,
+        24.18000030517578
+      ]
+    },
+    {
+      "name": "roof:C",
+      "type": "MESH",
+      "persistent_id": "roof:C",
+      "vertices": 8,
+      "unique_vertices": 8,
+      "polygons": 6,
+      "triangles": 12,
+      "bounds_min": [
+        23.0,
+        -20.0,
+        18.0
+      ],
+      "bounds_max": [
+        40.0,
+        -3.0,
+        18.18000030517578
+      ]
+    },
+    {
+      "name": "windows:A",
+      "type": "MESH",
+      "persistent_id": "windows:A",
+      "vertices": 800,
+      "unique_vertices": 800,
+      "polygons": 200,
+      "triangles": 400,
+      "bounds_min": [
+        -40.04499816894531,
+        -40.04499816894531,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        -19.954999923706055,
+        -19.954999923706055,
+        29.3700008392334
+      ]
+    },
+    {
+      "name": "windows:B",
+      "type": "MESH",
+      "persistent_id": "windows:B",
+      "vertices": 576,
+      "unique_vertices": 576,
+      "polygons": 144,
+      "triangles": 288,
+      "bounds_min": [
+        -4.045000076293945,
+        -4.045000076293945,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        14.045000076293945,
+        18.045000076293945,
+        23.3700008392334
+      ]
+    },
+    {
+      "name": "windows:C",
+      "type": "MESH",
+      "persistent_id": "windows:C",
+      "vertices": 384,
+      "unique_vertices": 384,
+      "polygons": 96,
+      "triangles": 192,
+      "bounds_min": [
+        22.954999923706055,
+        -20.045000076293945,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        40.04499816894531,
+        -2.9549999237060547,
+        17.3700008392334
+      ]
+    }
+  ],
+  "counts": {
+    "objects": 128,
+    "mesh_objects": 126,
+    "cameras": 1,
+    "lights": 1,
+    "vertices": 3608,
+    "unique_vertices": 3608,
+    "polygons": 1610,
+    "triangles": 4084
+  },
+  "camera": {
+    "name": "camera:aerial",
+    "position": [
+      95.0,
+      -120.0,
+      95.0
+    ],
+    "rotation_euler": [
+      1.0514456033706665,
+      5.002902270234699e-08,
+      0.6696389317512512
+    ],
+    "vertical_fov": 36.99999875288908,
+    "lens_mm": 35.864219665527344,
+    "forward": [
+      -0.5388580560684204,
+      0.6806628108024597,
+      -0.4963165819644928
+    ],
+    "up": [
+      -0.30806511640548706,
+      0.3891349732875824,
+      0.8681415915489197
+    ]
+  },
+  "blender_version": "4.3.2"
+}

@@ -1,0 +1,938 @@
+{
+  "tests_run": 232,
+  "passed": 232,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "outcomes": [
+    {
+      "test": "test_api.APITests.test_boundary_and_control_alignment_preserve_camera_and_assets",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_invalid_asset_and_traversal",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_jpeg_source_preserved_byte_for_byte",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_persistent_edit_camera_restore",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_photo_and_context_model_ingest",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api.APITests.test_static_json_sample_is_served_as_valid_json",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_architectural_edit.ArchitecturalEditLifecycleTests.test_actual_native_fork_render_and_persistent_catalogue",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_architectural_edit.ArchitecturalEditRequestTests.test_empty_history_is_a_valid_empty_catalogue",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_architectural_edit.ArchitecturalEditRequestTests.test_invalid_controls_rejected_before_creating_a_version",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_architectural_edit.ArchitecturalEditRequestTests.test_unknown_or_changed_source_cannot_start_worker",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_balcony_default_thickness_matches_model_and_other_slab_defaults",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_body_overlap_is_reported_conservatively",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_duplicate_slab_and_building_ids_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_explicit_complete_empty_scene_yields_geometric_clear_only",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_higher_partial_balcony_and_section_geometry",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_hole_remains_empty_in_top_and_section",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_invalid_inputs_and_missing_ids_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_lower_balcony_and_distant_geometry_do_not_obstruct",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_overlapping_projections_union_without_double_counting",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_second_building_above_balcony_and_different_base_datum",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_balconies.BalconyAnalysisTests.test_unknown_overhead_is_not_treated_as_open_or_certified",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_actual_source_glb_read",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_actual_source_png_read",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_claimed_flags_without_evidence_not_accuracy",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_edit_outside_target_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_foreign_project_evidence_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_geometry_edit_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_material_edit_passes_without_pixel_claim",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_nearby_nonoverlapping_slab_not_obstruction",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_original_delivery_files_preserved",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_overhang_detected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_removed_context_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_sukkah_geometry_never_halakhic_approval",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_sukkah_no_policy_does_not_assume_rules",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_synthetic_never_real_accuracy",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_target_movement_rejected_even_without_vertex_change",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_unknown_real_site_blocked",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_unsupported_not_claimed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_constraints.Gates.test_verified_evidence_still_missing_terrain_blocked",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_bundle_preserves_originals_and_zip_is_repeatable",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_contact_sheet_contains_actual_render_pixels",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_full_bundle_refuses_missing_fresh_model_exports",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_gallery_embeds_original_pngs_and_no_external_dependencies",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_missing_or_invalid_png_does_not_create_partial_output",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_offline_chromium_displays_all_original_images_without_network",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_report_text_is_escaped",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery.DeliveryTests.test_validation_failure_preserves_existing_delivery",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_api.DeliveryAPITests.test_blank_and_missing_deliveries_fail_closed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_api.DeliveryAPITests.test_download_verifies_actual_bytes_and_sets_filename",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_glb_separate_blender_import_preserves_camera",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_obj_separate_blender_import_geometry_and_names",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_pdf_all_pages_visually_rendered_and_reopened",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_actual_png_jpeg_reopened_and_two_independent_decoders",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_archive_crc_unsafe_paths_and_corrupt_image_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_archive_requires_manifest_and_all_members",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_corrupt_or_blank_pdf_is_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_declared_golden_city_obj_axes_preserve_local_xyz_bounds",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_existing_but_corrupt_local_image_and_html_cycles_are_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_invalid_geometry_and_glb_indices_are_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_json_text_and_unsupported_types",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_local_embedded_and_external_links_checked_without_access_claim",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_missing_empty_and_unreasonably_large_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_missing_escaped_and_corrupt_embedded_link_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_modified_during_validation_fails",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_packaged_outputs_are_extracted_reopened_and_hashed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_truncated_png_cannot_pass_header_only_check",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_uniform_or_transparent_image_fails_but_source_is_labeled",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_delivery_validation.DeliveryValidationTests.test_wrong_extension_expected_dimensions_or_hash_fail",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_duplicate_id",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_geographic_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_invalid_polygon",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_outside",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_overlap",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_geometry.GeometryTests.test_valid_and_approval_gate",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_actual_modifier_detail_white_materials_fail_despite_correct_mesh_inventory",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_blob_limit_omits_large_native_scenes_and_splits_actual_zip_bytes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_declared_pass_does_not_hide_non_target_or_world_changes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_embedded_model_hash_mismatch_fails_before_reader_acceptance",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_exact_shared_bin_reassembly_preserves_source_glb_and_detects_tampering",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_existing_user_files_are_not_overwritten",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_generated_receipts_and_nested_archives_cannot_be_extra_sources",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_geometry_preservation_report_cannot_bypass_real_synthetic_flags",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_material_inventory_cannot_omit_detail_mesh_or_use_nonfinite_colors",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_material_repair_report_cannot_hide_changes_to_frozen_images_or_native_scenes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_missing_outputs_fail_without_creating_any_delivery",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_old_browser_pass_cannot_describe_a_new_viewer",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_pbr_scalar_defaults_cannot_disguise_wrong_roughness_or_metallic",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_portable_owner_role_metadata_cannot_change_editable_building_assignment",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_portable_primitive_source_provenance_and_tint_scale_are_independently_checked",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_postpack_failure_does_not_publish_or_change_source_files",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_real_independent_zip_reopen_checks_complete_manifest_and_payload_hashes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_source_symlinks_and_unsafe_extra_names_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_successful_orchestration_lists_all_members_and_preserves_source_bytes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_verify_only_rejects_passed_receipt_which_omits_required_sources",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_weak_model_inventory_and_camera_claims_fail_closed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_package_v3.PackageV3Tests.test_zip_extracted_glb_materials_are_checked_after_crc_and_correct_hashes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_actual_png_and_persisted_blender_scene",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_bad_render_requests_rejected_before_blender",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_base_elevation_is_part_of_geometry_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_invalid_camera_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_named_and_saved_cameras_use_local_z_up",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_polygon_openings_preserved_in_exact_cap_triangulation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_rendering.RenderingTests.test_targeted_material_change_preserves_geometry",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewAPITests.test_malformed_geojson_returns_400_without_creating_projects",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewAPITests.test_restored_asset_references_keep_original_bytes_and_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewAPITests.test_sky_completeness_requires_explicit_boolean_at_http_boundary",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_balcony_input_ids_and_coordinates_match_analysis_contract",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_explicit_imported_overhead_geometry_is_not_silently_lost",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_export_and_camera_use_one_xyz_z_up_convention",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_holed_overhead_source_survives_import_and_version_restore",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_omitted_balcony_thickness_matches_rendering_default",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review.ReviewTests.test_restore_recovers_assets_source_approval_and_stable_ids",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_cache_separates_expected_dimensions_and_returns_isolated_evidence",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_cached_html_cannot_reuse_old_evidence_for_changed_link_target",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_changed_corrupt_bytes_do_not_reuse_prior_open_evidence",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_download_serves_verified_snapshot_when_file_changes_after_gate",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_expected_original_hash_cannot_be_replaced_with_changed_valid_bytes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_html_link_cannot_pass_merely_because_corrupt_target_exists",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_nested_archive_gallery_resolves_within_whole_extraction_root",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_review_delivery.DeliveryReviewTests.test_uniform_source_image_cannot_reuse_cache_as_valid_render_output",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_attached_balconies_and_slabs_share_horizontal_alignment",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_insufficient_collinear_and_poor_distribution_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_invalid_tolerance_scale_bounds_and_crs_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_measured_residuals_are_reported_inside_tolerance",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_outlier_wrong_pair_and_mirror_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_rotation_scale_multiple_footprints_and_source_unchanged",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.AlignmentTests.test_second_site_crs_negative_rotation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_bad_ring_nonfinite_and_3d_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_feature_projected_source_and_provenance_do_not_certify",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_missing_provenance_invalid_date_and_unsupported_geojson",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_real_coordinate_sites_in_two_projected_crs",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_spatial.BoundaryImportTests.test_wrong_crs_axis_order_and_unknown_source_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_atomic_serialization_persists_snapshots",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_balcony_edit_preserves_neighbors",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_camera_survives_version_restore",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_edit_only_one_object",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_invalid_balcony_outside",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_state.StateTests.test_invalid_camera",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sukkah_policy.SukkahPolicyTests.test_complete_geometric_candidate_never_receives_halachic_approval",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sukkah_policy.SukkahPolicyTests.test_explicit_clear_subset_can_pass_without_moving_existing_balcony",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sukkah_policy.SukkahPolicyTests.test_incomplete_overhead_and_schach_are_unknown",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sukkah_policy.SukkahPolicyTests.test_nan_negative_height_and_nonrectangular_candidate_fail_closed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sukkah_policy.SukkahPolicyTests.test_project_policy_and_wall_source_required",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sukkah_policy.SukkahPolicyTests.test_stacked_balcony_fails_clear_projection",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_audit.BlenderSceneAudit.test_facade_edit_isolates_shared_meshes_and_other_roles",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_audit.BlenderSceneAudit.test_modifiers_visibility_and_global_environment_are_audited",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_audit.BlenderSceneAudit.test_saved_render_preflight_preserves_original_objects_and_floor_rows",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_audit.BlenderSceneAudit.test_saved_worker_version_is_reopened_and_source_pinned",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_audit.BlenderSceneAudit.test_shader_parameters_and_uv_material_assignments_are_audited",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.EditInvariantTests.test_adding_or_removing_objects_is_not_material_edit",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.EditInvariantTests.test_facade_edit_cannot_hide_an_immutable_change",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.EditInvariantTests.test_facade_material_change_is_accepted_and_neighbors_identical",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.EditInvariantTests.test_legacy_material_record_remains_supported",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.EditInvariantTests.test_material_change_on_target_roof_is_not_facade_edit",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.EditInvariantTests.test_neighbor_and_world_changes_rejected_with_valid_facade_edit",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.EditInvariantTests.test_target_ownership_role_visibility_and_modifier_changes_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_arbitrary_source_and_date_strings_are_not_provenance",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_changed_current_source_hash_does_not_reuse_old_review",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_complete_recorded_review_is_not_certification_or_runtime_capability",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_each_runtime_capability_is_required",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_every_approval_and_evidence_record_is_required",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_geographic_or_mismatched_crs_cannot_pass_metre_geometry_gate",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_geometry_bytes_are_reopened_and_hashed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_geometry_manifest_from_another_project_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_malformed_capability_items_fail_closed_without_type_error",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_malformed_evidence_containers_fail_closed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_matching_geographic_or_foot_crs_still_rejects_metre_claim",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_matching_malformed_crs_is_reported_instead_of_escaping",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_missing_and_unsafe_source_paths_fail_closed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_new_geometry_version_does_not_reuse_old_review",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_nonfinite_geometry_json_rejected_even_with_matching_hashes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_project_json_cannot_claim_renderer_capabilities",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_rehashed_manifest_still_requires_positive_height_and_integer_floors",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_review_is_bound_to_project_geometry_and_named_reviewer",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_review_timestamp_must_be_real_iso_date_with_timezone",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_source_bytes_are_reopened_and_hashed",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_symlinks_cannot_escape_source_or_geometry_base_directory",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.RealSiteEvidenceTests.test_trusted_capability_opt_in_still_does_not_claim_certification",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_edge_touching_and_lower_slabs_do_not_cover_sky",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_integer_coordinates_too_large_for_renderer_raise_value_error",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_invalid_policy_dimensions_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_known_overhang_fails_even_with_incomplete_inventory",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_malformed_obstruction_is_not_silently_ignored",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_negative_or_zero_clear_height_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_nonfinite_geometry_cannot_become_candidate",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_reversed_empty_or_wrong_dimension_rectangle_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_spec_completeness_is_literal_boolean",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SukkahScreeningTests.test_unobstructed_candidate_requires_known_complete_inventory",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_constraints.SyntheticDesignationTests.test_only_literal_true_permits_unverified_synthetic_render",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_actual_format_fixtures_have_hashes_and_no_assumed_georeferencing",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_actual_glb_blender_import_export_roundtrip_geometry_and_camera",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_actual_pdf_poppler_fallback_is_verified_independently",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_dwg_and_unknown_formats_are_not_advertised",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_dxf_actual_entities_units_and_coordinates",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_dxf_curved_polyline_is_explicitly_not_treated_as_straight",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_dxf_malformed_and_binary_not_advertised",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_dxf_units_missing_are_not_assumed_to_be_metres",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_existing_script_import_signature_can_inspect_geojson_from_engine_directory",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_geojson_explicit_metric_crs_and_missing_crs_are_distinct",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_geojson_nonmetric_crs_and_invalid_topology_or_nonfinite_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_actual_bad_indices_nonfinite_components_camera_and_hierarchy",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_actual_buffers_geometry_camera_and_parented_pose",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_external_buffers_are_never_fetched_or_called_geometry_complete",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_inline_buffer_and_interleaved_accessors_preserve_geometry",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_invalid_header_chunks_and_buffer_bounds",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_matrix_accessor_column_padding_is_validated",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_response_coordinate_cap_does_not_change_actual_counts_and_hashes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_semantic_morph_material_and_empty_light_references_are_strict",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_sparse_accessor_values_and_duplicate_sparse_indices",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_glb_unsupported_required_compression_is_inventory_only",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_image_malformed_truncated_wrong_extension_and_pixel_limit",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_large_real_glb_buffer_with_small_mesh_is_bounded_and_inspected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_obj_actual_planar_quad_and_concave_face_triangulation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_obj_negative_texture_normal_indices_and_external_materials_not_loaded",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_obj_strict_indices_nan_unexecuted_directives_and_nonplanar_face",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_pdf_actual_pages_text_and_raster_are_extracted_without_scale",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_pdf_bad_content_and_real_page_limit",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_png_and_jpeg_pixels_are_decoded_and_preview_is_a_real_image",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_v3_intake.IntakeTests.test_size_regular_file_and_symlink_guards_have_safe_errors",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_viewer_embedding.OfflineIntegrityTests.test_portable_sha256_matches_authoritative_vectors_and_boundary_lengths",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_viewer_embedding.OfflineIntegrityTests.test_shared_bin_reassembles_distinct_json_headers_byte_for_byte",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow.WorkflowTests.test_dossier_never_inherits_demo_geometry_or_synthetic_flag",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow.WorkflowTests.test_path_traversal_and_invalid_source_leave_no_accepted_records",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow.WorkflowTests.test_real_site_final_remains_blocked_by_actual_renderer_limit",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow.WorkflowTests.test_review_binding_ignores_color_but_detects_floor_and_location_changes",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow.WorkflowTests.test_saved_geometry_corruption_cannot_reuse_a_review",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow.WorkflowTests.test_synthetic_final_requires_valid_geometry_and_explicit_user_confirmation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow.WorkflowTests.test_uploaded_image_reopened_and_never_automatically_georeferenced",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow_api.WorkflowAPITests.test_capabilities_explicitly_report_dwg_and_real_final_limits",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow_api.WorkflowAPITests.test_forged_review_and_bad_uploaded_source_are_rejected",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow_api.WorkflowAPITests.test_real_dossier_accepts_source_but_never_synthetic_geometry",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_workflow_api.WorkflowAPITests.test_real_draft_and_final_cannot_use_flat_synthetic_ground",
+      "outcome": "passed"
+    }
+  ]
+}

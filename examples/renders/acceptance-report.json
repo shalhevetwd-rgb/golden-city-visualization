@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "synthetic": true,
+  "source": "examples/synthetic-project.geojson",
+  "existing_A_footprint_reused_verbatim": true,
+  "renders": [
+    "aerial.png",
+    "street.png",
+    "edited-aerial.png"
+  ],
+  "proof_image": "comparison.png",
+  "comparison_verification": {
+    "status": "passed",
+    "path": "/workspace/golden-city-visualization/examples/renders/comparison.png",
+    "name": "comparison.png",
+    "bytes": 1498448,
+    "sha256": "83bb50177bc613b8a4c27b5e43aee6ed516080e4050043aab3c6477ff15b24df",
+    "format": "png",
+    "artifact_role": "render comparison",
+    "checks": [
+      "regular_file_exists",
+      "nonempty_reasonable_size",
+      "independent_reopen",
+      "container_verify",
+      "full_pixel_decode",
+      "second_independent_pixel_decoder",
+      "dimensions",
+      "nonblank",
+      "immutable_source_hash"
+    ],
+    "details": {
+      "reader": "Pillow independent verify + full pixel decode",
+      "encoding": "PNG",
+      "width": 1920,
+      "height": 1520,
+      "mode": "RGB",
+      "extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          253
+        ],
+        [
+          0,
+          253
+        ]
+      ],
+      "standard_deviation": [
+        78.76601736115867,
+        83.61584918610896,
+        84.76646444655726
+      ],
+      "nonuniform_fraction": 0.7898899322660098,
+      "nonblank": true,
+      "decoded": true,
+      "second_decoder": {
+        "reader": "FFmpeg independent full pixel decoder",
+        "decoded_bytes": 8755200,
+        "pixel_sha256": "f273ceb3109ec55f32d78a659f1acea83a1b3876da6895643b32866a89c11abc",
+        "decoded": true
+      }
+    },
+    "user_accessibility": "not_verified"
+  },
+  "model_exports": [
+    "aerial.obj",
+    "aerial.mtl",
+    "aerial.glb",
+    "street.obj",
+    "street.mtl",
+    "street.glb",
+    "edited-aerial.obj",
+    "edited-aerial.mtl",
+    "edited-aerial.glb"
+  ],
+  "render_delivery_status": {
+    "aerial": {
+      "aerial.png": "passed",
+      "aerial.scene.json": "passed",
+      "aerial.objects.json": "passed",
+      "aerial-objects.png": "passed",
+      "aerial.blend": "passed",
+      "aerial.obj": "passed",
+      "aerial.glb": "passed",
+      "aerial.mtl": "passed"
+    },
+    "street": {
+      "street.png": "passed",
+      "street.scene.json": "passed",
+      "street.objects.json": "passed",
+      "street-objects.png": "passed",
+      "street.blend": "passed",
+      "street.obj": "passed",
+      "street.glb": "passed",
+      "street.mtl": "passed"
+    },
+    "edited": {
+      "edited-aerial.png": "passed",
+      "edited-aerial.scene.json": "passed",
+      "edited-aerial.objects.json": "passed",
+      "edited-aerial-objects.png": "passed",
+      "edited-aerial.blend": "passed",
+      "edited-aerial.obj": "passed",
+      "edited-aerial.glb": "passed",
+      "edited-aerial.mtl": "passed"
+    }
+  },
+  "object_checks": {
+    "A": {
+      "fingerprints_unchanged": false,
+      "geometry_hash_unchanged": false,
+      "material_hash_unchanged": false,
+      "visible_pixels_before": 40573,
+      "visible_pixels_after": 40633,
+      "visible_mask_changed_pixels": 60,
+      "visible_mask_identical": false
+    },
+    "B": {
+      "fingerprints_unchanged": true,
+      "geometry_hash_unchanged": true,
+      "material_hash_unchanged": true,
+      "visible_pixels_before": 25707,
+      "visible_pixels_after": 25707,
+      "visible_mask_changed_pixels": 0,
+      "visible_mask_identical": true
+    },
+    "C": {
+      "fingerprints_unchanged": true,
+      "geometry_hash_unchanged": true,
+      "material_hash_unchanged": true,
+      "visible_pixels_before": 27918,
+      "visible_pixels_after": 27918,
+      "visible_mask_changed_pixels": 0,
+      "visible_mask_identical": true
+    }
+  },
+  "changed_render_pixels": 173528,
+  "camera_equal": true,
+  "limitations": [
+    "Unchanged B/C proof covers exact stored geometry/material hashes and identical visible object masks.",
+    "Full beauty-render pixels may differ on neighboring surfaces because an edit changes shadows and light transport.",
+    "Flat synthetic terrain, no cadastral, engineering or sukkah suitability certification."
+  ],
+  "engine": "Blender Cycles CPU",
+  "samples": 48,
+  "durations_seconds": {
+    "aerial": 40.997,
+    "street": 42.526,
+    "edited": 45.065
+  }
+}

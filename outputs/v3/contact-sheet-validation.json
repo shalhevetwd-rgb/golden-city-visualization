@@ -1,0 +1,66 @@
+{
+  "receipt": {
+    "status": "passed",
+    "path": "/workspace/golden-city-visualization/outputs/v3/contact-sheet.png",
+    "name": "contact-sheet.png",
+    "bytes": 2064787,
+    "sha256": "53ad5ca2de24abdbfa351ae8ffa084439e2644d21edfe09d00c005c7164b13e4",
+    "format": "png",
+    "artifact_role": "synthetic architectural contact sheet",
+    "checks": [
+      "regular_file_exists",
+      "nonempty_reasonable_size",
+      "independent_reopen",
+      "container_verify",
+      "full_pixel_decode",
+      "second_independent_pixel_decoder",
+      "dimensions",
+      "nonblank",
+      "immutable_source_hash"
+    ],
+    "details": {
+      "reader": "Pillow independent verify + full pixel decode",
+      "encoding": "PNG",
+      "width": 1660,
+      "height": 1184,
+      "mode": "RGB",
+      "extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          1,
+          252
+        ],
+        [
+          2,
+          243
+        ]
+      ],
+      "standard_deviation": [
+        62.015261529425,
+        59.55925584281024,
+        61.194357220250964
+      ],
+      "nonuniform_fraction": 0.9212773224043715,
+      "nonblank": true,
+      "decoded": true,
+      "second_decoder": {
+        "reader": "FFmpeg independent full pixel decoder",
+        "decoded_bytes": 5896320,
+        "pixel_sha256": "687bd633b1c577bf61965e6a5f71ed5654dcee12d0b8183bba858548b857446e",
+        "decoded": true
+      }
+    },
+    "user_accessibility": "not_verified"
+  },
+  "source_png_sha256": {
+    "aerial.png": "beb9efa31bf85ffbfe97946dc24d2d2789b78f72819fd61ddf61d00383cd2002",
+    "street.png": "4ae560324de0b734b9c26bb9df046c47078e034e2d71100d21e0500f9f63f219",
+    "architectural.png": "df5fe7966aa37d301b31fd15c096073a04683fdb204089560e035589bda6c070",
+    "edited-aerial.png": "fa13d18083225dceb27b3825ba0ab4df79eadc0f9a08e31c760aee9708433156"
+  },
+  "composition_only": true,
+  "source_images_modified": false
+}

@@ -1,12 +1,21 @@
-import bpy,math,json,sys
+"""Idempotent daylight/render calibration; never changes source mesh data."""
+import json
+import math
+import sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];out=ROOT/'outputs/v2';bpy.ops.wm.open_mainfile(filepath=str(out/'model.blend'));scene=bpy.context.scene;scene.view_settings.exposure=-1.25;scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.12;bpy.data.objects['lighting:sun'].data.energy=2.4
-for name in ['Warm limestone, procedural','Light limestone']:
- m=bpy.data.materials.get(name)
- if not m:continue
- n=m.node_tree.nodes;l=m.node_tree.links;bsdf=n.get('Principled BSDF');geo=n.new('ShaderNodeNewGeometry');sep=n.new('ShaderNodeSeparateXYZ');l.new(geo.outputs['Position'],sep.inputs[0]);norm=n.new('ShaderNodeSeparateXYZ');l.new(geo.outputs['Normal'],norm.inputs[0]);absn=n.new('ShaderNodeMath');absn.operation='ABSOLUTE';l.new(norm.outputs['X'],absn.inputs[0]);mix=n.new('ShaderNodeMix');mix.data_type='FLOAT';l.new(absn.outputs[0],mix.inputs[0]);l.new(sep.outputs['X'],mix.inputs[2]);l.new(sep.outputs['Y'],mix.inputs[3]);vec=n.new('ShaderNodeCombineXYZ');l.new(mix.outputs[0],vec.inputs[0]);l.new(sep.outputs['Z'],vec.inputs[1]);brick=n.new('ShaderNodeTexBrick');l.new(vec.outputs[0],brick.inputs['Vector']);brick.inputs['Scale'].default_value=1;brick.inputs['Mortar Size'].default_value=.007;brick.inputs['Brick Width'].default_value=.95;brick.inputs['Row Height'].default_value=.42;brick.inputs['Color1'].default_value=(.58,.51,.39,1);brick.inputs['Color2'].default_value=(.74,.67,.54,1);brick.inputs['Mortar'].default_value=(.30,.27,.22,1);l.new(brick.outputs['Color'],bsdf.inputs['Base Color']);bump=n.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.24;bump.inputs['Distance'].default_value=.005;l.new(brick.outputs['Fac'],bump.inputs['Height']);l.new(bump.outputs['Normal'],bsdf.inputs['Normal'])
-# Existing tree geometry: smooth shading only, no changed positions or topology.
-for o in bpy.data.objects:
- if o.type=='MESH' and o.name.startswith('landscape:tree:'):
-  for p in o.data.polygons:p.use_smooth=True
-bpy.ops.wm.save_as_mainfile(filepath=str(out/'model.blend'));print('Lighting calibrated; source meshes untouched')
+import bpy
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'engine'))
+from render_context import load_context,configure_render
+cfg,out=load_context();bpy.ops.wm.open_mainfile(filepath=str(out/'model.blend'))
+scene=bpy.context.scene;capabilities=configure_render(scene,cfg)
+scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=cfg['lighting']['sky_strength']
+for node in scene.world.node_tree.nodes:
+    if node.type=='TEX_SKY':node.sun_disc=False
+lights=[obj for obj in scene.objects if obj.type=='LIGHT']
+assert len(lights)==1 and lights[0].data.type=='SUN','The synthetic daylight design requires one consistent sun'
+lights[0].data.energy=cfg['lighting']['sun_energy'];lights[0].data.angle=math.radians(cfg['lighting']['sun_angle_degrees'])
+report=json.loads((out/'geometry-report.json').read_text());report['render']=capabilities
+report['lighting']={'single_sun':True,'sky_sun_disk':False,'sun_energy':lights[0].data.energy,'sun_angle_degrees':math.degrees(lights[0].data.angle),'sky_strength':cfg['lighting']['sky_strength'],'exposure':scene.view_settings.exposure}
+(out/'geometry-report.json').write_text(json.dumps(report,indent=2))
+bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(out/'model.blend'))
+print('SINGLE-SUN DAYLIGHT CALIBRATED; SOURCE GEOMETRY UNTOUCHED')

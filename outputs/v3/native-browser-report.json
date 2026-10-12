@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8014",
+  "software_webgl": true,
+  "checks": [
+    "verified catalogue adopts actual native GLB and PNG; all target facade colors and tint scales match; unselected objects stay identical; orbit during paused real GLB loading is retained and overlapping native actions are disabled",
+    "real render button sends source SHA target color and camera to backend; reduced 400x250 8-sample integration job produces fresh PNG/GLB; all C facades change while A B windows roofs geometry and original bytes remain unchanged",
+    "reloaded service catalogue lazily reopens the saved native version; embedded originals remain exact"
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "requests": [
+    {
+      "ui_request": {
+        "building_id": "C",
+        "operation": "facade_color",
+        "color": [
+          0.13013647668074665,
+          0.20507873637973145,
+          0.24228112245478564
+        ],
+        "source_sha256": "45fa5bd7fdf5df113b3cab9d6b2b49af92f1c9cd88e9f664753454b1a79c3648",
+        "camera": "street",
+        "width": 960,
+        "height": 600,
+        "samples": 48
+      },
+      "test_render_settings": {
+        "width": 400,
+        "height": 250,
+        "samples": 8
+      }
+    }
+  ],
+  "html_sha256": "d67c247b8e46d5d835fed9ac73cdc85d5217032048e3aeb6ba2432005a6620e3",
+  "restored_version_id": "807dd890202f43f892c528bb9090e489",
+  "created_version_id": "d3d20307781a4fb69fd359ce567e2fcd",
+  "source_bytes_unchanged": true
+}

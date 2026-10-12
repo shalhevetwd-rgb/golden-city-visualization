@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:8000",
+  "software_webgl": true,
+  "checks": [
+    "real WebGL canvas initializes",
+    "existing synthetic model imported with three stable object ids",
+    "orbit controls change the actual 3D camera",
+    "street camera stays at 1.7 metres while looking upward",
+    "camera save and restore round trip preserves XYZ target and FOV",
+    "georeferenced photo and separate OBJ context layer load without replacing building objects",
+    "one-building facade edit leaves B and C byte-equivalent in canonical JSON",
+    "balcony footprint and top elevation persist only on the selected building",
+    "known-geometry sky analysis, top view, and true east-west section display without certification",
+    "version restore appends a revision and restores buildings cameras and environment references",
+    "reloading page restores persisted project and saved camera",
+    "render button creates a real nonblank server PNG and displays its gallery entry",
+    "no browser JavaScript or console errors"
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "project_id": "d4a3b9be8e044e46bd26e505ad49868f",
+  "render_url": "/renders/d4a3b9be8e044e46bd26e505ad49868f-8-fbc6ea72.png",
+  "render_limit": "Server Blender renders omit imported photo and OBJ context assets; those layers are currently viewer foundations.",
+  "status": "passed"
+}

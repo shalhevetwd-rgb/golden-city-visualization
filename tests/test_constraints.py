@@ -10,7 +10,7 @@ class Gates(unittest.TestCase):
   p={k:True for k in ['parcel_geometry_verified','alignment_approved','building_positions_verified','floors_verified','heights_verified']};self.assertFalse(site_gate(p)['final_render_allowed'])
  def test_sukkah_no_policy_does_not_assume_rules(self):self.assertEqual(sukkah_geometry({},[],None)['status'],'missing_project_policy')
  def test_sukkah_geometry_never_halakhic_approval(self):
-  r=sukkah_geometry({'rectangle':[0,0,3,3],'floor_z':0,'clear_height_m':3},[],{'min_width_m':2,'min_length_m':2,'min_height_m':2});self.assertEqual(r['status'],'geometric_candidate');self.assertFalse(r['halakhic_approval'])
+  r=sukkah_geometry({'rectangle':[0,0,3,3],'floor_z':0,'clear_height_m':3},[],{'min_width_m':2,'min_length_m':2,'min_height_m':2},obstructions_complete=True);self.assertEqual(r['status'],'geometric_candidate');self.assertFalse(r['halakhic_approval'])
  def test_overhang_detected(self):
   r=sukkah_geometry({'rectangle':[0,0,3,3],'floor_z':0,'clear_height_m':3},[{'rectangle':[1,1,4,4],'z':5}],{'min_width_m':2,'min_length_m':2,'min_height_m':2});self.assertTrue(r['sky_obstructed'])
  def test_nearby_nonoverlapping_slab_not_obstruction(self):
