@@ -1,0 +1,93 @@
+{
+  "commit": "8d7646b2aabbb2ae2aff675a15699ab071e567dd",
+  "verification_method": "fresh GitHub clone; all 17 delivery hashes compared; PNG images decoded",
+  "files": [
+    {
+      "file": "outputs/v2/aerial.png",
+      "sha256_matches": true,
+      "bytes": 2051805
+    },
+    {
+      "file": "outputs/v2/architectural.png",
+      "sha256_matches": true,
+      "bytes": 2251520
+    },
+    {
+      "file": "outputs/v2/before-after.png",
+      "sha256_matches": true,
+      "bytes": 2755982
+    },
+    {
+      "file": "outputs/v2/contact-sheet.png",
+      "sha256_matches": true,
+      "bytes": 1165804
+    },
+    {
+      "file": "outputs/v2/edit-report.json",
+      "sha256_matches": true,
+      "bytes": 204
+    },
+    {
+      "file": "outputs/v2/edited-aerial.png",
+      "sha256_matches": true,
+      "bytes": 2035530
+    },
+    {
+      "file": "outputs/v2/edited-model.blend",
+      "sha256_matches": true,
+      "bytes": 8891336
+    },
+    {
+      "file": "outputs/v2/edited-model.glb",
+      "sha256_matches": true,
+      "bytes": 7740156
+    },
+    {
+      "file": "outputs/v2/geometry-report.json",
+      "sha256_matches": true,
+      "bytes": 1385
+    },
+    {
+      "file": "outputs/v2/model.blend",
+      "sha256_matches": true,
+      "bytes": 8891336
+    },
+    {
+      "file": "outputs/v2/model.glb",
+      "sha256_matches": true,
+      "bytes": 7740156
+    },
+    {
+      "file": "outputs/v2/output-checks.json",
+      "sha256_matches": true,
+      "bytes": 1790
+    },
+    {
+      "file": "outputs/v2/roundtrip-geometry.json",
+      "sha256_matches": true,
+      "bytes": 460
+    },
+    {
+      "file": "outputs/v2/scene-snapshots.json",
+      "sha256_matches": true,
+      "bytes": 866379
+    },
+    {
+      "file": "outputs/v2/street.png",
+      "sha256_matches": true,
+      "bytes": 2278024
+    },
+    {
+      "file": "outputs/v2/viewer-module.mjs",
+      "sha256_matches": true,
+      "bytes": 10307
+    },
+    {
+      "file": "outputs/v2/viewer.html",
+      "sha256_matches": true,
+      "bytes": 35077196
+    }
+  ],
+  "github_contents_api_error": "transform: short source buffer",
+  "browser_download_success_not_confirmed": true
+}
