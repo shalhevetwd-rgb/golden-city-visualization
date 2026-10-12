@@ -1,0 +1,39 @@
+{
+  "synthetic": true,
+  "render_regenerated": false,
+  "geometry_changed": false,
+  "branch": "delivery-test",
+  "content_scope": "synthetic visualization assets only",
+  "files": [
+    {
+      "name": "aerial.png",
+      "bytes": 1153202,
+      "sha256": "b4b25b9c9e8e9fe4bdf6a594e86f4949402d8351591103725cee57d805ece129"
+    },
+    {
+      "name": "street.png",
+      "bytes": 1357347,
+      "sha256": "ed15aa7ab92f810f3802c9e869e503fd3b0d57da48cb9f5aa4444842a5048caf"
+    },
+    {
+      "name": "edited-aerial.png",
+      "bytes": 1168008,
+      "sha256": "a4b52d30ef74cf7490c3b716794f7d25e6798d9d83fff12b3f0c437b9566f62d"
+    },
+    {
+      "name": "contact-sheet.png",
+      "bytes": 1242549,
+      "sha256": "b9a61b4968e7cdeb07337640a14384efbcb448918ec13b2554418713b5fa3ed4"
+    },
+    {
+      "name": "golden-city-gallery.html",
+      "bytes": 17187087,
+      "sha256": "8c9fbba13e118540d81cf87484cc3ae9f0b02864db2bbf89354bcc86d0de7ede"
+    },
+    {
+      "name": "golden-city-viewer.html",
+      "bytes": 8423962,
+      "sha256": "61c3be94161d32e0ddfbee1acd31987d407754102d2ff19d225c8311cdc800c7"
+    }
+  ]
+}
