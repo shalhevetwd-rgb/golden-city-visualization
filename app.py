@@ -161,6 +161,25 @@ class Handler(BaseHTTPRequestHandler):
         if path == '/': return self.respond((ROOT/'index.html').read_text(),mime='text/html')
         if path == '/health': return self.respond({'status':'ok'})
         if path == '/api/capabilities': return self.respond(capabilities())
+        if path in {'/site-clearing','/site-clearing/'}:
+            artifact=ROOT/'outputs/site-v4/viewer.html';payload=artifact.read_bytes()
+            verify_for_delivery(artifact,expected={'sha256':hashlib.sha256(payload).hexdigest()})
+            return self.respond(payload,mime='text/html',verified=True)
+        if path == '/api/reconstruction/versions':
+            from site_reconstruction import digest
+            entries=[]
+            for p in sorted((DATA/'site-reconstruction').glob('*.json')):
+                record=json.loads(p.read_text())
+                if digest(record['scene'])!=record['sha256']:raise ValueError('גרסת קרקע פגומה')
+                entries.append({'version_id':record['version_id'],'sha256':record['sha256'],'stage':record['scene']['stage'],'name':record['scene'].get('name')})
+            return self.respond({'versions':entries})
+        if path.startswith('/api/reconstruction/version/'):
+            from site_reconstruction import digest,propose
+            identifier=path.rsplit('/',1)[-1]
+            if not re.fullmatch('[0-9a-f]{32}',identifier):raise ValueError('מזהה גרסת קרקע לא תקין')
+            record=json.loads((DATA/'site-reconstruction'/(identifier+'.json')).read_text())
+            if digest(record['scene'])!=record['sha256']:raise ValueError('גרסת קרקע פגומה')
+            return self.respond({**record,'proposal':propose(record['scene']) if record['scene']['stage']=='existing' else None})
         if path == '/api/architectural-versions':
             from architectural_edit import catalogue
             return self.respond({'versions':catalogue(DATA),'recipient_access':'not_verified'})
@@ -208,6 +227,9 @@ class Handler(BaseHTTPRequestHandler):
             if not 0 < length <= request_limit: raise ValueError('גודל בקשה לא תקין')
             request=json.loads(self.rfile.read(length))
             with LOCK:
+                if self.path.startswith('/api/reconstruction/'):
+                    from site_reconstruction import api_action
+                    return self.respond(api_action(self.path.rsplit('/',1)[-1],request,DATA/'site-reconstruction'))
                 if self.path == '/api/architectural-edit':
                     from architectural_edit import edit
                     return self.respond(edit(request,ROOT,DATA))

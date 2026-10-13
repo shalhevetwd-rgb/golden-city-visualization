@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "fresh_imports": {
+    "existing.blend": {
+      "passed": true,
+      "mesh_count": 8,
+      "camera_count": 3,
+      "max_world_coordinate_error_m": 9.344691562773733e-07,
+      "triangle_count": 536
+    },
+    "existing.glb": {
+      "passed": true,
+      "mesh_count": 8,
+      "camera_count": 3,
+      "max_world_coordinate_error_m": 9.344691562773733e-07,
+      "triangle_count": 536
+    },
+    "cleared.blend": {
+      "passed": true,
+      "mesh_count": 7,
+      "camera_count": 3,
+      "max_world_coordinate_error_m": 9.344691562773733e-07,
+      "triangle_count": 524
+    },
+    "cleared.glb": {
+      "passed": true,
+      "mesh_count": 7,
+      "camera_count": 3,
+      "max_world_coordinate_error_m": 9.344691562773733e-07,
+      "triangle_count": 524
+    },
+    "planted.blend": {
+      "passed": true,
+      "mesh_count": 8,
+      "camera_count": 3,
+      "max_world_coordinate_error_m": 9.344691562773733e-07,
+      "triangle_count": 536
+    },
+    "planted.glb": {
+      "passed": true,
+      "mesh_count": 8,
+      "camera_count": 3,
+      "max_world_coordinate_error_m": 9.344691562773733e-07,
+      "triangle_count": 536
+    }
+  },
+  "protected_geometry_exact_between_GLBS": true,
+  "terrain_exact_between_GLBS": true,
+  "protected_materials_exact_between_GLBS": true,
+  "camera_poses_FOV_exact_between_GLBS": true,
+  "georeference_metadata_verified": true,
+  "source_coordinate_tolerance_m": 0.0001,
+  "real_site_accuracy_certified": false,
+  "synthetic": true,
+  "source_sha256": {
+    "existing.json": "f9579655da801739f006bdec4ece1ec81a422e622ff70993f7987ca2bb5ce616",
+    "existing.blend": "c5db95495b2a94a097c33087ddba0c939a78eb118dc5b8b33bd3aa2c602b8be3",
+    "existing.glb": "2384625fa653b1e804c2634afad6cb6481c60312e62f05af683bdb9435f9aac5",
+    "cleared.json": "befd3f4474897fe6619d53114bc5452e350bf92a8b8a54cc4fc1e1fd6dedda2d",
+    "cleared.blend": "11be0a5adf5b896b0ac05e8f70982c488bdf1534495b74677e0c3fe73b3225d1",
+    "cleared.glb": "452c6a0d380325892ba33847ea1251c2b711a3dbd1988c92262101fce1837f85",
+    "planted.json": "c3a9439f2b1b909bd6e8f1497f25d064094c03e98a987511d9c538f568fb1d7a",
+    "planted.blend": "7f4aaa4b0fe9cbca9ed0fa5a2180b451e3b3cfdd5734cd73903cda66b27d28f1",
+    "planted.glb": "65c3d880072a98f4159b99d60b6bed5126ef495773d5620a807982d0931cf3a7"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "viewer_sha256": "ccceb8c647116000c8ce8c950e3994ac5498ba9cf9c85a64ab341a665bde9ad0",
+  "checks": [
+    "Three actual embedded GLBs load and reflect exact removed/new/preserved IDs",
+    "Orbit and metric top camera respond",
+    "Offline no network/errors and downloaded GLB exact",
+    "Actual service requires explicit boundary/selected building approval; saves cleared, pending and approved stages",
+    "Actual program endpoint defaults100paldalet; missing lobby/core/etc prevents gross calculation",
+    "Persisted catalogue survives reload; no JS errors"
+  ],
+  "offline_http_requests": [],
+  "page_errors": [],
+  "recipient_access": "not_verified"
+}

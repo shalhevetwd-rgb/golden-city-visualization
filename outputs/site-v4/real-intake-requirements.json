@@ -1,0 +1,22 @@
+{
+  "synthetic": false,
+  "crs": null,
+  "origin": null,
+  "boundary": null,
+  "terrain": null,
+  "objects": null,
+  "identity": {
+    "address": null,
+    "block": null,
+    "parcels": []
+  },
+  "required_sources": [
+    "Authoritative parcel/address linkage",
+    "Authenticated boundary/source review",
+    "Measured bare-earth DTM with vertical datum",
+    "Licensed aerial/context source",
+    "Classified actual 3D object meshes"
+  ],
+  "ground_source_must_be": "bare-earth DTM, not rooftop DSM",
+  "review_authority_authentication_implemented": false
+}

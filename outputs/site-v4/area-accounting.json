@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "units": 6,
+  "default_apartment_paldalet_m2": 100.0,
+  "apartments_paldalet_total_m2": 600.0,
+  "separate_areas_m2": {
+    "core": 30.0,
+    "elevators": 18.0,
+    "stairs": 54.0,
+    "corridors": 66.0,
+    "shafts": 18.0,
+    "shared": 24.0,
+    "lobby": 280.0
+  },
+  "accounted_area_total_m2": 1090.0,
+  "schematic_constant_floorplate_total_m2": 1120.0,
+  "unallocated_area_m2": 30.0,
+  "geometric_apartment_area_measured": false,
+  "statutory_gross_area_certified": false,
+  "missing": "Detailed room, wall and legal area schedule. Unallocated area is not assigned by assumption."
+}

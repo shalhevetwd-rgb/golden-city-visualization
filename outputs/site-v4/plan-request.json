@@ -1,0 +1,142 @@
+{
+  "buildings": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              20,
+              14
+            ],
+            [
+              0,
+              14
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "new-N",
+        "height": 12,
+        "floors": 4,
+        "base_elevation": 106.99012305980102,
+        "entrance_xy": [
+          220030,
+          631024
+        ],
+        "planning_status": "synthetic_concept",
+        "program": {
+          "units": 6,
+          "apartment_paldalet_m2": 100,
+          "categories_are_disjoint": true,
+          "separate_areas_m2": {
+            "core": 30,
+            "elevators": 18,
+            "stairs": 54,
+            "corridors": 66,
+            "shafts": 18,
+            "shared": 24,
+            "lobby": 280
+          }
+        }
+      }
+    }
+  ],
+  "control_points": [
+    {
+      "plan_xy": [
+        0,
+        0
+      ],
+      "target_xy": [
+        220010,
+        631010
+      ]
+    },
+    {
+      "plan_xy": [
+        40,
+        0
+      ],
+      "target_xy": [
+        220050,
+        631010
+      ]
+    },
+    {
+      "plan_xy": [
+        0,
+        40
+      ],
+      "target_xy": [
+        220010,
+        631050
+      ]
+    },
+    {
+      "plan_xy": [
+        40,
+        40
+      ],
+      "target_xy": [
+        220050,
+        631050
+      ]
+    }
+  ],
+  "max_residual_m": 0.01,
+  "scale_bounds": [
+    0.9999,
+    1.0001
+  ],
+  "north_reference": "projected_grid_north",
+  "plan_north_xy": [
+    0,
+    1
+  ],
+  "north_tolerance_degrees": 0.1,
+  "vertical_datum": "synthetic_test_Z_metres",
+  "max_entrance_difference_m": 0.2,
+  "buildable_envelope": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          220005,
+          631005
+        ],
+        [
+          220075,
+          631005
+        ],
+        [
+          220075,
+          631075
+        ],
+        [
+          220005,
+          631075
+        ],
+        [
+          220005,
+          631005
+        ]
+      ]
+    ]
+  },
+  "classification": "synthetic_concept_not_approved_architecture"
+}

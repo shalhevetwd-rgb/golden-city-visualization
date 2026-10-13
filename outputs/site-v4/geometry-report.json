@@ -1,0 +1,315 @@
+{
+  "status": "passed",
+  "synthetic": true,
+  "original_scene_unchanged": true,
+  "proposal": {
+    "scene_sha256": "accf71fe54b94ab240f3373e1b5d8860197d0440dc3e6d5dcc02d0a5ef067164",
+    "candidate_ids": [
+      "remove-A",
+      "keep-B"
+    ],
+    "crossing_buildings_not_removable": [
+      "crossing-D"
+    ],
+    "preserved_ids": [
+      "outside-C",
+      "road",
+      "walk",
+      "tree"
+    ],
+    "requires_explicit_selection": true,
+    "real_site_accuracy_certified": false
+  },
+  "clearing": {
+    "passed": true,
+    "preserved_object_count": 6,
+    "outside_or_unselected_changed": [],
+    "terrain_sha256": "403c3c9cc172e3c0d39749fbc0b2b72c30a3ffecf541cda360379e9fcadfa9cf",
+    "terrain_exactly_preserved": true,
+    "elevation_range_m": [
+      96.41109770592371,
+      116.38049413694198
+    ],
+    "removed_ids_absent": true,
+    "terrain_method": "Reveal the already source-supported continuous TIN under removed objects; never flatten/extrapolate",
+    "photo_pixels_modified": false,
+    "synthetic": true,
+    "real_site_accuracy_certified": false
+  },
+  "placement": {
+    "source_sha256": "d9b7819b4b58419545e9ea80897da60a72148a78f4127d405112832d8c88aa45",
+    "alignment": {
+      "method": "2-D similarity from control-point pairs",
+      "scale": 1.0,
+      "rotation_degrees": 0.0,
+      "translation": [
+        220010.0,
+        631010.0
+      ],
+      "residuals_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_residual_m": 0.0,
+      "rms_residual_m": 0.0,
+      "tolerance_m": 0.01,
+      "control_points": [
+        {
+          "plan_xy": [
+            0,
+            0
+          ],
+          "target_xy": [
+            220010,
+            631010
+          ]
+        },
+        {
+          "plan_xy": [
+            40,
+            0
+          ],
+          "target_xy": [
+            220050,
+            631010
+          ]
+        },
+        {
+          "plan_xy": [
+            0,
+            40
+          ],
+          "target_xy": [
+            220010,
+            631050
+          ]
+        },
+        {
+          "plan_xy": [
+            40,
+            40
+          ],
+          "target_xy": [
+            220050,
+            631050
+          ]
+        }
+      ],
+      "survey_accuracy_verified": false,
+      "terrain_alignment": "Entrance and footprint sampled on supplied TIN; no terrain deformation"
+    },
+    "north_reference": "projected_grid_north",
+    "building_line_envelope": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            220005,
+            631005
+          ],
+          [
+            220075,
+            631005
+          ],
+          [
+            220075,
+            631075
+          ],
+          [
+            220005,
+            631075
+          ],
+          [
+            220005,
+            631005
+          ]
+        ]
+      ]
+    },
+    "levels": [
+      {
+        "id": "new-N",
+        "entrance_ground_m": 106.89012305980103,
+        "finished_floor_m": 106.99012305980102,
+        "difference_m": 0.09999999999999432,
+        "footprint_ground_range_m": [
+          102.16321817458491,
+          106.89012305980103
+        ],
+        "earthworks_designed": false
+      }
+    ],
+    "errors": [],
+    "coverage_ratio": 0.04375,
+    "missing": [
+      "Architectural/structural/fire/accessibility review",
+      "Earthworks, retaining walls and finished-ground design"
+    ],
+    "north_deviation_degrees": 0.0,
+    "approved": true,
+    "source_plan": {
+      "buildings": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  20,
+                  0
+                ],
+                [
+                  20,
+                  14
+                ],
+                [
+                  0,
+                  14
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "id": "new-N",
+            "height": 12,
+            "floors": 4,
+            "base_elevation": 106.99012305980102,
+            "entrance_xy": [
+              220030,
+              631024
+            ],
+            "planning_status": "synthetic_concept",
+            "program": {
+              "units": 6,
+              "apartment_paldalet_m2": 100,
+              "categories_are_disjoint": true,
+              "separate_areas_m2": {
+                "core": 30,
+                "elevators": 18,
+                "stairs": 54,
+                "corridors": 66,
+                "shafts": 18,
+                "shared": 24,
+                "lobby": 280
+              }
+            }
+          }
+        }
+      ],
+      "control_points": [
+        {
+          "plan_xy": [
+            0,
+            0
+          ],
+          "target_xy": [
+            220010,
+            631010
+          ]
+        },
+        {
+          "plan_xy": [
+            40,
+            0
+          ],
+          "target_xy": [
+            220050,
+            631010
+          ]
+        },
+        {
+          "plan_xy": [
+            0,
+            40
+          ],
+          "target_xy": [
+            220010,
+            631050
+          ]
+        },
+        {
+          "plan_xy": [
+            40,
+            40
+          ],
+          "target_xy": [
+            220050,
+            631050
+          ]
+        }
+      ],
+      "max_residual_m": 0.01,
+      "scale_bounds": [
+        0.9999,
+        1.0001
+      ],
+      "north_reference": "projected_grid_north",
+      "plan_north_xy": [
+        0,
+        1
+      ],
+      "north_tolerance_degrees": 0.1,
+      "vertical_datum": "synthetic_test_Z_metres",
+      "max_entrance_difference_m": 0.2,
+      "buildable_envelope": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              220005,
+              631005
+            ],
+            [
+              220075,
+              631005
+            ],
+            [
+              220075,
+              631075
+            ],
+            [
+              220005,
+              631075
+            ],
+            [
+              220005,
+              631005
+            ]
+          ]
+        ]
+      },
+      "classification": "synthetic_concept_not_approved_architecture"
+    },
+    "reviewer": "Synthetic demo placement reviewer",
+    "reviewed_at": "2026-10-12T23:46:51.449798+00:00"
+  },
+  "scene_hashes": {
+    "existing": "accf71fe54b94ab240f3373e1b5d8860197d0440dc3e6d5dcc02d0a5ef067164",
+    "cleared": "891a477db355498092fed8ed97909dfaaeb5a84648def5cb937ef800c987fec4",
+    "placement-pending": "06c3965d389ec8414f90aa257413a07814d605949ffc8b6fe6c5637da95f1f01",
+    "planted": "1dc3dc27b433384dc26a912f605d657bd43f378f004c2b204964b7ba90797213"
+  },
+  "photographic_clearing_performed": false,
+  "terrain_reconstruction": "Reveal existing source-supported TIN, not inpainting or inferred fill",
+  "real_site_trial_ready": false,
+  "real_site_blockers": [
+    "Authoritative parcel/address linkage",
+    "Authenticated boundary/source review",
+    "Measured bare-earth DTM with vertical datum",
+    "Licensed aerial/context source",
+    "Classified actual 3D object meshes"
+  ],
+  "professional_architecture_approved": false,
+  "final_render_approved": false
+}

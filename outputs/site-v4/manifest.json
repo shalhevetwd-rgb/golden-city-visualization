@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "recipient_access": "not_verified",
+  "files": [
+    {
+      "name": "existing.json",
+      "bytes": 66732,
+      "sha256": "f9579655da801739f006bdec4ece1ec81a422e622ff70993f7987ca2bb5ce616"
+    },
+    {
+      "name": "existing.blend",
+      "bytes": 603816,
+      "sha256": "c5db95495b2a94a097c33087ddba0c939a78eb118dc5b8b33bd3aa2c602b8be3",
+      "cameras": 3
+    },
+    {
+      "name": "existing.glb",
+      "bytes": 45424,
+      "sha256": "2384625fa653b1e804c2634afad6cb6481c60312e62f05af683bdb9435f9aac5",
+      "cameras": 3
+    },
+    {
+      "name": "existing.png",
+      "bytes": 810155,
+      "sha256": "f6251ee2ad4abb8f476c8d8d9322a6be2f5452a345264f4294b3e961decf36d4"
+    },
+    {
+      "name": "cleared.json",
+      "bytes": 65439,
+      "sha256": "befd3f4474897fe6619d53114bc5452e350bf92a8b8a54cc4fc1e1fd6dedda2d"
+    },
+    {
+      "name": "cleared.blend",
+      "bytes": 598216,
+      "sha256": "11be0a5adf5b896b0ac05e8f70982c488bdf1534495b74677e0c3fe73b3225d1",
+      "cameras": 3
+    },
+    {
+      "name": "cleared.glb",
+      "bytes": 44288,
+      "sha256": "452c6a0d380325892ba33847ea1251c2b711a3dbd1988c92262101fce1837f85",
+      "cameras": 3
+    },
+    {
+      "name": "cleared.png",
+      "bytes": 794191,
+      "sha256": "a9464c7623bb6e9cee1020639546e86440c87bd87534d198db8e0dbe34567d9d"
+    },
+    {
+      "name": "planted.json",
+      "bytes": 74513,
+      "sha256": "c3a9439f2b1b909bd6e8f1497f25d064094c03e98a987511d9c538f568fb1d7a"
+    },
+    {
+      "name": "planted.blend",
+      "bytes": 626988,
+      "sha256": "7f4aaa4b0fe9cbca9ed0fa5a2180b451e3b3cfdd5734cd73903cda66b27d28f1",
+      "cameras": 3
+    },
+    {
+      "name": "planted.glb",
+      "bytes": 45628,
+      "sha256": "65c3d880072a98f4159b99d60b6bed5126ef495773d5620a807982d0931cf3a7",
+      "cameras": 3
+    },
+    {
+      "name": "planted.png",
+      "bytes": 811405,
+      "sha256": "4633ff38980b96109d0c63026cac85d819b3e120d6d06360b20ba06a4612986e"
+    },
+    {
+      "name": "placement-pending.json",
+      "bytes": 74374,
+      "sha256": "7b504a1b548bd2c22b51ad6366f83cf8401b6b971b9896372053e854e602cd58"
+    },
+    {
+      "name": "plan-request.json",
+      "bytes": 2353,
+      "sha256": "a20831eb8e551d619bdc971e85939c001e6e9410ca970ef09f18b50a17724429"
+    },
+    {
+      "name": "real-intake-requirements.json",
+      "bytes": 560,
+      "sha256": "c86385d4e51371f9765af82b5496d97d344b150d3c54dffd3f9c007dbfe66e75"
+    },
+    {
+      "name": "geometry-report.json",
+      "bytes": 7394,
+      "sha256": "eb6a98dd0cfd58f4b0f86168ec137ad37dc9d23c851571741149b91c43a9fea8"
+    },
+    {
+      "name": "roundtrip-report.json",
+      "bytes": 2331,
+      "sha256": "d964998d46cb9d639098c68ae18160ebf4ec865a7acef0542d4d1620c07698ae"
+    },
+    {
+      "name": "browser-report.json",
+      "bytes": 683,
+      "sha256": "e92965e037f32545915ea36d8b7f7bb1549e380f9a4fa62d35e15362ed4e2fdd"
+    },
+    {
+      "name": "area-accounting.json",
+      "bytes": 612,
+      "sha256": "4b76f14d5f66d6f6234974e0f375f1d35b790daf3044a8e01fa3918f7ac03a94"
+    },
+    {
+      "name": "contact-sheet.png",
+      "bytes": 122942,
+      "sha256": "b6fe63bd6ea0d3991dd47a198b9c9b38dd0dbeb936914b6685bb0997668dcc0e"
+    },
+    {
+      "name": "viewer.html",
+      "bytes": 6432265,
+      "sha256": "ccceb8c647116000c8ce8c950e3994ac5498ba9cf9c85a64ab341a665bde9ad0"
+    },
+    {
+      "name": "offline-preview.png",
+      "bytes": 298127,
+      "sha256": "e908de66c42b870bda1363e4a4cd365330c472c5d4342a8132631465362b4732"
+    },
+    {
+      "name": "live-approval-preview.png",
+      "bytes": 319166,
+      "sha256": "aba5cce0f9d92708d0aeb7e268b612596b16b8b7e4771b613c45e75e277b5255"
+    },
+    {
+      "name": "regression-report.json",
+      "bytes": 36450,
+      "sha256": "ab9fb4a3cc67519f7a1946292e2486b52c353c2ba98bd6afa668249a8a6aafb5"
+    }
+  ]
+}
