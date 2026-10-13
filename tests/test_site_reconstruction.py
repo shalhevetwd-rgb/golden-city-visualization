@@ -7,6 +7,9 @@ from site_reconstruction import program,alternatives,propose,approve_clearing,cl
 class SiteTests(unittest.TestCase):
     def setUp(self):self.scene,self.plan=fixture()
     def cleared(self):return clear(self.scene,approve_clearing(self.scene,['remove-A'],'tester',True))
+    def place(self,scene,plan):
+        from tests.planning_helpers import approved_scene
+        return place(approved_scene(scene,plan),plan)
     def test_default_paldalet_is_not_gross(self):
         p=program({'units':12});self.assertEqual(p['apartments_paldalet_total_m2'],1200);self.assertIsNone(p['gross_total_m2']);self.assertIn('lobby',p['missing_area_categories'])
     def test_disjoint_areas_and_lobby_separate(self):
@@ -27,7 +30,7 @@ class SiteTests(unittest.TestCase):
             if all(i>=n for i in t):
                 a,b,c=[m['vertices'][i] for i in t];self.assertGreater((b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]),0)
         source=self.cleared();foot=rectangle(220015,631015,2,2);source['objects'].append({'id':'protected-tree','kind':'vegetation','footprint':foot,'mesh':prism(foot,103,3)})
-        self.assertTrue(place(source,self.plan)['placement']['errors'])
+        self.assertTrue(self.place(source,self.plan)['placement']['errors'])
     def test_concept_arithmetic_is_never_approved(self):
         data=copy.deepcopy(self.plan['buildings'][0]['properties']['program']);data.update(multiplier=2,desired_height_m=12,building_count=1,planning_constraints={'max_coverage_ratio':.5,'residential_floors':3})
         a=alternatives(data,6400);self.assertEqual(len(a['alternatives']),2);self.assertFalse(a['planning_approval'])
@@ -64,7 +67,7 @@ class SiteTests(unittest.TestCase):
         source=copy.deepcopy(self.scene);source['synthetic']=False;source['official_verified']=True
         with self.assertRaisesRegex(ValueError,'Real clearing blocked'):clear(source,approve_clearing(source,['remove-A'],'tester',True))
     def test_placement_control_points_terrain_and_accounting(self):
-        source=self.cleared();sha=digest(source);p=place(source,self.plan);self.assertEqual(digest(source),sha);self.assertEqual(p['placement']['errors'],[]);self.assertLess(p['placement']['alignment']['max_residual_m'],1e-8)
+        source=self.cleared();sha=digest(source);p=self.place(source,self.plan);self.assertEqual(digest(source),sha);self.assertEqual(p['placement']['errors'],[]);self.assertLess(p['placement']['alignment']['max_residual_m'],1e-8)
         n=next(o for o in p['objects'] if o['id']=='new-N');self.assertEqual(n['program']['apartments_paldalet_total_m2'],600);self.assertEqual(n['floors'],4);self.assertEqual(n['height'],12)
         self.assertAlmostEqual(p['placement']['coverage_ratio'],280/6400);self.assertEqual(source['terrain'],p['terrain'])
         self.assertAlmostEqual(p['placement']['levels'][0]['difference_m'],.1,places=6)
@@ -72,16 +75,16 @@ class SiteTests(unittest.TestCase):
     def test_wrong_north_vertical_datum_or_controls_rejected(self):
         for key,value in [('plan_north_xy',[1,0]),('vertical_datum','unknown'),('control_points',self.plan['control_points'][:2])]:
             plan=copy.deepcopy(self.plan);plan[key]=value
-            with self.assertRaises(ValueError):place(self.cleared(),plan)
+            with self.assertRaises(ValueError):self.place(self.cleared(),plan)
     def test_deviations_prevent_approval(self):
-        plan=copy.deepcopy(self.plan);plan['buildable_envelope']=rectangle(220040,631040,30,30);candidate=place(self.cleared(),plan)
+        plan=copy.deepcopy(self.plan);plan['buildable_envelope']=rectangle(220040,631040,30,30);candidate=self.place(self.cleared(),plan)
         self.assertTrue(candidate['placement']['errors'])
         with self.assertRaises(ValueError):approve_placement(candidate,digest(candidate),'tester')
-        plan=copy.deepcopy(self.plan);plan['buildings'][0]['properties']['base_elevation']+=10;candidate=place(self.cleared(),plan);self.assertTrue(candidate['placement']['errors'])
-        plan=copy.deepcopy(self.plan);plan['buildings'][0]['properties']['program']['units']=100;candidate=place(self.cleared(),plan)
+        plan=copy.deepcopy(self.plan);plan['buildings'][0]['properties']['base_elevation']+=10;candidate=self.place(self.cleared(),plan);self.assertTrue(candidate['placement']['errors'])
+        plan=copy.deepcopy(self.plan);plan['buildings'][0]['properties']['program']['units']=100;candidate=self.place(self.cleared(),plan)
         self.assertTrue(any('floorplate capacity' in e for e in candidate['placement']['errors']))
     def test_placement_approval_binds_geometry(self):
-        candidate=place(self.cleared(),self.plan)
+        candidate=self.place(self.cleared(),self.plan)
         with self.assertRaises(ValueError):approve_placement(candidate,'bad','tester')
         result=approve_placement(candidate,digest(candidate),'tester');self.assertTrue(result['placement']['approved']);self.assertFalse(result['final_render_ready'])
     def test_guard_detects_protected_terrain_and_boundary_change(self):
@@ -98,8 +101,12 @@ class SiteTests(unittest.TestCase):
             r=api_action('import',{'scene':self.scene},tmp)['version'];p=Path(tmp)/(r['version_id']+'.json');original=p.read_bytes()
             req={'version_id':r['version_id'],'expected_sha256':r['sha256'],'selected_ids':['remove-A'],'reviewer':'tester','boundary_approved':True}
             cleared=api_action('clear',req,tmp)['version'];self.assertEqual(p.read_bytes(),original)
+            from tests.planning_helpers import known_brief
+            cleared=api_action('planning-save',{'version_id':cleared['version_id'],'expected_sha256':cleared['sha256'],'brief':known_brief(self.plan)},tmp)['version']
+            packet=api_action('planning-review',{'version_id':cleared['version_id'],'expected_sha256':cleared['sha256'],'plan':self.plan},tmp)
+            cleared=api_action('planning-approve',{'version_id':cleared['version_id'],'expected_sha256':cleared['sha256'],'plan':self.plan,'review_sha256':packet['review_sha256'],'origin':'user_interface','confirmed_by_user':True,'reviewer':'SIMULATED HUMAN TEST ACTOR'},tmp)['version']
             planted=api_action('place',{'version_id':cleared['version_id'],'expected_sha256':cleared['sha256'],'plan':self.plan},tmp)['version']
             approved=api_action('approve-placement',{'version_id':planted['version_id'],'expected_sha256':planted['sha256'],'reviewer':'tester'},tmp)['version']
-            self.assertEqual(len(list(Path(tmp).glob('*.json'))),4);self.assertEqual(approved['scene']['stage'],'placement_approved')
+            self.assertEqual(len(list(Path(tmp).glob('*.json'))),6);self.assertEqual(approved['scene']['stage'],'placement_approved')
             bad=json.loads(p.read_text());bad['scene']['objects'][0]['height']+=1;p.write_text(json.dumps(bad))
             with self.assertRaises(ValueError):api_action('clear',req,tmp)

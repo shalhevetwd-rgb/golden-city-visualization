@@ -38,7 +38,7 @@ function working(r){if(r.scene.stage==='existing')baseline=r.scene;else if(!reco
  showGroup(g);el('state').textContent=current.stage+' — '+(current.synthetic?'תיק סינתטי':'נתוני משתמשת, טרם אומתו');el('boundary').value=JSON.stringify(current.boundary,null,2);map();buttons();catalogue();
  if(current.stage==='existing'){const bounds=new THREE.Box3().setFromObject(g),size=bounds.getSize(new THREE.Vector3());bounds.getCenter(frameCenter);frameSpan=Math.max(size.x,size.y,size.z,1);camera.far=Math.max(1000,frameSpan*20);camera.updateProjectionMatrix();el('aerial').click()}
 }
-function buttons(){el('clear').disabled=!online||!record||current.stage!=='existing'||!current.synthetic;el('place').disabled=!online||!record||current.stage!=='cleared';el('approve').disabled=!online||!record||current.stage!=='placement_pending';el('boundaryApprove').checked=false}
+function buttons(){if(el('planningFrame')){el('planningFrame').hidden=!online||!record;if(online&&record&&el('planningFrame').dataset.version!==record.version_id){el('planningFrame').dataset.version=record.version_id;el('planningFrame').src='/planning?version='+record.version_id;}}el('clear').disabled=!online||!record||current.stage!=='existing'||!current.synthetic;el('place').disabled=!online||!record||current.stage!=='cleared'||!current.planning_brief?.approval;el('approve').disabled=!online||!record||current.stage!=='placement_pending';el('boundaryApprove').checked=false}
 function map(){const b=current.boundary.coordinates[0],xs=b.map(p=>p[0]),ys=b.map(p=>p[1]),x0=Math.min(...xs),y0=Math.min(...ys),span=Math.max(Math.max(...xs)-x0,Math.max(...ys)-y0),points=ring=>ring.map(p=>[20+(p[0]-x0)/span*460,480-(p[1]-y0)/span*460].join(',')).join(' ');
  let markup=`<polygon points="${points(b)}" fill="none" stroke="#9558ae" stroke-width="3"/>`;
  for(const o of (baseline?.objects||[]).filter(o=>o.kind==='building'))markup+=`<polygon points="${points(o.footprint.coordinates[0])}" fill="none" stroke="#999" stroke-dasharray="4 3"/>`;
@@ -66,3 +66,5 @@ el('calculate').onclick=async()=>{try{const p={apartment_paldalet_m2:Number(el('
 for(const node of document.querySelectorAll('[data-service]'))node.disabled=!online;
 el('serviceNote').textContent=online?'עבודה דרך השירות: אישורים וגרסאות נשמרים על הדיסק.':'קובץ עצמאי: צפייה וסיבוב במודלים שנמסרו; ביצוע ניקוי/אישורים דורש את שירות המערכת.';
 stage('existing').then(()=>catalogue()).catch(error);
+
+window.addEventListener('message',event=>{if(event.origin===location.origin&&event.source===el('planningFrame')?.contentWindow&&event.data?.type==='planning-version'){record=event.data.record;current=record.scene;el('planningFrame').dataset.version=record.version_id;buttons();catalogue();}});

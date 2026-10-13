@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": [
+    "Address and block only opens empty dossier and mandatory Hebrew brief; no source geometry inferred",
+    "Partial brief persists without approval; missing questions displayed",
+    "Changed massing through legacy alignment also rejects missing programme; unchanged source registration remains compatible",
+    "HTTP proposed creation rejected before brief; existing/cleared source operations remain available",
+    "Explicit proposed import cannot bypass mandatory programme",
+    "Actual structured source-plan file prefills units/buildings/height/area and source hash for verification without guessing residential floors",
+    "Complete known programme review displays map, plan, separate areas, core assumptions; unchecked consent cannot approve",
+    "Only explicit simulated user checkbox and review action create a version-bound approval; no building created by approval",
+    "Unknown programme workflow displays/selects numeric feasibility concepts with assumptions and still requires height/plan/user review; no model/automatic approval",
+    "Standalone HTML bytes decode and interact in Chromium without HTTP; unapproved JSON downloads and reopens",
+    "Saved brief reloads into offline form for verification; imported approval is ignored"
+  ],
+  "page_errors": [],
+  "recipient_access": "not_verified",
+  "direct_file_navigation": "blocked_by_administrator_in_cloud; actual standalone bytes tested with about:blank set_content, recipient desktop unverified",
+  "approval_actor": "simulated human test actor, not actual project consent",
+  "source_hashes": {
+    "site-viewer.html": "b854b4a1d140eade0dbb310de93e1b63c6f4e959f4017981a27754454f437b52",
+    "planning-questionnaire.html": "fbacf09d9aa07e19d7eb685922b5cb0175f498da1ae7d0a691714ed016a752d8"
+  }
+}

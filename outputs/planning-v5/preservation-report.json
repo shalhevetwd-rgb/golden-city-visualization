@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "old_immutable_artifacts": 29,
+  "original_tests_and_examples_byte_identical": 56,
+  "v3_v4_tracked_outputs_byte_identical": 61,
+  "no_models_or_renders_regenerated": true,
+  "source_base_commit": "c0d2946b134f81a9977a3fbecfcbd0645741fa7e"
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "name": "README.he.md",
+      "bytes": 10859,
+      "sha256": "64562fce9db3494bc03ce38a0299a88dd847c67afe66dd2f3b46e738fbf8707a"
+    },
+    {
+      "name": "planning-questionnaire.html",
+      "bytes": 21553,
+      "sha256": "fbacf09d9aa07e19d7eb685922b5cb0175f498da1ae7d0a691714ed016a752d8"
+    },
+    {
+      "name": "site-viewer.html",
+      "bytes": 6433220,
+      "sha256": "b854b4a1d140eade0dbb310de93e1b63c6f4e959f4017981a27754454f437b52"
+    },
+    {
+      "name": "dossier-questionnaire-preview.png",
+      "bytes": 829232,
+      "sha256": "9ea281f8323e5940d9fc85035f4da973b8a732879158a0289e8135737bba2c44"
+    },
+    {
+      "name": "planning-review-preview.png",
+      "bytes": 205592,
+      "sha256": "87b7aeae72a84fe46b3c1c58a1e3e2a1f5e9b9befadf4d216361820d8829d738"
+    },
+    {
+      "name": "historical-model-viewer-preview.png",
+      "bytes": 308937,
+      "sha256": "a3a0ebf27c782242984ba9ad1226ee8bdf840d268675874c716e7f17b3a911a8"
+    },
+    {
+      "name": "site-approval-preview.png",
+      "bytes": 329999,
+      "sha256": "3dab99c27a6c90ca7ff892cacb4a02604b831ba2cbd8663a57e799acda2af618"
+    },
+    {
+      "name": "browser-report.json",
+      "bytes": 1813,
+      "sha256": "dd9568540c6fbef204edf4f7ca53407db8c3f5a1bca4602c808aef1a4ba36130"
+    },
+    {
+      "name": "site-browser-report.json",
+      "bytes": 735,
+      "sha256": "51b154b2e3b1805e512c792627e81833f0eebbb08f5a8ff817c0461b2c9db505"
+    },
+    {
+      "name": "preservation-report.json",
+      "bytes": 267,
+      "sha256": "e776b6accd2e7ccde5b30b50302e3f61b3d81aef69153b97bd5df504e3e6b90a"
+    },
+    {
+      "name": "regression-report.json",
+      "bytes": 40252,
+      "sha256": "37bef6d2cb59fa430bd61fb7fb468e99dcceb57ea2859d06876f1113e3b3e463"
+    },
+    {
+      "name": "acceptance-status.json",
+      "bytes": 2372,
+      "sha256": "cffa79f15edaeccccd0b51d58a01abfc4fb6f364275e111b015686363fa9152f"
+    }
+  ]
+}

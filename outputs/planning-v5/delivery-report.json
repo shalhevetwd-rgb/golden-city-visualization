@@ -1,0 +1,3036 @@
+{
+  "status": "passed",
+  "files": {
+    "README.he.md": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/README.he.md",
+      "name": "README.he.md",
+      "bytes": 10859,
+      "sha256": "64562fce9db3494bc03ce38a0299a88dd847c67afe66dd2f3b46e738fbf8707a",
+      "format": "md",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "nonblank_text",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 decoder",
+        "characters": 6459,
+        "lines": 51
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "planning-questionnaire.html": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/planning-questionnaire.html",
+      "name": "planning-questionnaire.html",
+      "bytes": 21553,
+      "sha256": "fbacf09d9aa07e19d7eb685922b5cb0175f498da1ae7d0a691714ed016a752d8",
+      "format": "html",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "html_parse",
+        "all_local_targets_exist",
+        "embedded_artifacts_decode",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent HTML parser",
+        "status": "passed",
+        "local_links": [],
+        "embedded_artifacts": [
+          {
+            "attribute": "href",
+            "mime": "image/png",
+            "bytes": 123,
+            "sha256": "d7f170ebbb8e09bf94be2840aaf7f1634cc9bd0592ab90a4ced6ccfdefa134d7",
+            "details": {
+              "reader": "Pillow independent verify + full pixel decode",
+              "encoding": "PNG",
+              "width": 24,
+              "height": 24,
+              "mode": "RGB",
+              "extrema": [
+                [
+                  71,
+                  201
+                ],
+                [
+                  13,
+                  184
+                ],
+                [
+                  63,
+                  138
+                ]
+              ],
+              "standard_deviation": [
+                62.877273259686625,
+                82.70779790312625,
+                36.275349957511516
+              ],
+              "nonuniform_fraction": 0.37326388888888884,
+              "nonblank": true,
+              "decoded": true,
+              "second_decoder": {
+                "reader": "FFmpeg independent full pixel decoder",
+                "decoded_bytes": 1728,
+                "pixel_sha256": "1b8b6be9f4141a4dccf35572af11a88b6b73c462b11a66dde3bf4052948a1930",
+                "decoded": true
+              }
+            }
+          }
+        ],
+        "external_links": [],
+        "user_accessibility": "not_verified",
+        "sha256": "fbacf09d9aa07e19d7eb685922b5cb0175f498da1ae7d0a691714ed016a752d8"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "site-viewer.html": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/site-viewer.html",
+      "name": "site-viewer.html",
+      "bytes": 6433220,
+      "sha256": "b854b4a1d140eade0dbb310de93e1b63c6f4e959f4017981a27754454f437b52",
+      "format": "html",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "html_parse",
+        "all_local_targets_exist",
+        "embedded_artifacts_decode",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent HTML parser",
+        "status": "passed",
+        "local_links": [],
+        "embedded_artifacts": [
+          {
+            "attribute": "href",
+            "mime": "image/png",
+            "bytes": 123,
+            "sha256": "d7f170ebbb8e09bf94be2840aaf7f1634cc9bd0592ab90a4ced6ccfdefa134d7",
+            "details": {
+              "reader": "Pillow independent verify + full pixel decode",
+              "encoding": "PNG",
+              "width": 24,
+              "height": 24,
+              "mode": "RGB",
+              "extrema": [
+                [
+                  71,
+                  201
+                ],
+                [
+                  13,
+                  184
+                ],
+                [
+                  63,
+                  138
+                ]
+              ],
+              "standard_deviation": [
+                62.877273259686625,
+                82.70779790312625,
+                36.275349957511516
+              ],
+              "nonuniform_fraction": 0.37326388888888884,
+              "nonblank": true,
+              "decoded": true,
+              "second_decoder": {
+                "reader": "FFmpeg independent full pixel decoder",
+                "decoded_bytes": 1728,
+                "pixel_sha256": "1b8b6be9f4141a4dccf35572af11a88b6b73c462b11a66dde3bf4052948a1930",
+                "decoded": true
+              }
+            }
+          },
+          {
+            "attribute": "src",
+            "mime": "image/png",
+            "bytes": 810155,
+            "sha256": "f6251ee2ad4abb8f476c8d8d9322a6be2f5452a345264f4294b3e961decf36d4",
+            "details": {
+              "reader": "Pillow independent verify + full pixel decode",
+              "encoding": "PNG",
+              "width": 1000,
+              "height": 700,
+              "mode": "RGBA",
+              "extrema": [
+                [
+                  63,
+                  195
+                ],
+                [
+                  109,
+                  200
+                ],
+                [
+                  76,
+                  202
+                ]
+              ],
+              "standard_deviation": [
+                10.01671528128342,
+                8.554278393559986,
+                15.992666646527285
+              ],
+              "nonuniform_fraction": 0.5476606145251397,
+              "nonblank": true,
+              "decoded": true,
+              "second_decoder": {
+                "reader": "FFmpeg independent full pixel decoder",
+                "decoded_bytes": 2100000,
+                "pixel_sha256": "d47e8cd760b9cfd6e190830e8c8546b49b1e9b3d208d5c06a3197f03b624a4b8",
+                "decoded": true
+              }
+            }
+          },
+          {
+            "attribute": "src",
+            "mime": "image/png",
+            "bytes": 794191,
+            "sha256": "a9464c7623bb6e9cee1020639546e86440c87bd87534d198db8e0dbe34567d9d",
+            "details": {
+              "reader": "Pillow independent verify + full pixel decode",
+              "encoding": "PNG",
+              "width": 1000,
+              "height": 700,
+              "mode": "RGBA",
+              "extrema": [
+                [
+                  63,
+                  195
+                ],
+                [
+                  109,
+                  199
+                ],
+                [
+                  76,
+                  203
+                ]
+              ],
+              "standard_deviation": [
+                9.301142121207263,
+                7.967715089376615,
+                15.395589421394689
+              ],
+              "nonuniform_fraction": 0.5475951466480447,
+              "nonblank": true,
+              "decoded": true,
+              "second_decoder": {
+                "reader": "FFmpeg independent full pixel decoder",
+                "decoded_bytes": 2100000,
+                "pixel_sha256": "36db292b9dfcdd8567e973f7b279a09a13c1dc088e4cec055f0718b7a9329010",
+                "decoded": true
+              }
+            }
+          },
+          {
+            "attribute": "src",
+            "mime": "image/png",
+            "bytes": 811405,
+            "sha256": "4633ff38980b96109d0c63026cac85d819b3e120d6d06360b20ba06a4612986e",
+            "details": {
+              "reader": "Pillow independent verify + full pixel decode",
+              "encoding": "PNG",
+              "width": 1000,
+              "height": 700,
+              "mode": "RGBA",
+              "extrema": [
+                [
+                  52,
+                  195
+                ],
+                [
+                  108,
+                  200
+                ],
+                [
+                  76,
+                  206
+                ]
+              ],
+              "standard_deviation": [
+                12.700456439713607,
+                9.251229970535771,
+                15.734564581095146
+              ],
+              "nonuniform_fraction": 0.5475951466480447,
+              "nonblank": true,
+              "decoded": true,
+              "second_decoder": {
+                "reader": "FFmpeg independent full pixel decoder",
+                "decoded_bytes": 2100000,
+                "pixel_sha256": "a6727eb3871d68a0968abc9184d8cba980caedec398efca2817fc07867c1e0c1",
+                "decoded": true
+              }
+            }
+          }
+        ],
+        "external_links": [],
+        "user_accessibility": "not_verified",
+        "sha256": "b854b4a1d140eade0dbb310de93e1b63c6f4e959f4017981a27754454f437b52"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "dossier-questionnaire-preview.png": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/dossier-questionnaire-preview.png",
+      "name": "dossier-questionnaire-preview.png",
+      "bytes": 829232,
+      "sha256": "9ea281f8323e5940d9fc85035f4da973b8a732879158a0289e8135737bba2c44",
+      "format": "png",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "container_verify",
+        "full_pixel_decode",
+        "second_independent_pixel_decoder",
+        "dimensions",
+        "nonblank",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Pillow independent verify + full pixel decode",
+        "encoding": "PNG",
+        "width": 1400,
+        "height": 5853,
+        "mode": "RGB",
+        "extrema": [
+          [
+            18,
+            255
+          ],
+          [
+            61,
+            255
+          ],
+          [
+            53,
+            255
+          ]
+        ],
+        "standard_deviation": [
+          39.380228703538734,
+          33.572419418593654,
+          34.70964865622771
+        ],
+        "nonuniform_fraction": 0.6237832991803278,
+        "nonblank": true,
+        "decoded": true,
+        "second_decoder": {
+          "reader": "FFmpeg independent full pixel decoder",
+          "decoded_bytes": 24582600,
+          "pixel_sha256": "e5fba3c6ddbe9dd61ff945fc7ebcfa7f0d8c1e75fc69f189e09ef4d01eb8e946",
+          "decoded": true
+        }
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "planning-review-preview.png": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/planning-review-preview.png",
+      "name": "planning-review-preview.png",
+      "bytes": 205592,
+      "sha256": "87b7aeae72a84fe46b3c1c58a1e3e2a1f5e9b9befadf4d216361820d8829d738",
+      "format": "png",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "container_verify",
+        "full_pixel_decode",
+        "second_independent_pixel_decoder",
+        "dimensions",
+        "nonblank",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Pillow independent verify + full pixel decode",
+        "encoding": "PNG",
+        "width": 1400,
+        "height": 1546,
+        "mode": "RGB",
+        "extrema": [
+          [
+            4,
+            255
+          ],
+          [
+            46,
+            255
+          ],
+          [
+            33,
+            255
+          ]
+        ],
+        "standard_deviation": [
+          31.627132264233065,
+          26.53492642084498,
+          28.565008033944387
+        ],
+        "nonuniform_fraction": 0.48045191271551724,
+        "nonblank": true,
+        "decoded": true,
+        "second_decoder": {
+          "reader": "FFmpeg independent full pixel decoder",
+          "decoded_bytes": 6493200,
+          "pixel_sha256": "a476e1e1a791ea220b0627c91b13e47c057584f8335d33c78933addc4bd903ee",
+          "decoded": true
+        }
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "historical-model-viewer-preview.png": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/historical-model-viewer-preview.png",
+      "name": "historical-model-viewer-preview.png",
+      "bytes": 308937,
+      "sha256": "a3a0ebf27c782242984ba9ad1226ee8bdf840d268675874c716e7f17b3a911a8",
+      "format": "png",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "container_verify",
+        "full_pixel_decode",
+        "second_independent_pixel_decoder",
+        "dimensions",
+        "nonblank",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Pillow independent verify + full pixel decode",
+        "encoding": "PNG",
+        "width": 1200,
+        "height": 3334,
+        "mode": "RGB",
+        "extrema": [
+          [
+            103,
+            255
+          ],
+          [
+            141,
+            255
+          ],
+          [
+            130,
+            255
+          ]
+        ],
+        "standard_deviation": [
+          20.011633013892617,
+          15.52748748494725,
+          22.81105448670824
+        ],
+        "nonuniform_fraction": 0.46106487771739135,
+        "nonblank": true,
+        "decoded": true,
+        "second_decoder": {
+          "reader": "FFmpeg independent full pixel decoder",
+          "decoded_bytes": 12002400,
+          "pixel_sha256": "d60044b311104d59b52e85f7df1763f92f19a3f034ef2637f3f164785d0ce921",
+          "decoded": true
+        }
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "site-approval-preview.png": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/site-approval-preview.png",
+      "name": "site-approval-preview.png",
+      "bytes": 329999,
+      "sha256": "3dab99c27a6c90ca7ff892cacb4a02604b831ba2cbd8663a57e799acda2af618",
+      "format": "png",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "container_verify",
+        "full_pixel_decode",
+        "second_independent_pixel_decoder",
+        "dimensions",
+        "nonblank",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Pillow independent verify + full pixel decode",
+        "encoding": "PNG",
+        "width": 1200,
+        "height": 3312,
+        "mode": "RGB",
+        "extrema": [
+          [
+            103,
+            255
+          ],
+          [
+            133,
+            255
+          ],
+          [
+            110,
+            255
+          ]
+        ],
+        "standard_deviation": [
+          18.421977885507566,
+          15.230430216066773,
+          19.04907114299029
+        ],
+        "nonuniform_fraction": 0.46564180107526887,
+        "nonblank": true,
+        "decoded": true,
+        "second_decoder": {
+          "reader": "FFmpeg independent full pixel decoder",
+          "decoded_bytes": 11923200,
+          "pixel_sha256": "5b1027e0bb7b3564a3ba7de23137b3e9e093495d58894e3ed28db2a82f8faa07",
+          "decoded": true
+        }
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "browser-report.json": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/browser-report.json",
+      "name": "browser-report.json",
+      "bytes": 1813,
+      "sha256": "dd9568540c6fbef204edf4f7ca53407db8c3f5a1bca4602c808aef1a4ba36130",
+      "format": "json",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "json_parse",
+        "finite_json_numbers",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 JSON parser",
+        "type": "dict"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "site-browser-report.json": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/site-browser-report.json",
+      "name": "site-browser-report.json",
+      "bytes": 735,
+      "sha256": "51b154b2e3b1805e512c792627e81833f0eebbb08f5a8ff817c0461b2c9db505",
+      "format": "json",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "json_parse",
+        "finite_json_numbers",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 JSON parser",
+        "type": "dict"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "preservation-report.json": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/preservation-report.json",
+      "name": "preservation-report.json",
+      "bytes": 267,
+      "sha256": "e776b6accd2e7ccde5b30b50302e3f61b3d81aef69153b97bd5df504e3e6b90a",
+      "format": "json",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "json_parse",
+        "finite_json_numbers",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 JSON parser",
+        "type": "dict"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "regression-report.json": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/regression-report.json",
+      "name": "regression-report.json",
+      "bytes": 40252,
+      "sha256": "37bef6d2cb59fa430bd61fb7fb468e99dcceb57ea2859d06876f1113e3b3e463",
+      "format": "json",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "json_parse",
+        "finite_json_numbers",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 JSON parser",
+        "type": "dict"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "acceptance-status.json": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/acceptance-status.json",
+      "name": "acceptance-status.json",
+      "bytes": 2372,
+      "sha256": "cffa79f15edaeccccd0b51d58a01abfc4fb6f364275e111b015686363fa9152f",
+      "format": "json",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "utf8_decode",
+        "json_parse",
+        "finite_json_numbers",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "reader": "Python independent UTF-8 JSON parser",
+        "type": "dict"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    }
+  },
+  "embedded_native_reimports": {
+    "existing": {
+      "status": "passed",
+      "name": "existing.glb",
+      "bytes": 45424,
+      "sha256": "2384625fa653b1e804c2634afad6cb6481c60312e62f05af683bdb9435f9aac5",
+      "format": "glb",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "independent_model_reimport",
+        "finite_nonempty_geometry",
+        "object_inventory",
+        "camera_inventory",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "source_primitives": 8,
+        "source_cameras": 3,
+        "status": "passed",
+        "reader": "Blender independent re-import",
+        "blender_version": "4.3.2",
+        "format": "glb",
+        "objects": [
+          {
+            "name": "crossing-D",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 930.8242874145508,
+            "surface_area_world": 930.8242887667567,
+            "bounds": [
+              [
+                75.0,
+                5.0,
+                6.127806186676025
+              ],
+              [
+                90.0,
+                18.0,
+                16.262950897216797
+              ]
+            ]
+          },
+          {
+            "name": "keep-B",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1617.097068786621,
+            "surface_area_world": 1617.097073369272,
+            "bounds": [
+              [
+                55.0,
+                55.0,
+                4.0337910652160645
+              ],
+              [
+                70.0,
+                70.0,
+                25.265283584594727
+              ]
+            ]
+          },
+          {
+            "name": "outside-C",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1545.6054229736328,
+            "surface_area_world": 1545.6054278410165,
+            "bounds": [
+              [
+                90.0,
+                25.0,
+                6.2110915184021
+              ],
+              [
+                108.0,
+                39.0,
+                23.493858337402344
+              ]
+            ]
+          },
+          {
+            "name": "remove-A",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1560.9859466552734,
+            "surface_area_world": 1560.9859550704437,
+            "bounds": [
+              [
+                10.0,
+                10.0,
+                2.1632182598114014
+              ],
+              [
+                30.0,
+                24.0,
+                18.990123748779297
+              ]
+            ]
+          },
+          {
+            "name": "road",
+            "vertices": 84,
+            "faces": 36,
+            "surface_area_local": 736.1034555435181,
+            "surface_area_world": 736.1034521773022,
+            "bounds": [
+              [
+                -10.0,
+                -10.0,
+                -0.5347127318382263
+              ],
+              [
+                110.0,
+                -4.0,
+                10.793767929077148
+              ]
+            ]
+          },
+          {
+            "name": "terrain",
+            "vertices": 1151,
+            "faces": 392,
+            "surface_area_local": 19902.789947509766,
+            "surface_area_world": 19902.789988611872,
+            "bounds": [
+              [
+                -20.0,
+                -20.0,
+                -3.588902235031128
+              ],
+              [
+                120.0,
+                120.0,
+                16.380495071411133
+              ]
+            ]
+          },
+          {
+            "name": "tree",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 32.0,
+            "surface_area_world": 32.0,
+            "bounds": [
+              [
+                45.0,
+                30.0,
+                8.271463394165039
+              ],
+              [
+                47.0,
+                32.0,
+                11.271463394165039
+              ]
+            ]
+          },
+          {
+            "name": "walk",
+            "vertices": 96,
+            "faces": 48,
+            "surface_area_local": 244.88199043273926,
+            "surface_area_world": 244.88198774986608,
+            "bounds": [
+              [
+                -10.0,
+                -4.0,
+                -0.5673563480377197
+              ],
+              [
+                110.0,
+                -2.0,
+                9.701507568359375
+              ]
+            ]
+          }
+        ],
+        "vertices": 1459,
+        "faces": 536,
+        "cameras": [
+          {
+            "name": "aerial",
+            "position": [
+              145.0,
+              -115.0,
+              110.0
+            ],
+            "rotation": [
+              1.059662938117981,
+              -1.8253551559155312e-08,
+              0.5954101085662842
+            ],
+            "quaternion": [
+              0.8249354958534241,
+              0.48315706849098206,
+              0.14824387431144714,
+              0.2531096339225769
+            ],
+            "forward": [
+              -0.48916661739349365,
+              0.7221028804779053,
+              -0.4891660213470459
+            ],
+            "up": [
+              -0.27434805035591125,
+              0.40498948097229004,
+              0.8721906542778015
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          },
+          {
+            "name": "street",
+            "position": [
+              0.0,
+              -12.0,
+              1.2200000286102295
+            ],
+            "rotation": [
+              1.7649415731430054,
+              -8.702311049546552e-08,
+              -0.594213604927063
+            ],
+            "quaternion": [
+              0.6074132323265076,
+              0.7384738922119141,
+              -0.22609786689281464,
+              -0.18597111105918884
+            ],
+            "forward": [
+              0.5493392944335938,
+              0.813022255897522,
+              0.19292786717414856
+            ],
+            "up": [
+              -0.1080121248960495,
+              -0.1598578542470932,
+              0.9812129735946655
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          },
+          {
+            "name": "top",
+            "position": [
+              40.0,
+              40.0,
+              190.0
+            ],
+            "rotation": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "quaternion": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "forward": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          }
+        ],
+        "camera_support": "supported",
+        "active_camera": null,
+        "coordinate_interpretation": "Blender Z up"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "cleared": {
+      "status": "passed",
+      "name": "cleared.glb",
+      "bytes": 44288,
+      "sha256": "452c6a0d380325892ba33847ea1251c2b711a3dbd1988c92262101fce1837f85",
+      "format": "glb",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "independent_model_reimport",
+        "finite_nonempty_geometry",
+        "object_inventory",
+        "camera_inventory",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "source_primitives": 7,
+        "source_cameras": 3,
+        "status": "passed",
+        "reader": "Blender independent re-import",
+        "blender_version": "4.3.2",
+        "format": "glb",
+        "objects": [
+          {
+            "name": "crossing-D",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 930.8242874145508,
+            "surface_area_world": 930.8242887667567,
+            "bounds": [
+              [
+                75.0,
+                5.0,
+                6.127806186676025
+              ],
+              [
+                90.0,
+                18.0,
+                16.262950897216797
+              ]
+            ]
+          },
+          {
+            "name": "keep-B",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1617.097068786621,
+            "surface_area_world": 1617.097073369272,
+            "bounds": [
+              [
+                55.0,
+                55.0,
+                4.0337910652160645
+              ],
+              [
+                70.0,
+                70.0,
+                25.265283584594727
+              ]
+            ]
+          },
+          {
+            "name": "outside-C",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1545.6054229736328,
+            "surface_area_world": 1545.6054278410165,
+            "bounds": [
+              [
+                90.0,
+                25.0,
+                6.2110915184021
+              ],
+              [
+                108.0,
+                39.0,
+                23.493858337402344
+              ]
+            ]
+          },
+          {
+            "name": "road",
+            "vertices": 84,
+            "faces": 36,
+            "surface_area_local": 736.1034555435181,
+            "surface_area_world": 736.1034521773022,
+            "bounds": [
+              [
+                -10.0,
+                -10.0,
+                -0.5347127318382263
+              ],
+              [
+                110.0,
+                -4.0,
+                10.793767929077148
+              ]
+            ]
+          },
+          {
+            "name": "terrain",
+            "vertices": 1151,
+            "faces": 392,
+            "surface_area_local": 19902.789947509766,
+            "surface_area_world": 19902.789988611872,
+            "bounds": [
+              [
+                -20.0,
+                -20.0,
+                -3.588902235031128
+              ],
+              [
+                120.0,
+                120.0,
+                16.380495071411133
+              ]
+            ]
+          },
+          {
+            "name": "tree",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 32.0,
+            "surface_area_world": 32.0,
+            "bounds": [
+              [
+                45.0,
+                30.0,
+                8.271463394165039
+              ],
+              [
+                47.0,
+                32.0,
+                11.271463394165039
+              ]
+            ]
+          },
+          {
+            "name": "walk",
+            "vertices": 96,
+            "faces": 48,
+            "surface_area_local": 244.88199043273926,
+            "surface_area_world": 244.88198774986608,
+            "bounds": [
+              [
+                -10.0,
+                -4.0,
+                -0.5673563480377197
+              ],
+              [
+                110.0,
+                -2.0,
+                9.701507568359375
+              ]
+            ]
+          }
+        ],
+        "vertices": 1433,
+        "faces": 524,
+        "cameras": [
+          {
+            "name": "aerial",
+            "position": [
+              145.0,
+              -115.0,
+              110.0
+            ],
+            "rotation": [
+              1.059662938117981,
+              -1.8253551559155312e-08,
+              0.5954101085662842
+            ],
+            "quaternion": [
+              0.8249354958534241,
+              0.48315706849098206,
+              0.14824387431144714,
+              0.2531096339225769
+            ],
+            "forward": [
+              -0.48916661739349365,
+              0.7221028804779053,
+              -0.4891660213470459
+            ],
+            "up": [
+              -0.27434805035591125,
+              0.40498948097229004,
+              0.8721906542778015
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          },
+          {
+            "name": "street",
+            "position": [
+              0.0,
+              -12.0,
+              1.2200000286102295
+            ],
+            "rotation": [
+              1.7649415731430054,
+              -8.702311049546552e-08,
+              -0.594213604927063
+            ],
+            "quaternion": [
+              0.6074132323265076,
+              0.7384738922119141,
+              -0.22609786689281464,
+              -0.18597111105918884
+            ],
+            "forward": [
+              0.5493392944335938,
+              0.813022255897522,
+              0.19292786717414856
+            ],
+            "up": [
+              -0.1080121248960495,
+              -0.1598578542470932,
+              0.9812129735946655
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          },
+          {
+            "name": "top",
+            "position": [
+              40.0,
+              40.0,
+              190.0
+            ],
+            "rotation": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "quaternion": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "forward": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          }
+        ],
+        "camera_support": "supported",
+        "active_camera": null,
+        "coordinate_interpretation": "Blender Z up"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    },
+    "planted": {
+      "status": "passed",
+      "name": "planted.glb",
+      "bytes": 45628,
+      "sha256": "65c3d880072a98f4159b99d60b6bed5126ef495773d5620a807982d0931cf3a7",
+      "format": "glb",
+      "artifact_role": "output",
+      "checks": [
+        "regular_file_exists",
+        "nonempty_reasonable_size",
+        "independent_reopen",
+        "independent_model_reimport",
+        "finite_nonempty_geometry",
+        "object_inventory",
+        "camera_inventory",
+        "immutable_source_hash"
+      ],
+      "details": {
+        "source_primitives": 8,
+        "source_cameras": 3,
+        "status": "passed",
+        "reader": "Blender independent re-import",
+        "blender_version": "4.3.2",
+        "format": "glb",
+        "objects": [
+          {
+            "name": "crossing-D",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 930.8242874145508,
+            "surface_area_world": 930.8242887667567,
+            "bounds": [
+              [
+                75.0,
+                5.0,
+                6.127806186676025
+              ],
+              [
+                90.0,
+                18.0,
+                16.262950897216797
+              ]
+            ]
+          },
+          {
+            "name": "keep-B",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1617.097068786621,
+            "surface_area_world": 1617.097073369272,
+            "bounds": [
+              [
+                55.0,
+                55.0,
+                4.0337910652160645
+              ],
+              [
+                70.0,
+                70.0,
+                25.265283584594727
+              ]
+            ]
+          },
+          {
+            "name": "new-N",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1560.9859466552734,
+            "surface_area_world": 1560.9859550704437,
+            "bounds": [
+              [
+                10.0,
+                10.0,
+                2.1632182598114014
+              ],
+              [
+                30.0,
+                24.0,
+                18.990123748779297
+              ]
+            ]
+          },
+          {
+            "name": "outside-C",
+            "vertices": 26,
+            "faces": 12,
+            "surface_area_local": 1545.6054229736328,
+            "surface_area_world": 1545.6054278410165,
+            "bounds": [
+              [
+                90.0,
+                25.0,
+                6.2110915184021
+              ],
+              [
+                108.0,
+                39.0,
+                23.493858337402344
+              ]
+            ]
+          },
+          {
+            "name": "road",
+            "vertices": 84,
+            "faces": 36,
+            "surface_area_local": 736.1034555435181,
+            "surface_area_world": 736.1034521773022,
+            "bounds": [
+              [
+                -10.0,
+                -10.0,
+                -0.5347127318382263
+              ],
+              [
+                110.0,
+                -4.0,
+                10.793767929077148
+              ]
+            ]
+          },
+          {
+            "name": "terrain",
+            "vertices": 1151,
+            "faces": 392,
+            "surface_area_local": 19902.789947509766,
+            "surface_area_world": 19902.789988611872,
+            "bounds": [
+              [
+                -20.0,
+                -20.0,
+                -3.588902235031128
+              ],
+              [
+                120.0,
+                120.0,
+                16.380495071411133
+              ]
+            ]
+          },
+          {
+            "name": "tree",
+            "vertices": 24,
+            "faces": 12,
+            "surface_area_local": 32.0,
+            "surface_area_world": 32.0,
+            "bounds": [
+              [
+                45.0,
+                30.0,
+                8.271463394165039
+              ],
+              [
+                47.0,
+                32.0,
+                11.271463394165039
+              ]
+            ]
+          },
+          {
+            "name": "walk",
+            "vertices": 96,
+            "faces": 48,
+            "surface_area_local": 244.88199043273926,
+            "surface_area_world": 244.88198774986608,
+            "bounds": [
+              [
+                -10.0,
+                -4.0,
+                -0.5673563480377197
+              ],
+              [
+                110.0,
+                -2.0,
+                9.701507568359375
+              ]
+            ]
+          }
+        ],
+        "vertices": 1459,
+        "faces": 536,
+        "cameras": [
+          {
+            "name": "aerial",
+            "position": [
+              145.0,
+              -115.0,
+              110.0
+            ],
+            "rotation": [
+              1.059662938117981,
+              -1.8253551559155312e-08,
+              0.5954101085662842
+            ],
+            "quaternion": [
+              0.8249354958534241,
+              0.48315706849098206,
+              0.14824387431144714,
+              0.2531096339225769
+            ],
+            "forward": [
+              -0.48916661739349365,
+              0.7221028804779053,
+              -0.4891660213470459
+            ],
+            "up": [
+              -0.27434805035591125,
+              0.40498948097229004,
+              0.8721906542778015
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          },
+          {
+            "name": "street",
+            "position": [
+              0.0,
+              -12.0,
+              1.2200000286102295
+            ],
+            "rotation": [
+              1.7649415731430054,
+              -8.702311049546552e-08,
+              -0.594213604927063
+            ],
+            "quaternion": [
+              0.6074132323265076,
+              0.7384738922119141,
+              -0.22609786689281464,
+              -0.18597111105918884
+            ],
+            "forward": [
+              0.5493392944335938,
+              0.813022255897522,
+              0.19292786717414856
+            ],
+            "up": [
+              -0.1080121248960495,
+              -0.1598578542470932,
+              0.9812129735946655
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          },
+          {
+            "name": "top",
+            "position": [
+              40.0,
+              40.0,
+              190.0
+            ],
+            "rotation": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "quaternion": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "forward": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "lens_mm": 38.095237731933594,
+            "vertical_fov": 34.96885417298361,
+            "sensor_height": 24.0,
+            "sensor_fit": "VERTICAL"
+          }
+        ],
+        "camera_support": "supported",
+        "active_camera": null,
+        "coordinate_interpretation": "Blender Z up"
+      },
+      "user_accessibility": "not_verified",
+      "delivery_gate": "independent_open_and_byte_hash"
+    }
+  },
+  "prior_source_bound_geometry_proof_sha256": "d964998d46cb9d639098c68ae18160ebf4ec865a7acef0542d4d1620c07698ae",
+  "after_packaging": {
+    "status": "passed",
+    "archive": {
+      "status": "passed",
+      "path": "/workspace/golden-city-visualization/outputs/planning-v5/planning-and-status-v5.zip",
+      "sha256": "1907145c14b2c179a211a11ae9e7a54ecda44057ca90f3032337100e308cb16a",
+      "bytes": 4815580,
+      "member_count": 13,
+      "uncompressed_bytes": 8186784,
+      "crc": "passed",
+      "manifest_hashes": "passed",
+      "members": [
+        {
+          "status": "passed",
+          "name": "README.he.md",
+          "bytes": 10859,
+          "sha256": "64562fce9db3494bc03ce38a0299a88dd847c67afe66dd2f3b46e738fbf8707a",
+          "format": "md",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "nonblank_text",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent UTF-8 decoder",
+            "characters": 6459,
+            "lines": 51
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "acceptance-status.json",
+          "bytes": 2372,
+          "sha256": "cffa79f15edaeccccd0b51d58a01abfc4fb6f364275e111b015686363fa9152f",
+          "format": "json",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "json_parse",
+            "finite_json_numbers",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent UTF-8 JSON parser",
+            "type": "dict"
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "browser-report.json",
+          "bytes": 1813,
+          "sha256": "dd9568540c6fbef204edf4f7ca53407db8c3f5a1bca4602c808aef1a4ba36130",
+          "format": "json",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "json_parse",
+            "finite_json_numbers",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent UTF-8 JSON parser",
+            "type": "dict"
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "dossier-questionnaire-preview.png",
+          "bytes": 829232,
+          "sha256": "9ea281f8323e5940d9fc85035f4da973b8a732879158a0289e8135737bba2c44",
+          "format": "png",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "container_verify",
+            "full_pixel_decode",
+            "second_independent_pixel_decoder",
+            "dimensions",
+            "nonblank",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Pillow independent verify + full pixel decode",
+            "encoding": "PNG",
+            "width": 1400,
+            "height": 5853,
+            "mode": "RGB",
+            "extrema": [
+              [
+                18,
+                255
+              ],
+              [
+                61,
+                255
+              ],
+              [
+                53,
+                255
+              ]
+            ],
+            "standard_deviation": [
+              39.380228703538734,
+              33.572419418593654,
+              34.70964865622771
+            ],
+            "nonuniform_fraction": 0.6237832991803278,
+            "nonblank": true,
+            "decoded": true,
+            "second_decoder": {
+              "reader": "FFmpeg independent full pixel decoder",
+              "decoded_bytes": 24582600,
+              "pixel_sha256": "e5fba3c6ddbe9dd61ff945fc7ebcfa7f0d8c1e75fc69f189e09ef4d01eb8e946",
+              "decoded": true
+            }
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "historical-model-viewer-preview.png",
+          "bytes": 308937,
+          "sha256": "a3a0ebf27c782242984ba9ad1226ee8bdf840d268675874c716e7f17b3a911a8",
+          "format": "png",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "container_verify",
+            "full_pixel_decode",
+            "second_independent_pixel_decoder",
+            "dimensions",
+            "nonblank",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Pillow independent verify + full pixel decode",
+            "encoding": "PNG",
+            "width": 1200,
+            "height": 3334,
+            "mode": "RGB",
+            "extrema": [
+              [
+                103,
+                255
+              ],
+              [
+                141,
+                255
+              ],
+              [
+                130,
+                255
+              ]
+            ],
+            "standard_deviation": [
+              20.011633013892617,
+              15.52748748494725,
+              22.81105448670824
+            ],
+            "nonuniform_fraction": 0.46106487771739135,
+            "nonblank": true,
+            "decoded": true,
+            "second_decoder": {
+              "reader": "FFmpeg independent full pixel decoder",
+              "decoded_bytes": 12002400,
+              "pixel_sha256": "d60044b311104d59b52e85f7df1763f92f19a3f034ef2637f3f164785d0ce921",
+              "decoded": true
+            }
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "manifest.json",
+          "bytes": 1953,
+          "sha256": "e7d7b075e18e639e32add862719a1fb187082a6f25447549fb115a275a32bb6a",
+          "format": "json",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "json_parse",
+            "finite_json_numbers",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent UTF-8 JSON parser",
+            "type": "dict"
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "planning-questionnaire.html",
+          "bytes": 21553,
+          "sha256": "fbacf09d9aa07e19d7eb685922b5cb0175f498da1ae7d0a691714ed016a752d8",
+          "format": "html",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "html_parse",
+            "all_local_targets_exist",
+            "embedded_artifacts_decode",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent HTML parser",
+            "status": "passed",
+            "local_links": [],
+            "embedded_artifacts": [
+              {
+                "attribute": "href",
+                "mime": "image/png",
+                "bytes": 123,
+                "sha256": "d7f170ebbb8e09bf94be2840aaf7f1634cc9bd0592ab90a4ced6ccfdefa134d7",
+                "details": {
+                  "reader": "Pillow independent verify + full pixel decode",
+                  "encoding": "PNG",
+                  "width": 24,
+                  "height": 24,
+                  "mode": "RGB",
+                  "extrema": [
+                    [
+                      71,
+                      201
+                    ],
+                    [
+                      13,
+                      184
+                    ],
+                    [
+                      63,
+                      138
+                    ]
+                  ],
+                  "standard_deviation": [
+                    62.877273259686625,
+                    82.70779790312625,
+                    36.275349957511516
+                  ],
+                  "nonuniform_fraction": 0.37326388888888884,
+                  "nonblank": true,
+                  "decoded": true,
+                  "second_decoder": {
+                    "reader": "FFmpeg independent full pixel decoder",
+                    "decoded_bytes": 1728,
+                    "pixel_sha256": "1b8b6be9f4141a4dccf35572af11a88b6b73c462b11a66dde3bf4052948a1930",
+                    "decoded": true
+                  }
+                }
+              }
+            ],
+            "external_links": [],
+            "user_accessibility": "not_verified",
+            "sha256": "fbacf09d9aa07e19d7eb685922b5cb0175f498da1ae7d0a691714ed016a752d8"
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "planning-review-preview.png",
+          "bytes": 205592,
+          "sha256": "87b7aeae72a84fe46b3c1c58a1e3e2a1f5e9b9befadf4d216361820d8829d738",
+          "format": "png",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "container_verify",
+            "full_pixel_decode",
+            "second_independent_pixel_decoder",
+            "dimensions",
+            "nonblank",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Pillow independent verify + full pixel decode",
+            "encoding": "PNG",
+            "width": 1400,
+            "height": 1546,
+            "mode": "RGB",
+            "extrema": [
+              [
+                4,
+                255
+              ],
+              [
+                46,
+                255
+              ],
+              [
+                33,
+                255
+              ]
+            ],
+            "standard_deviation": [
+              31.627132264233065,
+              26.53492642084498,
+              28.565008033944387
+            ],
+            "nonuniform_fraction": 0.48045191271551724,
+            "nonblank": true,
+            "decoded": true,
+            "second_decoder": {
+              "reader": "FFmpeg independent full pixel decoder",
+              "decoded_bytes": 6493200,
+              "pixel_sha256": "a476e1e1a791ea220b0627c91b13e47c057584f8335d33c78933addc4bd903ee",
+              "decoded": true
+            }
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "preservation-report.json",
+          "bytes": 267,
+          "sha256": "e776b6accd2e7ccde5b30b50302e3f61b3d81aef69153b97bd5df504e3e6b90a",
+          "format": "json",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "json_parse",
+            "finite_json_numbers",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent UTF-8 JSON parser",
+            "type": "dict"
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "regression-report.json",
+          "bytes": 40252,
+          "sha256": "37bef6d2cb59fa430bd61fb7fb468e99dcceb57ea2859d06876f1113e3b3e463",
+          "format": "json",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "json_parse",
+            "finite_json_numbers",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent UTF-8 JSON parser",
+            "type": "dict"
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "site-approval-preview.png",
+          "bytes": 329999,
+          "sha256": "3dab99c27a6c90ca7ff892cacb4a02604b831ba2cbd8663a57e799acda2af618",
+          "format": "png",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "container_verify",
+            "full_pixel_decode",
+            "second_independent_pixel_decoder",
+            "dimensions",
+            "nonblank",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Pillow independent verify + full pixel decode",
+            "encoding": "PNG",
+            "width": 1200,
+            "height": 3312,
+            "mode": "RGB",
+            "extrema": [
+              [
+                103,
+                255
+              ],
+              [
+                133,
+                255
+              ],
+              [
+                110,
+                255
+              ]
+            ],
+            "standard_deviation": [
+              18.421977885507566,
+              15.230430216066773,
+              19.04907114299029
+            ],
+            "nonuniform_fraction": 0.46564180107526887,
+            "nonblank": true,
+            "decoded": true,
+            "second_decoder": {
+              "reader": "FFmpeg independent full pixel decoder",
+              "decoded_bytes": 11923200,
+              "pixel_sha256": "5b1027e0bb7b3564a3ba7de23137b3e9e093495d58894e3ed28db2a82f8faa07",
+              "decoded": true
+            }
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "site-browser-report.json",
+          "bytes": 735,
+          "sha256": "51b154b2e3b1805e512c792627e81833f0eebbb08f5a8ff817c0461b2c9db505",
+          "format": "json",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "json_parse",
+            "finite_json_numbers",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent UTF-8 JSON parser",
+            "type": "dict"
+          },
+          "user_accessibility": "not_verified"
+        },
+        {
+          "status": "passed",
+          "name": "site-viewer.html",
+          "bytes": 6433220,
+          "sha256": "b854b4a1d140eade0dbb310de93e1b63c6f4e959f4017981a27754454f437b52",
+          "format": "html",
+          "artifact_role": "packaged_member",
+          "checks": [
+            "regular_file_exists",
+            "nonempty_reasonable_size",
+            "independent_reopen",
+            "utf8_decode",
+            "html_parse",
+            "all_local_targets_exist",
+            "embedded_artifacts_decode",
+            "immutable_source_hash"
+          ],
+          "details": {
+            "reader": "Python independent HTML parser",
+            "status": "passed",
+            "local_links": [],
+            "embedded_artifacts": [
+              {
+                "attribute": "href",
+                "mime": "image/png",
+                "bytes": 123,
+                "sha256": "d7f170ebbb8e09bf94be2840aaf7f1634cc9bd0592ab90a4ced6ccfdefa134d7",
+                "details": {
+                  "reader": "Pillow independent verify + full pixel decode",
+                  "encoding": "PNG",
+                  "width": 24,
+                  "height": 24,
+                  "mode": "RGB",
+                  "extrema": [
+                    [
+                      71,
+                      201
+                    ],
+                    [
+                      13,
+                      184
+                    ],
+                    [
+                      63,
+                      138
+                    ]
+                  ],
+                  "standard_deviation": [
+                    62.877273259686625,
+                    82.70779790312625,
+                    36.275349957511516
+                  ],
+                  "nonuniform_fraction": 0.37326388888888884,
+                  "nonblank": true,
+                  "decoded": true,
+                  "second_decoder": {
+                    "reader": "FFmpeg independent full pixel decoder",
+                    "decoded_bytes": 1728,
+                    "pixel_sha256": "1b8b6be9f4141a4dccf35572af11a88b6b73c462b11a66dde3bf4052948a1930",
+                    "decoded": true
+                  }
+                }
+              },
+              {
+                "attribute": "src",
+                "mime": "image/png",
+                "bytes": 810155,
+                "sha256": "f6251ee2ad4abb8f476c8d8d9322a6be2f5452a345264f4294b3e961decf36d4",
+                "details": {
+                  "reader": "Pillow independent verify + full pixel decode",
+                  "encoding": "PNG",
+                  "width": 1000,
+                  "height": 700,
+                  "mode": "RGBA",
+                  "extrema": [
+                    [
+                      63,
+                      195
+                    ],
+                    [
+                      109,
+                      200
+                    ],
+                    [
+                      76,
+                      202
+                    ]
+                  ],
+                  "standard_deviation": [
+                    10.01671528128342,
+                    8.554278393559986,
+                    15.992666646527285
+                  ],
+                  "nonuniform_fraction": 0.5476606145251397,
+                  "nonblank": true,
+                  "decoded": true,
+                  "second_decoder": {
+                    "reader": "FFmpeg independent full pixel decoder",
+                    "decoded_bytes": 2100000,
+                    "pixel_sha256": "d47e8cd760b9cfd6e190830e8c8546b49b1e9b3d208d5c06a3197f03b624a4b8",
+                    "decoded": true
+                  }
+                }
+              },
+              {
+                "attribute": "src",
+                "mime": "image/png",
+                "bytes": 794191,
+                "sha256": "a9464c7623bb6e9cee1020639546e86440c87bd87534d198db8e0dbe34567d9d",
+                "details": {
+                  "reader": "Pillow independent verify + full pixel decode",
+                  "encoding": "PNG",
+                  "width": 1000,
+                  "height": 700,
+                  "mode": "RGBA",
+                  "extrema": [
+                    [
+                      63,
+                      195
+                    ],
+                    [
+                      109,
+                      199
+                    ],
+                    [
+                      76,
+                      203
+                    ]
+                  ],
+                  "standard_deviation": [
+                    9.301142121207263,
+                    7.967715089376615,
+                    15.395589421394689
+                  ],
+                  "nonuniform_fraction": 0.5475951466480447,
+                  "nonblank": true,
+                  "decoded": true,
+                  "second_decoder": {
+                    "reader": "FFmpeg independent full pixel decoder",
+                    "decoded_bytes": 2100000,
+                    "pixel_sha256": "36db292b9dfcdd8567e973f7b279a09a13c1dc088e4cec055f0718b7a9329010",
+                    "decoded": true
+                  }
+                }
+              },
+              {
+                "attribute": "src",
+                "mime": "image/png",
+                "bytes": 811405,
+                "sha256": "4633ff38980b96109d0c63026cac85d819b3e120d6d06360b20ba06a4612986e",
+                "details": {
+                  "reader": "Pillow independent verify + full pixel decode",
+                  "encoding": "PNG",
+                  "width": 1000,
+                  "height": 700,
+                  "mode": "RGBA",
+                  "extrema": [
+                    [
+                      52,
+                      195
+                    ],
+                    [
+                      108,
+                      200
+                    ],
+                    [
+                      76,
+                      206
+                    ]
+                  ],
+                  "standard_deviation": [
+                    12.700456439713607,
+                    9.251229970535771,
+                    15.734564581095146
+                  ],
+                  "nonuniform_fraction": 0.5475951466480447,
+                  "nonblank": true,
+                  "decoded": true,
+                  "second_decoder": {
+                    "reader": "FFmpeg independent full pixel decoder",
+                    "decoded_bytes": 2100000,
+                    "pixel_sha256": "a6727eb3871d68a0968abc9184d8cba980caedec398efca2817fc07867c1e0c1",
+                    "decoded": true
+                  }
+                }
+              }
+            ],
+            "external_links": [],
+            "user_accessibility": "not_verified",
+            "sha256": "b854b4a1d140eade0dbb310de93e1b63c6f4e959f4017981a27754454f437b52"
+          },
+          "user_accessibility": "not_verified"
+        }
+      ],
+      "user_accessibility": "not_verified",
+      "checks": [
+        "crc",
+        "safe_paths",
+        "isolated_extract",
+        "manifest_hashes",
+        "independent_revalidation",
+        "immutable_archive_hash"
+      ]
+    },
+    "embedded_models_after_extraction": {
+      "existing": {
+        "status": "passed",
+        "name": "existing.glb",
+        "bytes": 45424,
+        "sha256": "2384625fa653b1e804c2634afad6cb6481c60312e62f05af683bdb9435f9aac5",
+        "format": "glb",
+        "artifact_role": "output",
+        "checks": [
+          "regular_file_exists",
+          "nonempty_reasonable_size",
+          "independent_reopen",
+          "independent_model_reimport",
+          "finite_nonempty_geometry",
+          "object_inventory",
+          "camera_inventory",
+          "immutable_source_hash"
+        ],
+        "details": {
+          "source_primitives": 8,
+          "source_cameras": 3,
+          "status": "passed",
+          "reader": "Blender independent re-import",
+          "blender_version": "4.3.2",
+          "format": "glb",
+          "objects": [
+            {
+              "name": "crossing-D",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 930.8242874145508,
+              "surface_area_world": 930.8242887667567,
+              "bounds": [
+                [
+                  75.0,
+                  5.0,
+                  6.127806186676025
+                ],
+                [
+                  90.0,
+                  18.0,
+                  16.262950897216797
+                ]
+              ]
+            },
+            {
+              "name": "keep-B",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1617.097068786621,
+              "surface_area_world": 1617.097073369272,
+              "bounds": [
+                [
+                  55.0,
+                  55.0,
+                  4.0337910652160645
+                ],
+                [
+                  70.0,
+                  70.0,
+                  25.265283584594727
+                ]
+              ]
+            },
+            {
+              "name": "outside-C",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1545.6054229736328,
+              "surface_area_world": 1545.6054278410165,
+              "bounds": [
+                [
+                  90.0,
+                  25.0,
+                  6.2110915184021
+                ],
+                [
+                  108.0,
+                  39.0,
+                  23.493858337402344
+                ]
+              ]
+            },
+            {
+              "name": "remove-A",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1560.9859466552734,
+              "surface_area_world": 1560.9859550704437,
+              "bounds": [
+                [
+                  10.0,
+                  10.0,
+                  2.1632182598114014
+                ],
+                [
+                  30.0,
+                  24.0,
+                  18.990123748779297
+                ]
+              ]
+            },
+            {
+              "name": "road",
+              "vertices": 84,
+              "faces": 36,
+              "surface_area_local": 736.1034555435181,
+              "surface_area_world": 736.1034521773022,
+              "bounds": [
+                [
+                  -10.0,
+                  -10.0,
+                  -0.5347127318382263
+                ],
+                [
+                  110.0,
+                  -4.0,
+                  10.793767929077148
+                ]
+              ]
+            },
+            {
+              "name": "terrain",
+              "vertices": 1151,
+              "faces": 392,
+              "surface_area_local": 19902.789947509766,
+              "surface_area_world": 19902.789988611872,
+              "bounds": [
+                [
+                  -20.0,
+                  -20.0,
+                  -3.588902235031128
+                ],
+                [
+                  120.0,
+                  120.0,
+                  16.380495071411133
+                ]
+              ]
+            },
+            {
+              "name": "tree",
+              "vertices": 24,
+              "faces": 12,
+              "surface_area_local": 32.0,
+              "surface_area_world": 32.0,
+              "bounds": [
+                [
+                  45.0,
+                  30.0,
+                  8.271463394165039
+                ],
+                [
+                  47.0,
+                  32.0,
+                  11.271463394165039
+                ]
+              ]
+            },
+            {
+              "name": "walk",
+              "vertices": 96,
+              "faces": 48,
+              "surface_area_local": 244.88199043273926,
+              "surface_area_world": 244.88198774986608,
+              "bounds": [
+                [
+                  -10.0,
+                  -4.0,
+                  -0.5673563480377197
+                ],
+                [
+                  110.0,
+                  -2.0,
+                  9.701507568359375
+                ]
+              ]
+            }
+          ],
+          "vertices": 1459,
+          "faces": 536,
+          "cameras": [
+            {
+              "name": "aerial",
+              "position": [
+                145.0,
+                -115.0,
+                110.0
+              ],
+              "rotation": [
+                1.059662938117981,
+                -1.8253551559155312e-08,
+                0.5954101085662842
+              ],
+              "quaternion": [
+                0.8249354958534241,
+                0.48315706849098206,
+                0.14824387431144714,
+                0.2531096339225769
+              ],
+              "forward": [
+                -0.48916661739349365,
+                0.7221028804779053,
+                -0.4891660213470459
+              ],
+              "up": [
+                -0.27434805035591125,
+                0.40498948097229004,
+                0.8721906542778015
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            },
+            {
+              "name": "street",
+              "position": [
+                0.0,
+                -12.0,
+                1.2200000286102295
+              ],
+              "rotation": [
+                1.7649415731430054,
+                -8.702311049546552e-08,
+                -0.594213604927063
+              ],
+              "quaternion": [
+                0.6074132323265076,
+                0.7384738922119141,
+                -0.22609786689281464,
+                -0.18597111105918884
+              ],
+              "forward": [
+                0.5493392944335938,
+                0.813022255897522,
+                0.19292786717414856
+              ],
+              "up": [
+                -0.1080121248960495,
+                -0.1598578542470932,
+                0.9812129735946655
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            },
+            {
+              "name": "top",
+              "position": [
+                40.0,
+                40.0,
+                190.0
+              ],
+              "rotation": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "quaternion": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "forward": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "up": [
+                0.0,
+                1.0,
+                0.0
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            }
+          ],
+          "camera_support": "supported",
+          "active_camera": null,
+          "coordinate_interpretation": "Blender Z up"
+        },
+        "user_accessibility": "not_verified",
+        "delivery_gate": "independent_open_and_byte_hash"
+      },
+      "cleared": {
+        "status": "passed",
+        "name": "cleared.glb",
+        "bytes": 44288,
+        "sha256": "452c6a0d380325892ba33847ea1251c2b711a3dbd1988c92262101fce1837f85",
+        "format": "glb",
+        "artifact_role": "output",
+        "checks": [
+          "regular_file_exists",
+          "nonempty_reasonable_size",
+          "independent_reopen",
+          "independent_model_reimport",
+          "finite_nonempty_geometry",
+          "object_inventory",
+          "camera_inventory",
+          "immutable_source_hash"
+        ],
+        "details": {
+          "source_primitives": 7,
+          "source_cameras": 3,
+          "status": "passed",
+          "reader": "Blender independent re-import",
+          "blender_version": "4.3.2",
+          "format": "glb",
+          "objects": [
+            {
+              "name": "crossing-D",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 930.8242874145508,
+              "surface_area_world": 930.8242887667567,
+              "bounds": [
+                [
+                  75.0,
+                  5.0,
+                  6.127806186676025
+                ],
+                [
+                  90.0,
+                  18.0,
+                  16.262950897216797
+                ]
+              ]
+            },
+            {
+              "name": "keep-B",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1617.097068786621,
+              "surface_area_world": 1617.097073369272,
+              "bounds": [
+                [
+                  55.0,
+                  55.0,
+                  4.0337910652160645
+                ],
+                [
+                  70.0,
+                  70.0,
+                  25.265283584594727
+                ]
+              ]
+            },
+            {
+              "name": "outside-C",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1545.6054229736328,
+              "surface_area_world": 1545.6054278410165,
+              "bounds": [
+                [
+                  90.0,
+                  25.0,
+                  6.2110915184021
+                ],
+                [
+                  108.0,
+                  39.0,
+                  23.493858337402344
+                ]
+              ]
+            },
+            {
+              "name": "road",
+              "vertices": 84,
+              "faces": 36,
+              "surface_area_local": 736.1034555435181,
+              "surface_area_world": 736.1034521773022,
+              "bounds": [
+                [
+                  -10.0,
+                  -10.0,
+                  -0.5347127318382263
+                ],
+                [
+                  110.0,
+                  -4.0,
+                  10.793767929077148
+                ]
+              ]
+            },
+            {
+              "name": "terrain",
+              "vertices": 1151,
+              "faces": 392,
+              "surface_area_local": 19902.789947509766,
+              "surface_area_world": 19902.789988611872,
+              "bounds": [
+                [
+                  -20.0,
+                  -20.0,
+                  -3.588902235031128
+                ],
+                [
+                  120.0,
+                  120.0,
+                  16.380495071411133
+                ]
+              ]
+            },
+            {
+              "name": "tree",
+              "vertices": 24,
+              "faces": 12,
+              "surface_area_local": 32.0,
+              "surface_area_world": 32.0,
+              "bounds": [
+                [
+                  45.0,
+                  30.0,
+                  8.271463394165039
+                ],
+                [
+                  47.0,
+                  32.0,
+                  11.271463394165039
+                ]
+              ]
+            },
+            {
+              "name": "walk",
+              "vertices": 96,
+              "faces": 48,
+              "surface_area_local": 244.88199043273926,
+              "surface_area_world": 244.88198774986608,
+              "bounds": [
+                [
+                  -10.0,
+                  -4.0,
+                  -0.5673563480377197
+                ],
+                [
+                  110.0,
+                  -2.0,
+                  9.701507568359375
+                ]
+              ]
+            }
+          ],
+          "vertices": 1433,
+          "faces": 524,
+          "cameras": [
+            {
+              "name": "aerial",
+              "position": [
+                145.0,
+                -115.0,
+                110.0
+              ],
+              "rotation": [
+                1.059662938117981,
+                -1.8253551559155312e-08,
+                0.5954101085662842
+              ],
+              "quaternion": [
+                0.8249354958534241,
+                0.48315706849098206,
+                0.14824387431144714,
+                0.2531096339225769
+              ],
+              "forward": [
+                -0.48916661739349365,
+                0.7221028804779053,
+                -0.4891660213470459
+              ],
+              "up": [
+                -0.27434805035591125,
+                0.40498948097229004,
+                0.8721906542778015
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            },
+            {
+              "name": "street",
+              "position": [
+                0.0,
+                -12.0,
+                1.2200000286102295
+              ],
+              "rotation": [
+                1.7649415731430054,
+                -8.702311049546552e-08,
+                -0.594213604927063
+              ],
+              "quaternion": [
+                0.6074132323265076,
+                0.7384738922119141,
+                -0.22609786689281464,
+                -0.18597111105918884
+              ],
+              "forward": [
+                0.5493392944335938,
+                0.813022255897522,
+                0.19292786717414856
+              ],
+              "up": [
+                -0.1080121248960495,
+                -0.1598578542470932,
+                0.9812129735946655
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            },
+            {
+              "name": "top",
+              "position": [
+                40.0,
+                40.0,
+                190.0
+              ],
+              "rotation": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "quaternion": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "forward": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "up": [
+                0.0,
+                1.0,
+                0.0
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            }
+          ],
+          "camera_support": "supported",
+          "active_camera": null,
+          "coordinate_interpretation": "Blender Z up"
+        },
+        "user_accessibility": "not_verified",
+        "delivery_gate": "independent_open_and_byte_hash"
+      },
+      "planted": {
+        "status": "passed",
+        "name": "planted.glb",
+        "bytes": 45628,
+        "sha256": "65c3d880072a98f4159b99d60b6bed5126ef495773d5620a807982d0931cf3a7",
+        "format": "glb",
+        "artifact_role": "output",
+        "checks": [
+          "regular_file_exists",
+          "nonempty_reasonable_size",
+          "independent_reopen",
+          "independent_model_reimport",
+          "finite_nonempty_geometry",
+          "object_inventory",
+          "camera_inventory",
+          "immutable_source_hash"
+        ],
+        "details": {
+          "source_primitives": 8,
+          "source_cameras": 3,
+          "status": "passed",
+          "reader": "Blender independent re-import",
+          "blender_version": "4.3.2",
+          "format": "glb",
+          "objects": [
+            {
+              "name": "crossing-D",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 930.8242874145508,
+              "surface_area_world": 930.8242887667567,
+              "bounds": [
+                [
+                  75.0,
+                  5.0,
+                  6.127806186676025
+                ],
+                [
+                  90.0,
+                  18.0,
+                  16.262950897216797
+                ]
+              ]
+            },
+            {
+              "name": "keep-B",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1617.097068786621,
+              "surface_area_world": 1617.097073369272,
+              "bounds": [
+                [
+                  55.0,
+                  55.0,
+                  4.0337910652160645
+                ],
+                [
+                  70.0,
+                  70.0,
+                  25.265283584594727
+                ]
+              ]
+            },
+            {
+              "name": "new-N",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1560.9859466552734,
+              "surface_area_world": 1560.9859550704437,
+              "bounds": [
+                [
+                  10.0,
+                  10.0,
+                  2.1632182598114014
+                ],
+                [
+                  30.0,
+                  24.0,
+                  18.990123748779297
+                ]
+              ]
+            },
+            {
+              "name": "outside-C",
+              "vertices": 26,
+              "faces": 12,
+              "surface_area_local": 1545.6054229736328,
+              "surface_area_world": 1545.6054278410165,
+              "bounds": [
+                [
+                  90.0,
+                  25.0,
+                  6.2110915184021
+                ],
+                [
+                  108.0,
+                  39.0,
+                  23.493858337402344
+                ]
+              ]
+            },
+            {
+              "name": "road",
+              "vertices": 84,
+              "faces": 36,
+              "surface_area_local": 736.1034555435181,
+              "surface_area_world": 736.1034521773022,
+              "bounds": [
+                [
+                  -10.0,
+                  -10.0,
+                  -0.5347127318382263
+                ],
+                [
+                  110.0,
+                  -4.0,
+                  10.793767929077148
+                ]
+              ]
+            },
+            {
+              "name": "terrain",
+              "vertices": 1151,
+              "faces": 392,
+              "surface_area_local": 19902.789947509766,
+              "surface_area_world": 19902.789988611872,
+              "bounds": [
+                [
+                  -20.0,
+                  -20.0,
+                  -3.588902235031128
+                ],
+                [
+                  120.0,
+                  120.0,
+                  16.380495071411133
+                ]
+              ]
+            },
+            {
+              "name": "tree",
+              "vertices": 24,
+              "faces": 12,
+              "surface_area_local": 32.0,
+              "surface_area_world": 32.0,
+              "bounds": [
+                [
+                  45.0,
+                  30.0,
+                  8.271463394165039
+                ],
+                [
+                  47.0,
+                  32.0,
+                  11.271463394165039
+                ]
+              ]
+            },
+            {
+              "name": "walk",
+              "vertices": 96,
+              "faces": 48,
+              "surface_area_local": 244.88199043273926,
+              "surface_area_world": 244.88198774986608,
+              "bounds": [
+                [
+                  -10.0,
+                  -4.0,
+                  -0.5673563480377197
+                ],
+                [
+                  110.0,
+                  -2.0,
+                  9.701507568359375
+                ]
+              ]
+            }
+          ],
+          "vertices": 1459,
+          "faces": 536,
+          "cameras": [
+            {
+              "name": "aerial",
+              "position": [
+                145.0,
+                -115.0,
+                110.0
+              ],
+              "rotation": [
+                1.059662938117981,
+                -1.8253551559155312e-08,
+                0.5954101085662842
+              ],
+              "quaternion": [
+                0.8249354958534241,
+                0.48315706849098206,
+                0.14824387431144714,
+                0.2531096339225769
+              ],
+              "forward": [
+                -0.48916661739349365,
+                0.7221028804779053,
+                -0.4891660213470459
+              ],
+              "up": [
+                -0.27434805035591125,
+                0.40498948097229004,
+                0.8721906542778015
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            },
+            {
+              "name": "street",
+              "position": [
+                0.0,
+                -12.0,
+                1.2200000286102295
+              ],
+              "rotation": [
+                1.7649415731430054,
+                -8.702311049546552e-08,
+                -0.594213604927063
+              ],
+              "quaternion": [
+                0.6074132323265076,
+                0.7384738922119141,
+                -0.22609786689281464,
+                -0.18597111105918884
+              ],
+              "forward": [
+                0.5493392944335938,
+                0.813022255897522,
+                0.19292786717414856
+              ],
+              "up": [
+                -0.1080121248960495,
+                -0.1598578542470932,
+                0.9812129735946655
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            },
+            {
+              "name": "top",
+              "position": [
+                40.0,
+                40.0,
+                190.0
+              ],
+              "rotation": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "quaternion": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "forward": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "up": [
+                0.0,
+                1.0,
+                0.0
+              ],
+              "type": "PERSP",
+              "lens_mm": 38.095237731933594,
+              "vertical_fov": 34.96885417298361,
+              "sensor_height": 24.0,
+              "sensor_fit": "VERTICAL"
+            }
+          ],
+          "camera_support": "supported",
+          "active_camera": null,
+          "coordinate_interpretation": "Blender Z up"
+        },
+        "user_accessibility": "not_verified",
+        "delivery_gate": "independent_open_and_byte_hash"
+      }
+    }
+  },
+  "recipient_access": "not_verified",
+  "publish_files": [
+    "README.he.md",
+    "planning-questionnaire.html",
+    "site-viewer.html",
+    "dossier-questionnaire-preview.png",
+    "planning-review-preview.png",
+    "historical-model-viewer-preview.png",
+    "site-approval-preview.png",
+    "browser-report.json",
+    "site-browser-report.json",
+    "preservation-report.json",
+    "regression-report.json",
+    "acceptance-status.json",
+    "manifest.json",
+    "planning-and-status-v5.zip",
+    "delivery-report.json"
+  ]
+}

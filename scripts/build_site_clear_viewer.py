@@ -1,5 +1,5 @@
 from pathlib import Path
-import base64,json,re
+import base64,json,re,argparse
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'outputs/site-v4'
 base=(ROOT/'golden-city-viewer.html').read_text()
 importmap=re.search(r'<script type="importmap">.*?</script>',base,re.S).group(0)
@@ -13,5 +13,5 @@ areas=''.join('<label>'+label+' — מ״ר נפרדים<input id="area-'+key+'" 
 text=(ROOT/'engine/site_clear_template.html').read_text()
 icon=re.search(r'<link rel="icon"[^>]*>',(ROOT/'engine/viewer_template.html').read_text()).group(0)
 for key,value in {'ICON':icon,'IMPORTMAP':importmap,'LICENSE':license,'PICTURES':pictures,'AREAS':areas,'PAYLOAD':json.dumps(payload,ensure_ascii=False).replace('</','<\\/'),'MODULE':(ROOT/'engine/site_clear_viewer.mjs').read_text()}.items():text=text.replace('__'+key+'__',value)
-(OUT/'viewer.html').write_text(text)
+parser=argparse.ArgumentParser();parser.add_argument('--destination',type=Path,default=OUT/'viewer.html');args=parser.parse_args();args.destination.parent.mkdir(parents=True,exist_ok=True);args.destination.write_text(text)
 print('Standalone site viewer created',len(text.encode()),'bytes')

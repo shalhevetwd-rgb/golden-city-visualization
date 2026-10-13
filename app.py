@@ -162,7 +162,7 @@ class Handler(BaseHTTPRequestHandler):
         if path == '/health': return self.respond({'status':'ok'})
         if path == '/api/capabilities': return self.respond(capabilities())
         if path in {'/site-clearing','/site-clearing/'}:
-            artifact=ROOT/'outputs/site-v4/viewer.html';payload=artifact.read_bytes()
+            artifact=ROOT/'outputs/planning-v5/site-viewer.html';payload=artifact.read_bytes()
             verify_for_delivery(artifact,expected={'sha256':hashlib.sha256(payload).hexdigest()})
             return self.respond(payload,mime='text/html',verified=True)
         if path == '/api/reconstruction/versions':
@@ -200,6 +200,8 @@ class Handler(BaseHTTPRequestHandler):
                     entries.append({'name':name,'url':'/downloads/'+name,'bytes':candidate.stat().st_size,'validation':evidence['status'],'user_accessibility':'not_verified'})
             return self.respond({'files':entries,'server_file_validation':'passed' if len(entries)==len(names) else 'incomplete','recipient_access':'not_verified'})
         locations={'/vendor/':ROOT/'vendor','/renders/':OUTPUT,'/assets/':ASSETS,'/examples/':ROOT/'examples','/downloads/':DELIVERABLES,'/showcase/v3/':ROOT/'outputs'/'v3','/architectural-edits/':DATA/'architectural-edits'}
+        if path=='/planning': return self.respond((ROOT/'planning.html').read_bytes(),mime='text/html')
+        if path=='/planning.js': return self.respond((ROOT/'planning.js').read_bytes(),mime='text/javascript')
         if path=='/browser-view.js': return self.respond((ROOT/'browser-view.js').read_bytes(),mime='text/javascript')
         for prefix, directory in locations.items():
             if path.startswith(prefix):
@@ -226,6 +228,39 @@ class Handler(BaseHTTPRequestHandler):
             request_limit=75_000_000 if self.path=='/api/intake' else 15_000_000
             if not 0 < length <= request_limit: raise ValueError('גודל בקשה לא תקין')
             request=json.loads(self.rfile.read(length))
+            if self.path=='/api/municipal-collect':
+                identifier=request.get('id')
+                if not isinstance(identifier,str) or not re.fullmatch('[0-9a-f]{32}',identifier):raise ValueError('מזהה תיק לא תקין')
+                with LOCK: initial_project=json.loads((DATA/(identifier+'.json')).read_text())
+                if initial_project.get('synthetic') is True:raise ValueError('מקורות אתר אמיתי נקלטים בתיק נפרד, ללא ערבוב עם ההדגמה הסינתטית')
+                from engine.municipal_gis import collect,discover
+                source_dir=DATA/'municipal-sources'/uuid.uuid4().hex
+                source_dir.mkdir(parents=True,exist_ok=False)
+                observations=collect(request['block'],request['parcels'],source_dir,request['street'],request['address_numbers']) if request.get('parcels') else discover(request['block'],request['street'],request['address_numbers'],source_dir)
+                source_path=source_dir/'observations.json';save_atomic(source_path,observations)
+                map_result=None
+                if observations['parcels']['features']:
+                    try:
+                        from engine.municipal_map import render as render_source_map
+                        map_result=render_source_map(observations,source_dir)
+                        verify_for_delivery(source_dir/map_result['map_path'],expected={'sha256':map_result['sha256']})
+                    except (ValueError,RuntimeError,OSError,KeyError,StopIteration) as error:
+                        save_atomic(source_dir/'map-unavailable.json',{'status':'unavailable','error':str(error),'synthetic_substitute_created':False})
+                with LOCK:
+                    project=json.loads((DATA/(identifier+'.json')).read_text());previous=copy.deepcopy(project)
+                    research=project.setdefault('real_site_research',{})
+                    for key in ('map_url','map_sha256','delivery_bundle'):research.pop(key,None)
+                    research['municipal_observations']={'path':str(source_path.relative_to(DATA)),'sha256':hashlib.sha256(source_path.read_bytes()).hexdigest(),'audit':observations['audit'],'counts':{k:len(observations[k]['features']) for k in ('parcels','buildings','addresses','height_points','contours')},'official_polygons_retrieved':bool(observations['parcels']['features']),'licensed_redistribution_verified':False}
+                    if map_result:
+                        map_name=uuid.uuid4().hex+'.png';map_bytes=(source_dir/map_result['map_path']).read_bytes();(ASSETS/map_name).write_bytes(map_bytes)
+                        research['map_url']='/assets/'+map_name;research['map_sha256']=map_result['sha256'];research['map_source_provenance']=map_result['source']
+                    known_units=observations['audit'].get('municipal_units_in_candidate_parcels')
+                    if known_units is not None:
+                        brief=project.setdefault('planning_brief',__import__('planning_brief').initial());answers=brief.setdefault('answers',{})
+                        if answers.get('existing_units') in (None,'unknown'):answers['existing_units']=known_units;brief['approval']=None
+                        brief.setdefault('provenance',{})['municipal_candidate_units']={'value':known_units,'scope':'candidate parcels; address linkage must be verified; show to user for review'}
+                    project=commit(previous,project,'municipal-source-intake');ensure_geometry_record(project,DATA);save_atomic(DATA/(identifier+'.json'),project)
+                return self.respond({'project':project,'source_audit':observations['audit'],'proposed_model_created':False})
             with LOCK:
                 if self.path.startswith('/api/reconstruction/'):
                     from site_reconstruction import api_action
@@ -237,6 +272,9 @@ class Handler(BaseHTTPRequestHandler):
                     project=dossier(request)
                 elif self.path == '/api/import':
                     project=validate(request); project['id']=uuid.uuid4().hex
+                    project['geometry_role']='imported_source'
+                    project['planning_brief']=__import__('planning_brief').initial(request.get('planning_answers'))
+                    if request.get('geometry_role')=='proposed':raise ValueError('קליטת בינוי מוצע חדש דורשת פרוגרמה ואישור; יש להשתמש בהעמדה מתוך קרקע נקייה')
                 else:
                     identifier=request['id']
                     if not isinstance(identifier,str) or not re.fullmatch('[0-9a-f]{32}',identifier): raise ValueError('מזהה לא תקין')
@@ -246,12 +284,21 @@ class Handler(BaseHTTPRequestHandler):
                         project,result=inspect_source(project,request,DATA)
                         save_atomic(DATA/(identifier+'.json'),project)
                         return self.respond({'project':project,'result':result})
+                    elif self.path == '/api/site-status':
+                        from real_site_readiness import status
+                        return self.respond(status(project))
                     elif self.path == '/api/readiness':
                         result=readiness(project,DATA)
                         save_atomic(DATA/(identifier+'.json'),project)
                         return self.respond(result)
                     elif self.path == '/api/review':
                         project=record_review(project,request,DATA)
+                    elif self.path in {'/api/planning-save','/api/planning-review','/api/planning-approve','/api/planning-alternatives'}:
+                        from planning_brief import normalize,review,approve,alternatives
+                        if self.path=='/api/planning-review':return self.respond(review(project,project.get('planning_brief',{}),request.get('plan')))
+                        if self.path=='/api/planning-alternatives':return self.respond(alternatives(project.get('planning_brief',{}),request.get('context',{})))
+                        project['planning_brief']=normalize(request['brief']) if self.path=='/api/planning-save' else approve(project,project.get('planning_brief',{}),request.get('plan'),request)
+                        project=commit(previous,project,'planning-brief')
                     elif self.path == '/api/approve':
                         if project['errors']: raise ValueError('יש לתקן את שגיאות ההעמדה')
                         if not project.get('buildings') or not project.get('boundary'):
@@ -292,6 +339,16 @@ class Handler(BaseHTTPRequestHandler):
                         payload=output.read_bytes()
                         verify_for_delivery(output,expected={'sha256':hashlib.sha256(payload).hexdigest(),'object_names':['building_'+quote(b['properties']['id'],safe='') for b in project['buildings']],'cameras':0})
                         return self.respond(payload,mime='text/plain',download_name='model.obj',verified=True)
+                    elif self.path == '/api/real-site-bundle':
+                        from delivery_validation import validate_archive
+                        bundle=project.get('real_site_research',{}).get('delivery_bundle',{})
+                        if not bundle:raise ValueError('אין חבילת מקור שנבדקה לתיק זה')
+                        output=(DATA/bundle['path']).resolve()
+                        if DATA.resolve() not in output.parents or output.suffix!='.zip':raise ValueError('נתיב חבילת מקור לא תקין')
+                        payload=output.read_bytes()
+                        if hashlib.sha256(payload).hexdigest()!=bundle['sha256']:raise ValueError('חבילת המקור השתנתה מאז בדיקתה')
+                        validate_archive(output)
+                        return self.respond(payload,mime='application/zip',download_name='real-site-source-study.zip',verified=True)
                     elif self.path == '/api/report':
                         output=EXPORTS/(identifier+'-'+str(project['version'])+'.json')
                         output.write_text(json.dumps(project,ensure_ascii=False,indent=2,allow_nan=False))
@@ -324,8 +381,12 @@ class Handler(BaseHTTPRequestHandler):
                         project['boundary_provenance']=result
                         project=commit(previous,project,'boundary')
                     elif self.path == '/api/align':
+                        from planning_brief import require_approval
                         from spatial import align_site_plan
                         result=align_site_plan(request['buildings'],request['control_points'],project['crs'],max_residual=float(request.get('max_residual',0.25)))
+                        existing={b['properties']['id']:b for b in project.get('buildings',[])}
+                        unchanged=len(existing)==len(result['buildings']) and all(b['properties']['id'] in existing and shape(b['geometry']).equals_exact(shape(existing[b['properties']['id']]['geometry']),1e-6) and all(b['properties'].get(k)==existing[b['properties']['id']]['properties'].get(k) for k in ('height','floors','base_elevation','balconies','slabs')) for b in result['buildings'])
+                        if not unchanged:require_approval(project,request)
                         updated=validate({**project,'buildings':result['buildings']})
                         for field in ('buildings','errors','approved'):
                             project[field]=updated[field]

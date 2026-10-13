@@ -348,6 +348,8 @@ function updateButtonStates() {
 }
 function render(resetCamera = false, preserveBuilding = true) {
   if (!project) return; const previousBuilding = preserveBuilding ? el('building').value : '';
+  if(el('planningFrame').dataset.project!==project.id){el('planningFrame').src='/planning?id='+encodeURIComponent(project.id);el('planningFrame').dataset.project=project.id;}el('planningFrame').hidden=false;el('planningHint').hidden=true;
+  el('realBundleDownload').disabled=!project.real_site_research?.delivery_bundle;el('realSiteCheck').disabled=project.synthetic===true;el('gisCollect').disabled=project.synthetic===true;el('realSiteStatus').textContent='';el('gisStatus').textContent='';const sourceMap=project.real_site_research?.map_url;el('realSitePreview').hidden=!sourceMap;if(sourceMap)el('realSitePreview').src=sourceMap;else el('realSitePreview').removeAttribute('src');const identityAddress=project.identity?.address||'';el('gisStreet').value=identityAddress.split(/\d/)[0].replace(/[—–,]+$/,'').trim();el('gisNumbers').value=(identityAddress.match(/\d+/g)||[]).join(',');
   el('title').textContent = project.name + ' • גרסה ' + project.version;
   const buildings = project.buildings || [], errors = project.errors || [];
   message(!hasGeometry() ? 'תיק נפרד פתוח ללא מודל. יש לקלוט מקורות; לא נוצרו גבולות או מיקומי מבנים משוערים.' : errors.length ? errors.join('\n') : project.approved ? 'ההעמדה אושרה על ידי המשתמשת. רינדור טיוטה אינו מאמת את הנתונים; הדמיה סופית תלויה באסמכתאות.' : 'הבדיקה הגיאומטרית עברה. יש לסקור ולאשר את ההעמדה.');
@@ -378,7 +380,8 @@ function renderReadiness() {
     : readiness?.evidence_complete === true
       ? 'סיווג: תיק אמיתי עם אסמכתאות סקירה רשומות לגרסה הנוכחית. אין תעודת מדידה, הנדסה או כשרות.'
       : 'סיווג: תיק אמיתי; נתונים שסיפקה המשתמשת או מקורות ציבוריים טעונים אימות. אין שיוך למודל ההדגמה.';
-  const missing = readiness?.missing || [];
+  const missing = [...(readiness?.missing || [])];
+  if(project.planning_brief?.status!=='approved')missing.push('לפני בינוי חדש: אפיון התכנון המבוקש ואישור משתמש לגרסת הקרקע והתוכנית');
   el('readinessMissing').replaceChildren(...missing.map(key => {const item=document.createElement('li');item.textContent=evidenceLabels[key]||String(key);return item;}));
   const stages={passed:'עבר בדיקה',missing:'חסר מידע',blocked:'חסום',synthetic:'ניסוי סינתטי',not_applicable_synthetic:'אינו חל על ניסוי סינתטי',not_implemented:'טרם מומש',ready:'מוכן לשלב הבא',registered:'נרשם'};
   el('readinessWorkflow').replaceChildren(...(readiness?.workflow||[]).map(record=>{const item=document.createElement('li');item.textContent=record.stage+' — '+(stages[record.status]||record.status);return item;}));
@@ -593,3 +596,9 @@ window.goldenCity = {
   getEnvironmentLayers: () => (viewer?.modelGroup.children || []).filter(o => o.userData.contextAsset || o.userData.aerialAsset).map(o => ({ id: o.userData.contextAsset || o.userData.aerialAsset, kind: o.userData.contextAsset ? 'model' : 'aerial_photo' })),
   getReadiness:()=>readiness?JSON.parse(JSON.stringify(readiness)):null,
 };
+
+el('realSiteCheck').onclick=()=>action(async()=>{el('realSiteStatus').textContent=JSON.stringify(await api('/api/site-status',{id:project.id}),null,2);},el('realSiteCheck'));
+
+el('gisCollect').onclick=()=>action(async()=>{const block=Number(project.identity?.block),parcels=(project.identity?.parcels||'').split(/[,\s]+/).filter(Boolean).map(Number),address_numbers=el('gisNumbers').value.split(/[,\s]+/).filter(Boolean).map(Number),street=el('gisStreet').value.trim();if(!block||!street||!address_numbers.length)throw Error('נדרשים גוש, שם רחוב ומספרי בתים. אם חלקות לא ידועות, תיבדק התאמה לפי נקודות כתובת רשמיות ללא הנחת מיקום');el('gisStatus').textContent='קוראים מקורות עירוניים. אין יצירת מבנים; אפשר לעבוד באפיון בנפרד.';const r=await api('/api/municipal-collect',{id:project.id,block,parcels,street,address_numbers});await updateProject(r.project);el('gisStatus').textContent=r.source_audit.requested_address_parcel_link_verified?'מקורות נקלטו ונמצא שיוך מרחבי לכתובות; אין בכך אישור הריסה, טופוגרפיה או תכנון.':'נקלטו מקורות רשמיים, אך שיוך הכתובות לא אומת. יש לפתור את הסתירה לפני קביעת תחום התערבות.';},el('gisCollect'));
+
+el('realBundleDownload').onclick=()=>action(async()=>{const response=await fetch('/api/real-site-bundle',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:project.id})});if(!response.ok){const j=await response.json();throw Error(j.error);}const bytes=await response.arrayBuffer();if(bytes.byteLength!==project.real_site_research.delivery_bundle.bytes)throw Error('גודל החבילה שונה מזה שנבדק');const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');if(hash!==project.real_site_research.delivery_bundle.sha256)throw Error('בדיקת SHA של ההורדה נכשלה');const link=document.createElement('a'),url=URL.createObjectURL(new Blob([bytes],{type:'application/zip'}));link.href=url;link.download='real-site-source-study.zip';link.click();setTimeout(()=>URL.revokeObjectURL(url),10000);},el('realBundleDownload'));

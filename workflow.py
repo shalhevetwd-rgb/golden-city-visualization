@@ -36,7 +36,8 @@ def dossier(request):
         'synthetic': False, 'crs': None, 'boundary': None, 'buildings': [],
         'errors': ['לא נקלטו גבולות ולא נקלטה תוכנית העמדה'],
         'approved': False, 'version': 1, 'topography': 'unknown',
-        'cameras': {}, 'assets': [], 'renders': [], 'inputs': {}, 'evidence': {}}
+        'cameras': {}, 'assets': [], 'renders': [], 'inputs': {}, 'evidence': {},
+        'planning_brief': __import__('planning_brief').initial(request.get('planning_answers'))}
 
 
 def geometry_payload(project):
@@ -157,6 +158,8 @@ def readiness(project, base_dir):
             'final_render_allowed': ready, 'missing': missing,
             'classification': 'synthetic_experiment' if synthetic else 'unverified_real_site',
             'certification': False, 'accurate_real_site': False,
+            'planning_brief_status':project.get('planning_brief',{}).get('status','needs_answers'),
+            'proposed_geometry_requires_human_program_approval':True,
             'geometry_version_sha256': project['geometry_version_sha256'],
             'workflow': [
                 {'stage': 'זיהוי המתחם', 'status': 'synthetic' if synthetic else 'user_provided'},

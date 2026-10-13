@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "viewer_sha256": "b854b4a1d140eade0dbb310de93e1b63c6f4e959f4017981a27754454f437b52",
+  "checks": [
+    "Three actual embedded GLBs load and reflect exact removed/new/preserved IDs",
+    "Orbit and metric top camera respond",
+    "Offline no network/errors and downloaded GLB exact",
+    "Actual service requires explicit source demolition consent and mandatory human programme approval before proposed meshes; saves cleared, pending and approved stages",
+    "Actual program endpoint defaults100paldalet; missing lobby/core/etc prevents gross calculation",
+    "Persisted catalogue survives reload; no JS errors"
+  ],
+  "offline_http_requests": [],
+  "page_errors": [],
+  "recipient_access": "not_verified"
+}

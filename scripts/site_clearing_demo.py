@@ -70,30 +70,6 @@ def fixture():
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--metadata-only',action='store_true',help='Refresh diagnostic records without rerendering unchanged authored meshes');args=parser.parse_args()
-    out=ROOT/'outputs/site-v4';out.mkdir(parents=True,exist_ok=True)
-    existing,plan=fixture();original=digest(existing);proposal=propose(existing)
-    approval=approve_clearing(existing,['remove-A'],'Synthetic demo execution explicitly requested by user',True)
-    cleared=clear(existing,approval);pending=place(cleared,plan)
-    if pending['placement']['errors']:raise ValueError(pending['placement']['errors'])
-    planted=approve_placement(pending,digest(pending),'Synthetic demo placement reviewer')
-    versions={}
-    for name,scene in [('existing',existing),('cleared',cleared),('placement-pending',pending),('planted',planted)]:
-        (out/(name+'.json')).write_text(json.dumps(scene,indent=2,ensure_ascii=False)+'\n')
-        versions[name]=save_version(scene,ROOT/'data/site-reconstruction')
-    report={'status':'passed','synthetic':True,'original_scene_unchanged':digest(existing)==original,'proposal':proposal,
-            'clearing':cleared['qa'],'placement':planted['placement'],'scene_hashes':{k:v['sha256'] for k,v in versions.items()},
-            'photographic_clearing_performed':False,'terrain_reconstruction':'Reveal existing source-supported TIN, not inpainting or inferred fill',
-            'real_site_trial_ready':False,'real_site_blockers':['Authoritative parcel/address linkage','Authenticated boundary/source review','Measured bare-earth DTM with vertical datum','Licensed aerial/context source','Classified actual 3D object meshes'],
-            'professional_architecture_approved':False,'final_render_approved':False}
-    (out/'geometry-report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
-    (out/'plan-request.json').write_text(json.dumps(plan,indent=2)+'\n')
-    template={'synthetic':False,'crs':None,'origin':None,'boundary':None,'terrain':None,'objects':None,
-              'identity':{'address':None,'block':None,'parcels':[]},'required_sources':report['real_site_blockers'],
-              'ground_source_must_be':'bare-earth DTM, not rooftop DSM','review_authority_authentication_implemented':False}
-    (out/'real-intake-requirements.json').write_text(json.dumps(template,indent=2)+'\n')
-    if not args.metadata_only:subprocess.run(['/usr/bin/blender','--background','--threads','4','--python-exit-code','1','--python',str(ROOT/'engine/site_clearing_export.py')],check=True,cwd=ROOT)
-    print('Synthetic clearing and planting complete; original scene untouched')
-
+    raise SystemExit('V4 completed. Automatic demo approval disabled: use the planning UI and explicit human approval before new proposed massing. Existing artifacts are preserved.')
 
 if __name__=='__main__':main()

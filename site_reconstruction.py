@@ -268,6 +268,8 @@ def compare(original,result,removed_ids):
 
 
 def place(cleared,request):
+    from planning_brief import require_approval
+    require_approval(cleared,request)
     if cleared.get('stage')!='cleared':raise ValueError('Approved cleared working version required')
     if cleared['synthetic'] is not True:raise ValueError('Real placement blocked until source and terrain validation implemented')
     boundary=validate_scene(cleared)
@@ -359,7 +361,15 @@ def api_action(action,request,directory):
     if not isinstance(identifier,str) or len(identifier)!=32 or any(c not in '0123456789abcdef' for c in identifier):raise ValueError('Invalid reconstruction version ID')
     record=json.loads((directory/(identifier+'.json')).read_text());scene=record['scene']
     if digest(scene)!=record['sha256'] or request.get('expected_sha256')!=record['sha256']:raise ValueError('Stale or corrupted reconstruction version')
-    if action=='clear':
+    if action in {'planning-save','planning-review','planning-approve','planning-alternatives'}:
+        from planning_brief import normalize,review,approve,alternatives as brief_alternatives
+        if action=='planning-save':
+            result=deepcopy(scene);result['planning_brief']=normalize(request['brief'])
+        elif action=='planning-review':return review(scene,scene.get('planning_brief',{}),request.get('plan'))
+        elif action=='planning-alternatives':return brief_alternatives(scene.get('planning_brief',{}),request.get('context',{}))
+        else:
+            result=deepcopy(scene);result['planning_brief']=approve(scene,scene.get('planning_brief',{}),request.get('plan'),request)
+    elif action=='clear':
         approval=approve_clearing(scene,request.get('selected_ids'),request.get('reviewer'),request.get('boundary_approved',False))
         result=clear(scene,approval)
     elif action=='place':result=place(scene,request['plan'])

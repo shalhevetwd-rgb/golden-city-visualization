@@ -523,6 +523,20 @@ def validate_file(path, *, expected=None, artifact_role='output'):
     elif suffix in {'.html', '.htm'}:
         details = {'reader': 'Python independent HTML parser', **validate_links(path)}
         checks += ['utf8_decode', 'html_parse', 'all_local_targets_exist', 'embedded_artifacts_decode']
+    elif suffix in {'.pgw','.jgw','.tfw','.wld'}:
+        try: values=[float(x) for x in path.read_text(encoding='utf-8').split()]
+        except (ValueError,UnicodeError) as error:raise ValidationError('Invalid worldfile') from error
+        if len(values)!=6 or not all(math.isfinite(x) for x in values) or abs(values[0]*values[3]-values[1]*values[2])<1e-15:
+            raise ValidationError('Worldfile requires six finite invertible affine coefficients')
+        details={'reader':'independent worldfile affine parser','coefficients':values}
+        checks+=['six_finite_coefficients','invertible_pixel_to_source_affine']
+    elif suffix=='.prj':
+        from pyproj import CRS
+        from pyproj.exceptions import CRSError
+        try: crs=CRS.from_wkt(path.read_text(encoding='utf-8'))
+        except (ValueError,UnicodeError,CRSError) as error:raise ValidationError('Invalid CRS WKT sidecar') from error
+        details={'reader':'independent PROJ WKT parser','epsg':crs.to_epsg(),'name':crs.name}
+        checks+=['crs_wkt_parse']
     elif suffix in TEXT_FORMATS:
         try:
             text = path.read_text(encoding='utf-8')
